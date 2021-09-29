@@ -1,0 +1,31 @@
+title: Start
+tags: 
+colorID: 0
+position: 860,356
+---
+<<setSpeaker Emily>>
+hello Richard #line:06df097
+<<setSpeaker Richard>>
+hi Emily #line:05580c3
+<<setSpeaker Emily>>
+how are you #line:004e233
+<<setSpeaker>>
+[[I am good.|good]] #line:0b7f703
+[[I am bad.|bad]] #line:0ff9af6
+===
+title: good
+tags: 
+colorID: 0
+position: 695,607
+---
+<<setSpeaker Emily>>
+great to hear that. #line:05c4205
+===
+title: bad
+tags: 
+colorID: 0
+position: 1101,603
+---
+<<setSpeaker Emily>>
+I am sad to hear that. #line:09e22d5
+===
