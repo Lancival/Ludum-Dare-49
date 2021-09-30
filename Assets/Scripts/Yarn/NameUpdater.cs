@@ -8,11 +8,11 @@ public class NameUpdater : MonoBehaviour
 {
     // Drag and drop your Dialogue Runner into this variable.
     [SerializeField] private DialogueRunner dialogueRunner;
-    private TextMeshProUGUI name;
+    private TextMeshProUGUI nameText;
 
     public void Awake()
     {
-    	name = transform.GetComponent<TextMeshProUGUI>();
+    	nameText = transform.GetComponent<TextMeshProUGUI>();
 
     	if (dialogueRunner != null)
         	dialogueRunner.AddCommandHandler("setSpeaker", SetSpeaker);
@@ -20,8 +20,8 @@ public class NameUpdater : MonoBehaviour
 
     private void SetSpeaker(string[] parameters) {
     	if (parameters != null)
-        	name.text = parameters[0];
+        	nameText.text = parameters[0];
         else
-        	name.text = "";
+        	nameText.text = "";
     }
 }
