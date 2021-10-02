@@ -11,9 +11,11 @@ using UnityEngine;
 
 public static class Settings
 {
-	// Gameplay State
+	/* Gameplay State */
     public static bool PAUSED = false;
 
+
+    /* Audio Settings */
 	// Master Volume, affect all sounds and music
 	public static float MASTER_VOLUME {
 		get {return PlayerPrefs.GetFloat("Master", 1.0f);} // Default of full volume
@@ -27,20 +29,21 @@ public static class Settings
 	}
 
 	// SFX Volume
-	public static float AUDIO_VOLUME {
-		get {return PlayerPrefs.GetFloat("Audio", 1.0f);} // Default of full volume
-		set {PlayerPrefs.SetFloat("Audio", value);}
+	public static float SFX_VOLUME {
+		get {return PlayerPrefs.GetFloat("SFX", 1.0f);} // Default of full volume
+		set {PlayerPrefs.SetFloat("SFX", value);}
 	}
 
-	// Voice Volume
-	public static float VOICE_VOLUME {
-		get {return PlayerPrefs.GetFloat("Voice", 1.0f);} // Default of full volume
-		set {PlayerPrefs.SetFloat("Voice", value);}
-	}
-
+	/* Text Settings */
 	// Text Speed
 	public static float TEXT_DELAY {
 		get {return PlayerPrefs.GetFloat("Delay", 0.01f);} // Default of full volume
 		set {PlayerPrefs.SetFloat("Delay", value);}
+	}
+
+	// Text Size
+	public static int TEXT_SIZE {
+		get {return PlayerPrefs.GetInt("Font", 49);}	   // Default font size
+		set {PlayerPrefs.SetInt("Font", value);}
 	}
 }
