@@ -52,3 +52,7 @@ UserSettings/EditorUserSettings.asset
 
 # .DS_Store
 .DS_Store
+
+# VS Code
+.vsconfig
+.vscode
