@@ -10,7 +10,7 @@ public class InventoryHolder : MonoBehaviour
     private bool CanCreateSlots = false;
 
     private InventorySystem.Inventory m_Inventory = new InventorySystem.Inventory();
-    public InventorySystem.Inventory Iventory => m_Inventory;
+    public InventorySystem.Inventory Inventory => m_Inventory;
 
     private void Awake()
     {
