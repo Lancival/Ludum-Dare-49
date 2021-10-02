@@ -217,7 +217,8 @@ GameObject:
   - component: {fileID: 650580049}
   - component: {fileID: 650580051}
   - component: {fileID: 650580052}
-  m_Layer: 0
+  - component: {fileID: 650580053}
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,6 +303,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 1435213138}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!114 &650580052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,6 +400,22 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!70 &650580053
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650580048}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 2, y: 1}
+  m_Direction: 0
 --- !u!1 &812324787
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1784528717}
   - component: {fileID: 1784528716}
+  - component: {fileID: 1784528718}
   m_Layer: 0
   m_Name: Green Square
   m_TagString: Untagged
@@ -676,3 +697,19 @@ Transform:
   m_Father: {fileID: 1449275618}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &1784528718
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784528715}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 2, y: 1}
+  m_Direction: 0
