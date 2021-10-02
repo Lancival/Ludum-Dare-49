@@ -34,7 +34,7 @@ public class CanvasGroupFade : MonoBehaviour
      * float duration: Duration of fade (in seconds), should be a non-negative number
      * bool active: Whether the gameObject should end active or not
      */
-    private static IEnumerator FadeCanvasGroup(CanvasGroup cg, float start, float end, float duration) {
+    private static IEnumerator FadeCanvasGroup(CanvasGroup cg, float start, float end, float duration, bool interactable) {
     	// Check for valid parameters
     	if (start < 0 || start > 1 || end < 0 || end > 1)
     	{
@@ -83,6 +83,17 @@ public class CanvasGroupFade : MonoBehaviour
 	    		yield return new WaitForEndOfFrame();
 	    	}
 	    }
+
+        if (interactable)
+        {
+            cg.interactable = true;
+            cg.blocksRaycasts = true;
+        }
+        else
+        {
+            cg.interactable = false;
+            cg.blocksRaycasts = false;
+        }
     }
 
     // Stops any ongoing fade coroutine
@@ -93,34 +104,34 @@ public class CanvasGroupFade : MonoBehaviour
     }
 
     // Wrapper function for FadeCanvasGroup
-    public void Fade(float start, float end, float duration)
+    public void Fade(float start, float end, float duration, bool interactable)
     {
     	StopFade();
-    	fadeInProgress = FadeCanvasGroup(canvasGroup, start, end, duration);
+    	fadeInProgress = FadeCanvasGroup(canvasGroup, start, end, duration, interactable);
         StartCoroutine(fadeInProgress);
     }
 
     // Wrapper function for Fade(), fades CanvasGroup alpha from 0 to 1 over the duration parameter
     public void FadeIn(float duration)
     {
-    	Fade(0, 1, duration);
+    	Fade(0, 1, duration, true);
     }
 
     // Overloaded function, fades CanvasGroup alpha from 0 to 1 over the default duration
     public void FadeIn()
     {
-    	Fade(0, 1, fadeInDurationDefault);
+    	Fade(0, 1, fadeInDurationDefault, true);
     }
 
     // Wrapper function for Fade(), fades CanvasGroup alpha from 1 to 0
     public void FadeOut(float duration)
     {
-    	Fade(1, 0, duration);
+    	Fade(1, 0, duration, false);
     }
 
     // Overloaded function, fades CanvasGroup alpha from 1 to 0 over the default duration
     public void FadeOut()
     {
-    	Fade(1, 0, fadeOutDurationDefault);
+    	Fade(1, 0, fadeOutDurationDefault, false);
     }
 }
