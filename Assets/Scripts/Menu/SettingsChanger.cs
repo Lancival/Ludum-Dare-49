@@ -71,6 +71,7 @@ public class SettingsChanger : MonoBehaviour
         if (!open)
         {
             open = true;
+            Settings.PAUSED = true;
             fader.FadeIn();
         }
     }
@@ -78,7 +79,10 @@ public class SettingsChanger : MonoBehaviour
     public void CloseSettings()
     {
         if (open)
+        {
             fader.FadeOut();
-        open = false;
+        	open = false;
+        	Settings.PAUSED = false;
+        }
     }
 }
