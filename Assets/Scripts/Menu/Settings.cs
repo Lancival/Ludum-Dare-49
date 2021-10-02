@@ -42,8 +42,8 @@ public static class Settings
 	}
 
 	// Text Size
-	public static int TEXT_SIZE {
-		get {return PlayerPrefs.GetInt("Font", 49);}	   // Default font size
-		set {PlayerPrefs.SetInt("Font", value);}
+	public static float TEXT_SCALE {
+		get {return PlayerPrefs.GetFloat("Scale", 1.0f);}  // Default font size
+		set {PlayerPrefs.SetFloat("Scale", value);}
 	}
 }

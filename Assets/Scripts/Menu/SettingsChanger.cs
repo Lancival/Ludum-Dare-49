@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class SettingsChanger : MonoBehaviour
 {
+    public static SettingsChanger SettingsChangerInstance {get; private set;}
+
+    void Awake()
+    {
+        SettingsChangerInstance = this;
+    }
+
+    void OnDestroy()
+    {
+        SettingsChangerInstance = null;
+    }
+
     public delegate void OnMasterVolumeChangedDelegate();
     public event OnMasterVolumeChangedDelegate masterVolumeChangedDelegate;
     public void ChangeMasterVolume(float volume)
@@ -36,11 +48,11 @@ public class SettingsChanger : MonoBehaviour
     	textDelayChangedDelegate?.Invoke();
     }
 
-    public delegate void OnTextSizeChangedDelegate();
-    public event OnTextSizeChangedDelegate textSizeChangedDelegate;
-    public void ChangeTextSize(int size)
+    public delegate void OnTextScaleChangedDelegate();
+    public event OnTextScaleChangedDelegate textScaleChangedDelegate;
+    public void ChangeTextScale(float scale)
     {
-    	Settings.TEXT_SIZE = size;
-    	textSizeChangedDelegate?.Invoke();
+    	Settings.TEXT_SCALE = scale;
+    	textScaleChangedDelegate?.Invoke();
     }
 }
