@@ -35,7 +35,7 @@ public class AudioClipCueSO : ScriptableObject
 
 	public void Initialize(AudioSource audioSource)
 	{
-		audioSource.volume = Volume;
+		//audioSource.volume = Volume;
 		audioSource.pitch = Pitch;
 		audioSource.loop = loop;
 	}

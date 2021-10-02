@@ -14,29 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClips:
   - {fileID: 8300000, guid: 3ab996c53fe514ff5b84992ea8f0c20c, type: 3}
-  - {fileID: 8300000, guid: f077b430a2063442ea5555f8f5a73ad3, type: 3}
   - {fileID: 8300000, guid: 8f23eb4d94981413eb95da85e7115c71, type: 3}
   - {fileID: 8300000, guid: d194e27089b794ec4a125b6772e135bc, type: 3}
   - {fileID: 8300000, guid: 93fc56c1abcca408697fabdb0cad5d2f, type: 3}
-  - {fileID: 8300000, guid: c0f713a1858134521834dfb4a5bae253, type: 3}
   - {fileID: 8300000, guid: 998ae927a05554bf0bae5501dabb60f1, type: 3}
   - {fileID: 8300000, guid: 7ed39c69e46704d908c09a00964b930f, type: 3}
   - {fileID: 8300000, guid: 57a9f398407df4b768b775d758f79e51, type: 3}
-  - {fileID: 8300000, guid: 520243528805b41be92daaeb08d6afc9, type: 3}
   - {fileID: 8300000, guid: fad8b5e7b547e4e989f7200001a9128e, type: 3}
   - {fileID: 8300000, guid: 989a48e6ee0e640c99355789ebbb65ef, type: 3}
-  - {fileID: 8300000, guid: f3a63e8d0cbf74556af09f1954dad3a6, type: 3}
   - {fileID: 8300000, guid: 7baab1593c0da43d89e8bea6b319466e, type: 3}
   loop: 0
-  Volume: 0.3
+  Volume: 1
   Pitch: 1
   sequenceMode: 1
   NegativePitchVariation: -0.3
   PositivePitchVariation: 0.3
   NegativeVolumeVariation: 0
   PositiveVolumeVariation: 0
-  lastIndex: 9
-  nextIndex: 9
+  lastIndex: 1
+  nextIndex: 1
   fadeInTime: 0
   fadeOutTime: 0
   reverbTailLength: 0
