@@ -7,7 +7,6 @@ using UnityEngine.InputSystem;
 
 // TODO: Change OverlapBoxAll to fit whatever type of collider we end up using.
 //						Also change the type of collider to fit the model
-// TODO: Tell interactable object to perform its action
 
 public class Player : MonoBehaviour
 {
@@ -15,11 +14,33 @@ public class Player : MonoBehaviour
 	[SerializeField] private LayerMask m_LayerMask;
 	[SerializeField] private float speed = 5f;
 
+	private Collider2D[] hits;
 	private Rigidbody2D rb;
+	private Vector3 facing;
 
   public void OnMove(InputValue input)
 	{
-		rb.velocity = input.Get<Vector2>() * speed;
+		Vector2 inputVec = input.Get<Vector2>();
+		// I found that releasing the movement key sends an input value of vector2.zero, which messes with the code saving which direction the player is facing
+		if (inputVec != Vector2.zero)
+			facing = new Vector3 (inputVec.x, inputVec.y, 0);
+		rb.velocity = inputVec * speed;
+	}
+
+	// Ran when player presses `Interact` key (currently set to SPACE)
+	public void OnInteract(InputValue input)
+	{
+		Debug.Log("Attempting to interact with nearby objects...");
+		if (hits.Length != 0){
+				Interactable other = hits[0].gameObject.GetComponent<Interactable>();
+				if (other == null){
+					Debug.Log("Colliding object is either uniteractable or has no script inheriting from `Interactable`");
+				}else{
+						other.interact();
+				}
+		}else{
+			Debug.Log("Not facing any nearby objects!");
+		}
 	}
 
 	/*void OnTriggerEnter2D(Collider2D other)
@@ -33,6 +54,7 @@ public class Player : MonoBehaviour
 	void Start()
 	{
 		rb = GetComponent<Rigidbody2D>();
+		facing = new Vector3(0,1,0);
 		if (mainCamera == null)
 		{
 			Debug.Log("Error: Main camera not provided to Player scipt.");
@@ -40,17 +62,14 @@ public class Player : MonoBehaviour
 		}
 	}
 
-	void FixedUpdate()
+	/*void FixedUpdate()
 	{
-    //Use the OverlapBox to detect if there are any other colliders within this box area.
-    Collider2D[] hitColliders = Physics2D.OverlapBoxAll(gameObject.transform.position, transform.localScale / 2, 0, m_LayerMask);
-		/*if (hitColliders.size())
-		{
-			 Tell the hitColliders[0] to do its action on keypress
-		}*/
-	}
+	}*/
 
 	void Update(){
+		// Checks what objects are in front of the player (in the direction the player is facing
+		// and snaps camera to the player
+		hits = Physics2D.OverlapBoxAll( transform.position + facing / 2f, transform.localScale / 2, 0, m_LayerMask);
 		mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y, mainCamera.transform.position.z);
 	}
 }
