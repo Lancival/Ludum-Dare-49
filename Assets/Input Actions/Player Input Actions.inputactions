@@ -777,6 +777,33 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Settings",
+            "id": "fad177d0-f0ef-4151-8af3-75b37bb70a1d",
+            "actions": [
+                {
+                    "name": "Open Settings",
+                    "type": "Button",
+                    "id": "aa1425da-d9c9-47bf-86fa-401d85f7c192",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "062348e3-96b9-4282-9fa2-874d49c6f4a8",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Open Settings",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
