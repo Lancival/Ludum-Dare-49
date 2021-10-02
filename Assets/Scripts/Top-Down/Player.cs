@@ -72,4 +72,6 @@ public class Player : MonoBehaviour
 		hits = Physics2D.OverlapBoxAll( transform.position + facing / 2f, transform.localScale / 2, 0, m_LayerMask);
 		mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y, mainCamera.transform.position.z);
 	}
+
+	public Camera getCamera(){ return mainCamera; }
 }
