@@ -2,13 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(CanvasGroupFade))]
+
 public class SettingsChanger : MonoBehaviour
 {
     public static SettingsChanger SettingsChangerInstance {get; private set;}
+    private CanvasGroupFade fader;
+    private bool open = false;
 
     void Awake()
     {
         SettingsChangerInstance = this;
+        fader = GetComponent<CanvasGroupFade>();
     }
 
     void OnDestroy()
@@ -54,5 +59,21 @@ public class SettingsChanger : MonoBehaviour
     {
     	Settings.TEXT_SCALE = scale;
     	textScaleChangedDelegate?.Invoke();
+    }
+
+    public void OpenSettings()
+    {
+        if (!open)
+        {
+            open = true;
+            fader.FadeIn();
+        }
+    }
+
+    public void CloseSettings()
+    {
+        if (open)
+            fader.FadeOut();
+        open = false;
     }
 }
