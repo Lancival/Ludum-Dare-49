@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35d58fd446484448289ab1cbbe38ea22, type: 3}
+  m_Name: AudioCue_Amb_Wind_Normal
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 2f88118bc621d49e4b726501a62cb02b, type: 3}
+  - {fileID: 8300000, guid: f1138588b4b0f46c7b76ee5f781b135b, type: 3}
+  - {fileID: 8300000, guid: c14e55a582b8b416bb935b59953f4527, type: 3}
+  - {fileID: 8300000, guid: 361e2a88df41041839316aac27c29471, type: 3}
+  - {fileID: 8300000, guid: 567bb01efa5c949449548171a290ad3e, type: 3}
+  - {fileID: 8300000, guid: c54d3cbe9b07141a3b13c4c28826684d, type: 3}
+  - {fileID: 8300000, guid: 606ca39553ec44d02aa4885969489ec5, type: 3}
+  loop: 0
+  Volume: 1
+  Pitch: 1
+  sequenceMode: 1
+  NegativePitchVariation: -0.2
+  PositivePitchVariation: 0.2
+  NegativeVolumeVariation: 0
+  PositiveVolumeVariation: 0
+  lastIndex: 1
+  nextIndex: 1
+  fadeInTime: 0
+  fadeOutTime: 0
+  reverbTailLength: 0
+  barLength: 0
+  bpm: 0
+  timeSigUpper: 0
+  timeSigLower: 0
