@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35d58fd446484448289ab1cbbe38ea22, type: 3}
+  m_Name: AudioCue_Amb_Wolves_Spooky
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 92bfd2ac8f52247c080fe291afbd1d6d, type: 3}
+  - {fileID: 8300000, guid: 57829e1f867f84605b8a9fec29780471, type: 3}
+  - {fileID: 8300000, guid: a798441d97b3a40d598ba6cf9b7392ed, type: 3}
+  loop: 0
+  Volume: 1
+  Pitch: 1
+  sequenceMode: 1
+  NegativePitchVariation: -0.3
+  PositivePitchVariation: 0.3
+  NegativeVolumeVariation: 0
+  PositiveVolumeVariation: 0
+  lastIndex: 2
+  nextIndex: 2
+  fadeInTime: 0
+  fadeOutTime: 0
+  reverbTailLength: 0
+  barLength: 0
+  bpm: 0
+  timeSigUpper: 0
+  timeSigLower: 0
