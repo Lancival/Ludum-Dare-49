@@ -49,3 +49,6 @@ crashlytics-build.properties
 
 # Editor User Settings
 UserSettings/EditorUserSettings.asset
+
+# .DS_Store
+.DS_Store
