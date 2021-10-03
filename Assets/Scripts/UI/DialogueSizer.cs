@@ -15,6 +15,7 @@ public class DialogueSizer : MonoBehaviour
 	[SerializeField] private float maxWidth = 1000;
 	[SerializeField] private CustomUI ui;
 	[SerializeField] private float defaultDuration = 0.25f;
+    public bool instantSize {get; set;}
 
 	private RectTransform rect;
 	private VerticalLayoutGroup layout;
@@ -28,6 +29,7 @@ public class DialogueSizer : MonoBehaviour
 		rect = GetComponent<RectTransform>();
 		layout = GetComponent<VerticalLayoutGroup>();
 		text = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        instantSize = false;
 	}
 
 	void Start()
@@ -53,18 +55,26 @@ public class DialogueSizer : MonoBehaviour
     		rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, maxWidth);
     		text.text = line;
     		Canvas.ForceUpdateCanvases();
-    		//rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, text.preferredHeight + layout.padding.top + layout.padding.bottom);
-    		StartVerticalLerp(text.preferredHeight + layout.padding.top + layout.padding.bottom);
-
-    		StartHorizontalLerp(maxWidth);
+    		if (instantSize)
+                rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, text.preferredHeight + layout.padding.top + layout.padding.bottom);
+            else
+            {
+                StartVerticalLerp(text.preferredHeight + layout.padding.top + layout.padding.bottom);
+                StartHorizontalLerp(maxWidth);
+            }
     	}
     	else
     	{
-    		StartVerticalLerp(preferredSize[1] + layout.padding.top + layout.padding.bottom);
-    		//rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, preferredSize[1] + layout.padding.top + layout.padding.bottom);
-
-    		StartHorizontalLerp(preferredSize[0] + layout.padding.left + layout.padding.right);
-    		//rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, preferredSize[0] + layout.padding.left + layout.padding.right);
+            if (instantSize)
+            {
+                rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, preferredSize[1] + layout.padding.top + layout.padding.bottom);
+                rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, preferredSize[0] + layout.padding.left + layout.padding.right);
+            }
+            else
+            {
+                StartVerticalLerp(preferredSize[1] + layout.padding.top + layout.padding.bottom);
+                StartHorizontalLerp(preferredSize[0] + layout.padding.left + layout.padding.right);
+            }
     	}
     }
 
