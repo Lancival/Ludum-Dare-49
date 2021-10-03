@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39340ea1df7e744ec88f0a6785102fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
   config: {fileID: 11400000, guid: 974215061110942ac8eb87a53fce365f, type: 2}
   cue: {fileID: 11400000, guid: 25e7bd5856fef485d9f0d5bfd057198a, type: 2}
   minTime: 4
@@ -322,8 +323,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 95e2783826bd14621b5369061fac8037, type: 2}
   cue: {fileID: 11400000, guid: 20b25e6b6549e45ee9b997fca50b02f1, type: 2}
-  playOnAwake: 2
-  startOnRandomTime: 0
+  playOnAwake: 1
+  startOnRandomTime: 1
 --- !u!1 &5460835322888831467
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,8 +467,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 95e2783826bd14621b5369061fac8037, type: 2}
   cue: {fileID: 11400000, guid: 8d670f7ff9b584d20990a6a4b8f3fbc6, type: 2}
-  playOnAwake: 2
-  startOnRandomTime: 0
+  playOnAwake: 1
+  startOnRandomTime: 1
 --- !u!1 &5460835323096927128
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,6 +609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39340ea1df7e744ec88f0a6785102fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
   config: {fileID: 11400000, guid: 974215061110942ac8eb87a53fce365f, type: 2}
   cue: {fileID: 11400000, guid: db0d7b07dc6fe4db3a3e7d5803cfcd33, type: 2}
   minTime: 7
@@ -788,6 +790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39340ea1df7e744ec88f0a6785102fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
   config: {fileID: 11400000, guid: 974215061110942ac8eb87a53fce365f, type: 2}
   cue: {fileID: 11400000, guid: 395fc9f97027649278872a2d89fbf250, type: 2}
   minTime: 9
@@ -936,6 +939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39340ea1df7e744ec88f0a6785102fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
   config: {fileID: 11400000, guid: 95e2783826bd14621b5369061fac8037, type: 2}
   cue: {fileID: 11400000, guid: 062107ad2553742cebb63e8b4f4295c4, type: 2}
   minTime: 7
@@ -1116,6 +1120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39340ea1df7e744ec88f0a6785102fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
   config: {fileID: 11400000, guid: 95e2783826bd14621b5369061fac8037, type: 2}
   cue: {fileID: 11400000, guid: 28966a60a03cc4bada27f9bfd8bafcad, type: 2}
   minTime: 5
@@ -1296,6 +1301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39340ea1df7e744ec88f0a6785102fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
   config: {fileID: 11400000, guid: 95e2783826bd14621b5369061fac8037, type: 2}
   cue: {fileID: 11400000, guid: b18feaef1dc8f4db2887295f89e41898, type: 2}
   minTime: 3
@@ -1313,9 +1319,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5460835324469061553}
-  - component: {fileID: 5460835324469061552}
+  - component: {fileID: 5343159659445668090}
   m_Layer: 0
-  m_Name: ForestAmbience
+  m_Name: Ambience_Forest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1339,7 +1345,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5460835324469061552
+--- !u!114 &5343159659445668090
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

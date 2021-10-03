@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6eef9b0f97ad412a8b578d173bb0c01, type: 3}
-  m_Name: AudioConfig_Amb_3D
+  m_Name: AudioConfig_Amb_Ext_2D
   m_EditorClassIdentifier: 
   OutputAudioMixerGroup: {fileID: 2611253473623671150, guid: 60edac19168ca4f2dbd7cd5386750f59, type: 2}
   _priorityLevel: 128
@@ -18,11 +18,11 @@ MonoBehaviour:
   PlayOnAwake: 0
   PanStereo: 0
   ReverbZoneMix: 1
-  SpatialBlend: 1
+  SpatialBlend: 0
   RolloffMode: 0
-  MinDistance: 1
-  MaxDistance: 8
-  Spread: 90
+  MinDistance: 0.1
+  MaxDistance: 50
+  Spread: 0
   DopplerLevel: 1
   BypassEffects: 0
   BypassListenerEffects: 0

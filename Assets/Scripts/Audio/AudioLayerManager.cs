@@ -2,17 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioAmbienceManager : MonoBehaviour
+public class AudioLayerManager : MonoBehaviour
 {
-    public static float parameterLayer1 = 0;
-    public static float parameterLayer2 = 0;
-    public static float parameterLayer3 = 0;
-    public static float parameterLayer4 = 0;
 
     [SerializeField] private AudioSource[] sourceLayer1;
     [SerializeField] private AudioSource[] sourceLayer2;
     [SerializeField] private AudioSource[] sourceLayer3;
     [SerializeField] private AudioSource[] sourceLayer4;
+
+    public static float parameterLayer1 = 0;
+    public static float parameterLayer2 = 0;
+    public static float parameterLayer3 = 0;
+    public static float parameterLayer4 = 0;
+
+    private static bool isLayer1Crossfaded = false;
+    private static bool isLayer2Crossfaded = false;
+    private static bool isLayer3Crossfaded = false;
+    private static bool isLayer4Crossfaded = false;
 
     private float crossfadeTime = 4f;
 
@@ -27,22 +33,39 @@ public class AudioAmbienceManager : MonoBehaviour
 
     public void CrossfadeLayer1()
     {
-        StartCoroutine(LerpLayer1());
+        if (!isLayer1Crossfaded)
+        {
+            StartCoroutine(LerpLayer1());
+            isLayer1Crossfaded = true;
+        }
     }
 
     public void CrossfadeLayer2()
     {
-        StartCoroutine(LerpLayer2());
+        if (!isLayer2Crossfaded)
+        {
+            StartCoroutine(LerpLayer2());
+            isLayer2Crossfaded = true;
+        }
+
     }
 
     public void CrossfadeLayer3()
     {
-        StartCoroutine(LerpLayer3());
+        if (!isLayer3Crossfaded)
+        {
+            StartCoroutine(LerpLayer3());
+            isLayer3Crossfaded = true;
+        }
     }
 
     public void CrossfadeLayer4()
     {
-        StartCoroutine(LerpLayer4());
+        if (!isLayer4Crossfaded)
+        {
+            StartCoroutine(LerpLayer4());
+            isLayer4Crossfaded = true;
+        }
     }
 
     private void SetLayer1()
