@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
 
 	void Start()
 	{
-		return;	
+		return;
 	}
 
 	void Update(){
