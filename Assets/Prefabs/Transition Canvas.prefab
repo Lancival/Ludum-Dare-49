@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4526203941294328154}
   - component: {fileID: 4526203941294328153}
   - component: {fileID: 4526203941294328152}
+  - component: {fileID: 5023436424911130726}
   m_Layer: 5
   m_Name: Transition Canvas
   m_TagString: Untagged
@@ -127,3 +128,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 
   transitionDurationDefault: 1
+--- !u!114 &5023436424911130726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4526203941294328151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086ee6291f2ec470a8c145fd7104fdd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: 60edac19168ca4f2dbd7cd5386750f59, type: 2}
+  duration: 1
