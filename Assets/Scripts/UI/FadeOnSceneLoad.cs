@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CanvasGroupFade))]
+[DisallowMultipleComponent]
 
 public class FadeOnSceneLoad : MonoBehaviour
 {

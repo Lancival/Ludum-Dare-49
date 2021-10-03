@@ -50,7 +50,8 @@ public class BlackSquare : Interactable
         }
         Debug.Log("TP complete.");
         target.transform.position = new Vector3(destination.x, destination.y, target.transform.position.z);
-        target.SetActive(true);
+        GameObject door = GameObject.Find("Door");
+        door.GetComponent<Interactable>().interact();
 
     }
 }
