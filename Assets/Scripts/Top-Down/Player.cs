@@ -48,7 +48,10 @@ public class Player : MonoBehaviour
 		inventory = new Inventory();
 		if (uiInventory != null)
 			uiInventory.SetInventory(inventory);
+		//inventory = new Inventory();
+		//uiInventory.SetInventory(inventory);
 	}
+
 	void Start()
 	{
 		rb = GetComponent<Rigidbody2D>();
