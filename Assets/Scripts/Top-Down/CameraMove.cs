@@ -32,6 +32,6 @@ public class CameraMove : MonoBehaviour
     void Update()
     {
        	mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y, mainCamera.transform.position.z);
-        ZoomIn();
+        //ZoomIn();
     }
 }
