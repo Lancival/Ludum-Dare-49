@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 
 [RequireComponent(typeof(TextMeshProUGUI))]
+[DisallowMultipleComponent]
 
 public class FontSizer : MonoBehaviour
 {
