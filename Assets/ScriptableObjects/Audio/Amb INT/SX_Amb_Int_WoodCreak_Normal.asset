@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35d58fd446484448289ab1cbbe38ea22, type: 3}
+  m_Name: SX_Amb_Int_WoodCreak_Normal
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 161bcbbc259204800b687d061e60133f, type: 3}
+  - {fileID: 8300000, guid: 5ed8f84e9083b42bb85f14b97c9b4776, type: 3}
+  - {fileID: 8300000, guid: 8bc4536cdfa3e45af8204456dbd2cc4b, type: 3}
+  - {fileID: 8300000, guid: 1178b89913ca542db8f0868bde22efbc, type: 3}
+  - {fileID: 8300000, guid: 4b0a27f49aed9446a975989b24971370, type: 3}
+  - {fileID: 8300000, guid: 451fc880421324d9294523b4da3fda6c, type: 3}
+  - {fileID: 8300000, guid: 607f7383b7c2b4a689066fa458ae0e76, type: 3}
+  loop: 0
+  Volume: 1
+  Pitch: 1
+  sequenceMode: 1
+  NegativePitchVariation: -0.3
+  PositivePitchVariation: 0.3
+  NegativeVolumeVariation: 0
+  PositiveVolumeVariation: 0
+  lastIndex: 6
+  nextIndex: 6
+  fadeInTime: 0
+  fadeOutTime: 0
+  reverbTailLength: 0
+  barLength: 0
+  bpm: 0
+  timeSigUpper: 0
+  timeSigLower: 0

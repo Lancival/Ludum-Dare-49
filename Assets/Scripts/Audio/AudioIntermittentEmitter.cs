@@ -8,6 +8,8 @@ using UnityEditor;
 [RequireComponent(typeof(AudioSource))]
 public class AudioIntermittentEmitter : MonoBehaviour
 {
+    [SerializeField] private bool debug;
+
     [Header("Audio References")]
     [SerializeField] private AudioConfigurationSO config;
     [SerializeField] private AudioClipCueSO cue;
@@ -55,7 +57,8 @@ public class AudioIntermittentEmitter : MonoBehaviour
         ConfigureAudioSource();
         StartCoroutine("IntermittentSound");
 
-        print("PLAY INTERMITTENT SOURCE: " + gameObject.name);
+        if(debug)
+            print("PLAY INTERMITTENT SOURCE: " + gameObject.name);
     }
 
     public void Stop()
@@ -64,7 +67,8 @@ public class AudioIntermittentEmitter : MonoBehaviour
 
         enablePlay = false;
 
-        print("STOP INTERMITTENT SOURCE: " + gameObject.name);
+        if(debug)
+            print("STOP INTERMITTENT SOURCE: " + gameObject.name);
     }
     #endregion
 
@@ -98,7 +102,8 @@ public class AudioIntermittentEmitter : MonoBehaviour
         audioSource.Play();
         StartCoroutine("IntermittentSound");
 
-        print("INTERMITTENT SOUND " + gameObject.name + " : " + audioSource.clip);
+        if(debug)
+            print("INTERMITTENT SOUND " + gameObject.name + " : " + audioSource.clip);
     }
 
     private void RandomizePosition()
