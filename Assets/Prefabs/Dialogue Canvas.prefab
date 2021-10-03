@@ -82,7 +82,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &5309681864258043250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,6 +428,8 @@ GameObject:
   - component: {fileID: 5309681865468036592}
   - component: {fileID: 5309681865468036607}
   - component: {fileID: 5309681865468036606}
+  - component: {fileID: 6782882166284460835}
+  - component: {fileID: 5151048577520220545}
   m_Layer: 5
   m_Name: Dialogue Box
   m_TagString: Untagged
@@ -516,13 +518,37 @@ MonoBehaviour:
   startAutomatically: 0
   onNodeStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5151048577520220545}
+        m_TargetAssemblyTypeName: CanvasGroupFade, Assembly-CSharp
+        m_MethodName: FadeIn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onNodeComplete:
     m_PersistentCalls:
       m_Calls: []
   onDialogueComplete:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5151048577520220545}
+        m_TargetAssemblyTypeName: CanvasGroupFade, Assembly-CSharp
+        m_MethodName: FadeOut
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5309681865468036607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,7 +578,19 @@ MonoBehaviour:
       m_Calls: []
   onLineUpdate:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5309681864964306807}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onLineEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -579,3 +617,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultVariables: []
   debugTextView: {fileID: 0}
+--- !u!225 &6782882166284460835
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5309681865468036602}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &5151048577520220545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5309681865468036602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e16b8efcb7ab94f0db25cb352b7a3e60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeInDurationDefault: 1
+  fadeOutDurationDefault: 1
