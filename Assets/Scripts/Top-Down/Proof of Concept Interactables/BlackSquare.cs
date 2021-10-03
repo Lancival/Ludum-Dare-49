@@ -5,7 +5,7 @@ using UnityEngine;
 public class BlackSquare : Interactable
 {
 
-    [SerializeField] private Vector2 destination = Vector2.zero;
+    [SerializeField] private GameObject destination;
     [SerializeField] private Camera mainCamera;
     [SerializeField] private GameObject target;
     [SerializeField] private float duration;
@@ -15,8 +15,8 @@ public class BlackSquare : Interactable
 
     void Start()
     {
-        if (mainCamera == null || target == null){
-      			Debug.Log("Error: Main camera or target not provided to Teleport scipt.");
+        if (mainCamera == null || target == null || destination == null){
+      			Debug.Log("Error: One or more of: camera, target, destination not provided to Teleport scipt.");
       			Destroy(this);
         }
         if (duration <= 0){
@@ -28,8 +28,8 @@ public class BlackSquare : Interactable
     public override void interact()
     {
         Debug.Log("TPing target...");
-        delX = (float)(destination.x - mainCamera.transform.position.x) / duration;
-        delY = (float)(destination.y - mainCamera.transform.position.y) / duration;
+        delX = (float)(destination.transform.position.x - mainCamera.transform.position.x) / duration;
+        delY = (float)(destination.transform.position.y - mainCamera.transform.position.y) / duration;
 
         // Disables player while camera is panning
           // TODO: Maybe don't disable the player all together? but definitely player input
@@ -49,9 +49,7 @@ public class BlackSquare : Interactable
           yield return null;
         }
         Debug.Log("TP complete.");
-        target.transform.position = new Vector3(destination.x, destination.y, target.transform.position.z);
-        GameObject door = GameObject.Find("Door");
-        door.GetComponent<Interactable>().interact();
-
+        target.transform.position = new Vector3(destination.transform.position.x, destination.transform.position.y, target.transform.position.z);
+        destination.GetComponent<Door>().transport(target);
     }
 }

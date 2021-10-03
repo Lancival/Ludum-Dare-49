@@ -9,9 +9,7 @@ using UnityEngine.InputSystem;
 //						Also change the type of collider to fit the model
 
 public class Player : MonoBehaviour
-{
-	[SerializeField] private Camera mainCamera;
-	[SerializeField] private LayerMask m_LayerMask;
+{	[SerializeField] private LayerMask m_LayerMask;
 	[SerializeField] private float speed = 5f;
 	[SerializeField] private UI_Inventory uiInventory;
 
@@ -20,7 +18,7 @@ public class Player : MonoBehaviour
 	private Vector3 facing;
 	private Inventory inventory;
 
-  public void OnMove(InputValue input)
+  	public void OnMove(InputValue input)
 	{
 		Vector2 inputVec = input.Get<Vector2>();
 		// I found that releasing the movement key sends an input value of vector2.zero, which messes with the code saving which direction the player is facing
@@ -44,15 +42,7 @@ public class Player : MonoBehaviour
 			Debug.Log("Not facing any nearby objects!");
 		}
 	}
-
-	/*void OnTriggerEnter2D(Collider2D other)
-	{
-     	if (Input.GetKeyDown(KeyCode.F)){
-		 	Debug.Log("Do something");
-	 	}
-		Debug.Log("Do something");
-	}*/
-
+  
 	void Awake()
 	{
 		inventory = new Inventory();
@@ -62,11 +52,6 @@ public class Player : MonoBehaviour
 	{
 		rb = GetComponent<Rigidbody2D>();
 		facing = new Vector3(0,1,0);
-		if (mainCamera == null)
-		{
-			Debug.Log("Error: Main camera not provided to Player scipt.");
-			Destroy(this);
-		}
 	}
 
 	/*void FixedUpdate()
@@ -77,8 +62,5 @@ public class Player : MonoBehaviour
 		// Checks what objects are in front of the player (in the direction the player is facing
 		// and snaps camera to the player
 		hits = Physics2D.OverlapBoxAll( transform.position + facing / 2f, transform.localScale / 2, 0, m_LayerMask);
-		mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y, mainCamera.transform.position.z);
 	}
-
-	public Camera getCamera(){ return mainCamera; }
 }
