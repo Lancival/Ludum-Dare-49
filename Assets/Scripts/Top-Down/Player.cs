@@ -13,10 +13,12 @@ public class Player : MonoBehaviour
 	[SerializeField] private Camera mainCamera;
 	[SerializeField] private LayerMask m_LayerMask;
 	[SerializeField] private float speed = 5f;
+	[SerializeField] private UI_Inventory uiInventory;
 
 	private Collider2D[] hits;
 	private Rigidbody2D rb;
 	private Vector3 facing;
+	private Inventory inventory;
 
   public void OnMove(InputValue input)
 	{
@@ -51,6 +53,11 @@ public class Player : MonoBehaviour
 		Debug.Log("Do something");
 	}*/
 
+	void Awake()
+	{
+		inventory = new Inventory();
+		uiInventory.SetInventory(inventory);
+	}
 	void Start()
 	{
 		rb = GetComponent<Rigidbody2D>();
