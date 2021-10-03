@@ -9,28 +9,23 @@ public class CameraMove : MonoBehaviour
 
     public void ZoomIn() {
         if(mainCamera.orthographicSize > 1)
-        {
             mainCamera.orthographicSize -= 0.01f;
-        } 
     }
 
     void Awake(){
       Scene scene = SceneManager.GetActiveScene();
       if (scene.name == "House")
-      {
-        gameObject.SetActive(false);
-      }
+        this.enabled = false;
     }
-
 
     // Start is called before the first frame update
     void Start()
     {
         if (mainCamera == null)
-		{
-			Debug.Log("Error: Main camera not provided to Player scipt.");
-			Destroy(this);
-		}
+		      {
+			         Debug.Log("Error: Main camera not provided to CameraMove script.");
+			         Destroy(this.gameObject);
+		      }
     }
 
     // Update is called once per frame
