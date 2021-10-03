@@ -37,7 +37,7 @@ public static class Settings
 	/* Text Settings */
 	// Text Speed
 	public static float TEXT_DELAY {
-		get {return PlayerPrefs.GetFloat("Delay", 0.01f);} // Default of full volume
+		get {return PlayerPrefs.GetFloat("Delay", 0.025f);} // Default of full volume
 		set {PlayerPrefs.SetFloat("Delay", value);}
 	}
 
