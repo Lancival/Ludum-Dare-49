@@ -165,7 +165,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   space:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6715504617761083854}
+        m_TargetAssemblyTypeName: FadeInAudioSource, Assembly-CSharp
+        m_MethodName: FadeMusicLayers
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   P:
     m_PersistentCalls:
       m_Calls: []
@@ -662,6 +674,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music_Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 6150215604497825883, guid: 0c45dad732823406492b403a49fba8fb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c45dad732823406492b403a49fba8fb, type: 3}
 --- !u!1001 &6715504617761083853
@@ -725,3 +741,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68e9763fd014a43d6a60da68e18c803a, type: 3}
+--- !u!114 &6715504617761083854 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6269982860312496132, guid: 68e9763fd014a43d6a60da68e18c803a, type: 3}
+  m_PrefabInstance: {fileID: 6715504617761083853}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7b90656eea647b6a006785f76510ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

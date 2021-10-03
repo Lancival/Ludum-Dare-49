@@ -48,7 +48,7 @@ MonoBehaviour:
   audioSourceSpooky: {fileID: 6715504618214783334}
   audioSourceNormal: {fileID: 6715504617770573909}
   layerNumber: 0
-  updateValue: 1
+  updateValue: 0
 --- !u!1 &6715504617696615819
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
   audioSourceSpooky: {fileID: 6715504618912587531}
   audioSourceNormal: {fileID: 6715504618950460884}
   layerNumber: 1
-  updateValue: 1
+  updateValue: 0
 --- !u!1 &6715504617770573912
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,7 +191,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -335,7 +335,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -483,7 +483,7 @@ MonoBehaviour:
   audioSourceSpooky: {fileID: 6715504618740365286}
   audioSourceNormal: {fileID: 6715504619236008549}
   layerNumber: 2
-  updateValue: 1
+  updateValue: 0
 --- !u!1 &6715504618082512510
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,7 +672,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -781,6 +781,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6715504618506214354}
+  - component: {fileID: 6269982860312496132}
   m_Layer: 0
   m_Name: Music_Cottage
   m_TagString: Untagged
@@ -806,6 +807,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6269982860312496132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6715504618506214355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7b90656eea647b6a006785f76510ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSources:
+  - {fileID: 6715504618214783334}
+  - {fileID: 6715504618912587531}
+  - {fileID: 6715504618740365286}
+  layersSystem:
+  - {fileID: 6715504617572393387}
+  - {fileID: 6715504617699495596}
+  - {fileID: 6715504617939258908}
 --- !u!1 &6715504618740365285
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,7 +871,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -994,7 +1015,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1138,7 +1159,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1282,7 +1303,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0

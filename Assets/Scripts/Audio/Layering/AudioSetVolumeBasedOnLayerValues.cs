@@ -8,7 +8,7 @@ public class AudioSetVolumeBasedOnLayerValues : MonoBehaviour
 
     [SerializeField] private AudioSource audioSourceSpooky, audioSourceNormal;
     [SerializeField] private LayerNumber layerNumber;
-    [SerializeField] private bool updateValue;
+    public bool updateValue;
 
     // Update is called once per frame
     void Update()
