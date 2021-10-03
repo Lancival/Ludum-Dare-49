@@ -7,7 +7,7 @@ public class Door : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D hit){
       if (hit.name == "Player"){
-        StartCoroutine(hit.GetComponent<CameraMove>().ZoomIn());
+        StartCoroutine(hit.GetComponent<CameraMove>().CamZoom()); //should probably have some sort of delay after this
         transport(hit.gameObject);
       }
     }
