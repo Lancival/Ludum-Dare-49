@@ -80,9 +80,9 @@ public class SettingsChanger : MonoBehaviour
     {
         if (open)
         {
-            fader.FadeOut();
         	open = false;
         	Settings.PAUSED = false;
+            fader.FadeOut();
         }
     }
 }
