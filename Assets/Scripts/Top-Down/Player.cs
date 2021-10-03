@@ -46,7 +46,8 @@ public class Player : MonoBehaviour
 	void Awake()
 	{
 		inventory = new Inventory();
-		uiInventory.SetInventory(inventory);
+		if (uiInventory != null)
+			uiInventory.SetInventory(inventory);
 	}
 	void Start()
 	{

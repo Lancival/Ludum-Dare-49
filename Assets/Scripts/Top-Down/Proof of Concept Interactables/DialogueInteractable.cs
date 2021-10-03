@@ -33,7 +33,7 @@ public class DialogueInteractable : Interactable
     		ui.MarkLineComplete();
     	else
     	{
-    		runner.transform.parent.position = transform.position;
+    		runner.transform.position = transform.position;
         	runner.StartDialogue(startNode);
         	dialogueStarted = true;
     	}
