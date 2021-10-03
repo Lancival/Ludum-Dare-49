@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4203508909228733457}
   - component: {fileID: 4203508909228733459}
   - component: {fileID: 4203508909228733460}
-  - component: {fileID: 4203508909228733461}
   - component: {fileID: 4203508909228733462}
   - component: {fileID: 4203508909228733463}
   m_Layer: 3
@@ -99,7 +98,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 871b657b3506543b0b8984e2b03f4902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 0}
   m_LayerMask:
     serializedVersion: 2
     m_Bits: 1
@@ -198,22 +196,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!70 &4203508909228733461
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4203508909228733456}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 1}
-  m_Direction: 0
 --- !u!50 &4203508909228733462
 Rigidbody2D:
   serializedVersion: 4

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : Interactable
+public class Door : MonoBehaviour
 {
     [SerializeField] private GameObject loader;
 
@@ -14,8 +14,13 @@ public class Door : Interactable
         Destroy(this);
       }
     }
-    public override void interact()
-    {
-        loader.GetComponent<SceneLoader>().LoadNextScene();
+
+    void OnTriggerEnter2D(Collider2D hit){
+      if (hit.name == "Player")
+        transport();
+    }
+
+    public void transport(){
+      loader.GetComponent<SceneLoader>().LoadNextScene();
     }
 }
