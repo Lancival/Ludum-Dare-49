@@ -7,6 +7,7 @@ public class Draggable : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
 {
    private RectTransform m_DraggingPlane;
    private GameObject m_DraggingIcon;
+   private Vector2 m_InitialPosition;
    [SerializeField] private CanvasGroup canvasGroup;
 
    private void Awake()
@@ -14,6 +15,7 @@ public class Draggable : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
        canvasGroup = GetComponent<CanvasGroup>();
        m_DraggingPlane = transform as RectTransform;
        m_DraggingIcon = this.gameObject;
+       m_InitialPosition = GetComponent<RectTransform>().anchoredPosition;
    }
    public void OnBeginDrag(PointerEventData eventData)
    {
@@ -35,6 +37,9 @@ public class Draggable : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
    public void OnEndDrag(PointerEventData eventData)
    {
        Debug.Log("OnEndDrag");
+    
+       var rt = m_DraggingIcon.GetComponent<RectTransform>();
+       rt.anchoredPosition = m_InitialPosition;
        canvasGroup.alpha = 1.0f;
        canvasGroup.blocksRaycasts = true;
    }   

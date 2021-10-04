@@ -714,6 +714,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: ItemAssets
       objectReference: {fileID: 0}
+    - target: {fileID: 1197739076166135598, guid: f75a2438efb60fe4fb3a535fb38edcca, type: 3}
+      propertyPath: key_outline_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 683735c908955e8468b2958d61127744, type: 3}
+    - target: {fileID: 1197739076166135598, guid: f75a2438efb60fe4fb3a535fb38edcca, type: 3}
+      propertyPath: book_outline_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1f5ca1e729b1eed40bed44b720db3d7c, type: 3}
+    - target: {fileID: 1197739076166135598, guid: f75a2438efb60fe4fb3a535fb38edcca, type: 3}
+      propertyPath: cables_outline_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4515bb8a514542e489e016db2d6a252b, type: 3}
+    - target: {fileID: 1197739076166135598, guid: f75a2438efb60fe4fb3a535fb38edcca, type: 3}
+      propertyPath: businessCard_outline_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f0a3f12acdf80214d9cc5e9f57e66999, type: 3}
     - target: {fileID: 1197739076166135599, guid: f75a2438efb60fe4fb3a535fb38edcca, type: 3}
       propertyPath: m_RootOrder
       value: 2
