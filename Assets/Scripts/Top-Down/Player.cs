@@ -12,7 +12,6 @@ public class Player : MonoBehaviour
 {	[SerializeField] private LayerMask m_LayerMask;
 	[SerializeField] private float speed = 5f;
 	[SerializeField] private UI_Inventory uiInventory;
-	[SerializeField] private Vector2 interactLim;
 
 	private Collider2D closest;
 	private Rigidbody2D rb;
@@ -20,7 +19,6 @@ public class Player : MonoBehaviour
 	private Inventory inventory;
 	private Animator anim;
 	private SpriteRenderer sprite;
-	private Rigidbody2D hitter;
 
   	public void OnMove(InputValue input)
 	{
@@ -56,6 +54,7 @@ public class Player : MonoBehaviour
 		}
 	}
 
+
 	void Awake()
 	{
 		inventory = new Inventory();
@@ -67,11 +66,6 @@ public class Player : MonoBehaviour
 		sprite = GetComponent<SpriteRenderer>();
 		//inventory = new Inventory();
 		//uiInventory.SetInventory(inventory);
-	}
-
-	void Start()
-	{
-		return;
 	}
 
 	void Update(){

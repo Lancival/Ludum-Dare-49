@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class CameraMove : MonoBehaviour
@@ -29,6 +30,7 @@ public class CameraMove : MonoBehaviour
     }
 
     public IEnumerator CamPan(float delX, float delY, float PanDuration){
+        this.GetComponent<PlayerInput>().enabled = false;
         float time = 0f;
         float temp;
         while (time < PanDuration)
@@ -39,14 +41,15 @@ public class CameraMove : MonoBehaviour
           yield return null;
         }
         CamPanning = false;
+        this.GetComponent<PlayerInput>().enabled = true;
     }
     void Awake(){
       Scene scene = SceneManager.GetActiveScene();
-      
+
       if (scene.name == "House"){
           UpdateEnabled = false;
         }
-        
+
     }
 
     // Start is called before the first frame update
@@ -55,7 +58,7 @@ public class CameraMove : MonoBehaviour
         if (mainCamera == null)
 		{
 			Debug.Log("Error: Main camera not provided to CameraMove scipt."); //hi
-			Destroy(this);  
+			Destroy(this);
         }
     }
 
