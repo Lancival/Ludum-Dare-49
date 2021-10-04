@@ -18,6 +18,7 @@ It's crazy. She's been dead for a month, but I'm still learning new things about
 I'd never have thought our relationship would keep changing after she passed.
 Thank you.
 If I discover mermaids, I will credit you!
+<<questComplete>>
 <<else>>
 <<if $hasTalkedToBrother is true>>
 <<setSpeaker Dennis>>
