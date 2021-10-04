@@ -59,13 +59,16 @@ public class DialogueInteractable : Interactable
 			Inventory inventory = GameObject.Find("Player").GetComponent<Player>().GetInventory();
 			switch (this.name){
 				case "Harper":
-					inventory.setItem("Harper");
+					inventory.setChar("Harper");
 					break;
 				case "Alice":
-					inventory.setItem("Alice");
+					inventory.setChar("Alice");
 					break;
 				case "Dennis":
-					inventory.setItem("Brother");
+					inventory.setChar("Brother");
+					break;
+				case "Husband":
+					inventory.setChar("Husband");
 					break;
 			}
 		}

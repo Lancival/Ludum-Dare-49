@@ -1,0 +1,148 @@
+title: Oliver
+tags: 
+colorID: 0
+position: 352,-100
+---
+<<if $hasPoem is true>>
+<<setSpeaker Oliver>>
+How did you find this?
+<<setSpeaker MC>>
+She wanted me to give this to you.
+<<setSpeaker Oliver>>
+I...I feel like an idiot.
+I didn't know she thought of me this way.
+<<setSpeaker MC>>
+She's your person. Of course she loves you.
+<<setSpeaker Oliver>>
+I hate being mad at her. I don't want to be, especially now that she's gone.
+I want to be loved, and I don't care if that's stupid.
+<<setSpeaker MC>>
+It isn't.
+<<setSpeaker Oliver>>
+Thank you for giving me this.
+<<questComplete>>
+<<else>>
+<<if $hasTalkedToHusband is true>>
+<<setSpeaker Oliver>>
+You found proof yet?
+<<else>>
+
+<<setSpeaker Oliver>>
+Hi, can I help you?
+<<setSpeaker MC>>
+Do you happen to know Delilah Anderson?
+<<setSpeaker Oliver>>
+I'm her husband. Who are you?
+<<setSpeaker>>
+[[I'm a friendly exorcist.|truth]]
+[[I'm...doing a project on her poetry.|lie]]
+<<endif>>
+<<endif>>
+===
+title: truth
+tags: 
+colorID: 0
+position: 162,196
+---
+<<setSpeaker Oliver>>
+I've heard of your kind.
+We don't need anyone investigating my wife.
+<<setSpeaker MC>>
+But I've been contracted to get rid of her ghost.
+She's in your old house.
+<<setSpeaker Oliver>>
+Let her stay there. Serves her right.
+[[cont]]
+===
+title: lie
+tags: 
+colorID: 0
+position: 560,188
+---
+<<setSpeaker Oliver>>
+And...what?
+You want me to tell you she was a prolific writer and revolutionized the art of poetry, right?
+<<setSpeaker MC>>
+I was hoping you could give insight to her life before she passed.
+If you think she has any unfinished business?
+<<setSpeaker Oliver>>
+Beats me. She's not exactly an expressive person outside of her writing.
+[[cont]]
+===
+title: cont
+tags: 
+colorID: 0
+position: 312,443
+---
+<<setSpeaker MC>>
+With all due respect, she's your wife.
+Don't you want to help her?
+<<setSpeaker Oliver>>
+I gave up on that a long time ago.
+She moved out here a year ago to "focus on her craft."
+Scram, kid, I've got things to do.
+<<setSpeaker MC>>
+I found a picture of you at her place.
+With two girls and an older man?
+You were all smiling. 
+<<setSpeaker Oliver>>
+How did you find..?
+<<setSpeaker MC>>
+Her spirit brought me to you. 
+There's something left between you two.
+<<setSpeaker Oliver>>
+You're really serious about this, huh?
+<<setSpeaker MC>>
+If you could tell me about your relationship, that'd be a great help.
+<<setSpeaker Oliver>>
+Look, I'm a nobody. I'm just Delilah's husband.
+Before she passed, she didn't communicate a lot to us.
+I wanted her back home, but she told us she had to stay here.
+She passed before she could tell us what she was up to.
+<<setSpeaker>>
+[[You're not just Delilah's husband.|husband]]
+[[I can help you find out what she was planning.|planning]]
+===
+title: husband
+tags: 
+colorID: 0
+position: 62,727
+---
+<<setSpeaker Oliver>>
+Did you know who I was before your little project?
+<<setSpeaker MC>>
+I...
+<<setSpeaker Oliver>>
+That's what I thought.
+[[cont1]]
+===
+title: planning
+tags: 
+colorID: 0
+position: 603,707
+---
+<<setSpeaker Oliver>>
+If I can't figure it out, I highly doubt a random stranger can.
+Besides, I'm allowed to be mad at her right now.
+[[cont1]]
+===
+title: cont1
+tags: 
+colorID: 0
+position: 312,1024
+---
+<<setSpeaker MC>>
+I'm sure Delilah cared about you.
+<i>Cares</i> about you.
+<<setSpeaker Oliver>>
+You know she won the Ruth Lilly Poetry prize?
+They give it to U.S. poets who deserve extraordinary recognition.
+I came to the award ceremony:
+All of these people I didn't know smiling at my wife, telling her she was brilliant.
+I just wanted to teach.
+I was studying to become a math professor at the time.
+But she was meant for something bigger, and I wanted to support her.
+So I quit my job.
+I gave her all of me. I just want to know she cared.
+If you can give me proof, I'll help you.
+===
