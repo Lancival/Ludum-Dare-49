@@ -35,6 +35,7 @@ public class DialogueInteractable : Interactable
     		ui.MarkLineComplete();
     	else
     	{
+				setState();
     		runner.transform.position = transform.position;
     		runner.onDialogueComplete.AddListener(exitDialogue);
         	runner.StartDialogue(startNode);
@@ -44,7 +45,7 @@ public class DialogueInteractable : Interactable
 
     private void exitDialogue()
     {
-    	StartCoroutine(Wait(talkCooldown)); 	
+    	StartCoroutine(Wait(talkCooldown));
     }
 
     private IEnumerator Wait(float duration)
@@ -53,4 +54,19 @@ public class DialogueInteractable : Interactable
     	dialogueStarted = false;
     	runner.onDialogueComplete.RemoveListener(exitDialogue);
     }
+
+		private void setState(){
+			Inventory inventory = GameObject.Find("Player").GetComponent<Player>().GetInventory();
+			switch (this.name){
+				case "Harper":
+					inventory.setItem("Harper");
+					break;
+				case "Alice":
+					inventory.setItem("Alice");
+					break;
+				case "Dennis":
+					inventory.setItem("Brother");
+					break;
+			}
+		}
 }
