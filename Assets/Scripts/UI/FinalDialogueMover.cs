@@ -31,11 +31,11 @@ public class FinalDialogueMover : MonoBehaviour
     	else if (parameters[0] == "Oliver")
     		runner.transform.position = oliver.transform.position;
     	else if (parameters[0] == "Dennis")
-    		runner.transform.position = dennis.transform.position;
+    		runner.transform.position = dennis.transform.position + offset;
     	else if (parameters[0] == "Alice")
     		runner.transform.position = alice.transform.position;
     	else if (parameters[0] == "Harper")
-    		runner.transform.position = harper.transform.position + offset;
+    		runner.transform.position = harper.transform.position;
     	else if (parameters[0] == "Delilah")
     		runner.transform.position = delilah.transform.position;
     }
