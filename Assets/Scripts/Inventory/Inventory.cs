@@ -27,6 +27,7 @@ public class Inventory
         // AddItem(new Item {itemType = Item.ItemType.Item3, amount=1});
 
         Debug.Log(itemList.Count);
+        itemsPickedUp = new List<String>();
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
@@ -47,6 +48,14 @@ public class Inventory
           varSet(output);
         }
     }
+
+    public void setChar(string name){
+      string output = "$" + "hasTalkedTo" + name;
+      if (vars != null){
+        varSet(output);
+      }
+    }
+
     private void varSet(string i){
       vars.GetComponent<InMemoryVariableStorage>().SetValue(i, true);
     }
