@@ -25,6 +25,8 @@ public class AudioConcatenation : MonoBehaviour
     public enum ConcatenationInterval { UpdateDynamically, FixedAtIndex0, SetOnInspector }
     private enum PlayOnAwakeMethod { No, PlayWithNoFade, PlayWithFade }
 
+    private float maxTextSpeed = 0.15f;
+    private float textSpeedMultiplier = 1.5f;
 
     // Start is called before the first frame update
     void Awake()
@@ -68,12 +70,15 @@ public class AudioConcatenation : MonoBehaviour
 
     private void IncrementNextStartTime()
     {
-        if (concatenationInterval == ConcatenationInterval.UpdateDynamically)
-        {
-            interval = ((double)audioSources[toggle].clip.samples / audioSources[toggle].clip.frequency) - cue.reverbTailLength;
-        }
+        //if (concatenationInterval == ConcatenationInterval.UpdateDynamically)
+        //{
+        //    interval = ((double)audioSources[toggle].clip.samples / audioSources[toggle].clip.frequency) - cue.reverbTailLength;
+        //}
 
-        nextStartTime += interval;
+        //nextStartTime += interval;
+
+        float textSpeed = Settings.TEXT_DELAY * textSpeedMultiplier;
+        nextStartTime += textSpeed < maxTextSpeed ? maxTextSpeed : textSpeed;
     }
     #endregion
 
@@ -86,10 +91,10 @@ public class AudioConcatenation : MonoBehaviour
             cue.Initialize(aSource);
         }
 
-        if (concatenationInterval == ConcatenationInterval.FixedAtIndex0)
-            interval = (double)cue.audioClips[0].samples / cue.audioClips[0].frequency;
-        else if (concatenationInterval == ConcatenationInterval.SetOnInspector)
-            interval = intervalOnInspector;
+        //if (concatenationInterval == ConcatenationInterval.FixedAtIndex0)
+        //    interval = (double)cue.audioClips[0].samples / cue.audioClips[0].frequency;
+        //else if (concatenationInterval == ConcatenationInterval.SetOnInspector)
+        //    interval = intervalOnInspector;
     }
 
     public void Play(bool fadeIn)
