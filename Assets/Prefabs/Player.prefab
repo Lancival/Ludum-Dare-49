@@ -212,8 +212,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 0}
-  duration: 0
-  zoomFactor: 0
+  duration: 2
+  zoomFactor: 1
   CamZooming: 0
   CamPanning: 0
 --- !u!50 &8779390180708700277
