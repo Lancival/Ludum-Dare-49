@@ -925,7 +925,7 @@ PrefabInstance:
     - target: {fileID: 7883313757190844999, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
       propertyPath: yarnScripts.Array.data[3]
       value: 
-      objectReference: {fileID: 2480198943629176163, guid: 0697521df744f4a47bc271a7e83fe6d4, type: 3}
+      objectReference: {fileID: 2480198943629176163, guid: 7dc2a89abc46ca449ae99db74d1f7b85, type: 3}
     - target: {fileID: 7883313757190845016, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
