@@ -12,10 +12,6 @@ public class Inventory
 
     public Inventory() {
         itemList = new List<Item>();
-
-        AddItem(new Item {itemType = Item.ItemType.Item1, amount =1});
-        AddItem(new Item {itemType = Item.ItemType.Item2, amount=1});
-        AddItem(new Item {itemType = Item.ItemType.Item3, amount=1});
         Debug.Log(itemList.Count);
     }
 
@@ -24,8 +20,17 @@ public class Inventory
         OnItemListChanged?.Invoke(this, EventArgs.Empty);
     }
 
+    public void RemoveItem(Item item) {
+        itemList.Remove(item);
+        OnItemListChanged?.Invoke(this, EventArgs.Empty);
+    }
     public List<Item> GetItemList()
     {
         return itemList;
+    }
+
+    public int GetItemListCount()
+    {
+        return itemList.Count;
     }
 }

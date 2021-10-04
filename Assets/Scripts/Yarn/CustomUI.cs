@@ -64,6 +64,11 @@ namespace Yarn.Unity {
         [Tooltip("How quickly to show the text, in seconds per character")]
         public float textSpeed = 0.025f;
 
+        public void ChangeTextSpeed()
+        {
+            textSpeed = Settings.TEXT_DELAY;
+        }
+
         /// <summary>
         /// The buttons that let the user choose an option.
         /// </summary>
@@ -250,7 +255,7 @@ namespace Yarn.Unity {
         /// <seealso cref="YarnCommandAttribute"/>
         public DialogueRunner.StringUnityEvent onCommand;
         
-        internal void Awake ()
+        internal void Awake()
         {
             // Start by hiding the container
             if (dialogueContainer != null)
@@ -259,6 +264,14 @@ namespace Yarn.Unity {
             foreach (var button in optionButtons) {
                 button.gameObject.SetActive (false);
             }
+
+            textSpeed = Settings.TEXT_DELAY;
+        }
+
+        internal void Start()
+        {
+            if (SettingsChanger.SettingsChangerInstance != null)
+                SettingsChanger.SettingsChangerInstance.textDelayChangedDelegate += ChangeTextSpeed;
         }
 
         /// Runs a line.
