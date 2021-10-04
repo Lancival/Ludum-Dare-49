@@ -62,13 +62,13 @@ public class CameraMove : MonoBehaviour
     void Update()
     {
         if(UpdateEnabled){
-            if(Mathf.Abs(transform.position.x) <= 19.1f && Mathf.Abs(transform.position.y) <= 11.6){
+            if(Mathf.Abs(transform.position.x) <= 17.2f && Mathf.Abs(transform.position.y) <= 11.6){
        	        mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y, mainCamera.transform.position.z);
             }
-            else if(Mathf.Abs(transform.position.x) <= 19.1f && !(Mathf.Abs(transform.position.y) <= 11.6)){
+            else if(Mathf.Abs(transform.position.x) <= 17.2f && !(Mathf.Abs(transform.position.y) <= 11.6)){
                 mainCamera.transform.position = new Vector3(transform.position.x, mainCamera.transform.position.y, mainCamera.transform.position.z);
             }
-            else if(!(Mathf.Abs(transform.position.x) <= 19.1f) && Mathf.Abs(transform.position.y) <= 11.6){
+            else if(!(Mathf.Abs(transform.position.x) <= 17.2f) && Mathf.Abs(transform.position.y) <= 11.6){
                 mainCamera.transform.position = new Vector3(mainCamera.transform.position.x, transform.position.y, mainCamera.transform.position.z);
             }
         }
