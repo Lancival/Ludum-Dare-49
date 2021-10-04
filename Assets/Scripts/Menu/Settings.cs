@@ -13,6 +13,7 @@ public static class Settings
 {
 	/* Gameplay State */
     public static bool PAUSED = false;
+    public static int QUESTS_COMPLETED = 0;
 
 
     /* Audio Settings */
