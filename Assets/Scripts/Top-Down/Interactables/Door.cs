@@ -22,6 +22,5 @@ public class Door : MonoBehaviour
     public void transport(GameObject player){
       player.GetComponent<PlayerInput>().enabled = false;
       SceneLoader.SceneLoaderInstance.LoadNextScene();
-      player.GetComponent<PlayerInput>().enabled = true;
     }
 }
