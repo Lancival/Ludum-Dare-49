@@ -22,8 +22,8 @@ MonoBehaviour:
   Volume: 1
   Pitch: 1
   sequenceMode: 1
-  NegativePitchVariation: -0.3
-  PositivePitchVariation: 0.1
+  NegativePitchVariation: -0.2
+  PositivePitchVariation: 0.15
   NegativeVolumeVariation: 0
   PositiveVolumeVariation: 0
   lastIndex: 0

@@ -21,7 +21,6 @@ public class ItemInteractable : Interactable
         {
             inventory.AddItem(new Item {itemType = Item.ItemType.Item3, amount=1});
             this.gameObject.SetActive(false);
-
         }
         else if (ItemType == "paints")
         {
@@ -43,7 +42,7 @@ public class ItemInteractable : Interactable
              inventory.AddItem(new Item {itemType = Item.ItemType.Item10, amount=1});
             this.gameObject.SetActive(false);
         }
-         else if ( ItemType == "travelbook")
+        else if ( ItemType == "travelbook")
         {
              inventory.AddItem(new Item {itemType = Item.ItemType.Item11, amount=1});
             this.gameObject.SetActive(false);
