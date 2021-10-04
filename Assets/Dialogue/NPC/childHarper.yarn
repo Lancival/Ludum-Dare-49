@@ -1,0 +1,177 @@
+title: Child_Harper
+tags: 
+colorID: 0
+position: 294,-189
+---
+<<if $hasSketchbook and $hasBusinessCard and $hasPaints is true>>
+<<setSpeaker Harper>>
+Don't mind me, I'm just casually thinking about how my mother's ghost is haunting me.
+I just wish I knew where my sketchbook was...
+and had art supplies...
+and got my mother's publishing contact.
+Easy, right?
+<<endif>>
+<<if $harperQuest is true>>
+<<setSpeaker Harper>>
+WHAT? How did you get all this?
+<<setSpeaker MC>>
+They were in your mother's place.
+<<setSpeaker Harper>>
+Are you sure she wanted me to have this?
+<<setSpeaker MC>>
+These belong you to you. I promise.
+<<setSpeaker Harper>>
+Seeing that she left these, a part of me feels like she's still here with me.
+Thank you.
+<<endif>>
+
+<<setSpeaker Harper>>
+Ahh! You scared me. I didn't expect anyone to be here.
+<<setSpeaker MC>>
+Sorry if I startled you. I'm new to this area.
+Are you Delilah Anderson's daughter?
+<<setSpeaker Harper>>
+My name is Harper. But yes, I am.
+<<setSpeaker MC>>
+Harper...hi. How are you?
+<<setSpeaker Harper>>
+Ugh, did my dad set you up to this?
+I told him I'm fine.
+<<setSpeaker MC>>
+No-
+<<setSpeaker Harper>>
+Sure, my mom just died, but I don't need random strangers asking how I am.
+No offense.
+<<setSpeaker MC>>
+I don't know who your dad is.
+<<setSpeaker Harper>>
+...Oh.
+Sorry, my dad's been trying to get me a therapist.
+And no one lives near here, so I thought he set you up.
+You don't know who I am. This is weird now.
+<<setSpeaker>>
+[[It's a little weird.|weird]]
+[[People tell me being a "friendly exorcist" is weird too, but here I am. I wouldn't worry about it.|worry]]
+===
+title: weird
+tags: 
+colorID: 1
+position: 88,101
+---
+<<setSpeaker Harper>>
+Well...I'm going to go now.
+<<setSpeaker MC>>
+No! Wait, I'm here to help your family. Your mom specifically.
+Have you noticed something off about this place?
+<<setSpeaker Harper>>
+My mom died here, so yeah, this place feels off.
+<<setSpeaker MC>>
+Something that cannot be explained with grief.
+Have you heard the screams too?
+<<setSpeaker Harper>>
+...Dad told me it was the wind.
+<<setSpeaker MC>>
+You think wind can make that sort of noise?
+[[then]]
+===
+title: then
+tags: 
+colorID: 0
+position: 308,409
+---
+<<setSpeaker Harper>>
+If what you're saying is true, then this is really freaky.
+<<setSpeaker MC>>
+Are you close with your mom?
+<<setSpeaker Harper>>
+Sort of? We were when I was younger but not as much anymore.
+Why did you come here?
+<<setSpeaker MC>>
+I'm here because there's something missing from your relationship with your mother.
+I saw your her ghost. She appeared after I saw a picture of your family.
+<<setSpeaker Harper>>
+What. The. Hell.
+I write children's books for crying out loud.
+I do not want to be haunted by my dead mother.
+<<setSpeaker MC>>
+So you're both writers.
+<<setSpeaker Harper>>
+My mom would kill you if she heard you say that.
+She never considered me a writer.
+Children's books weren't sophisticated enough, apparently.
+She was the esteemed, recluse author. Sylvia Plath type.
+<<setSpeaker>>
+[[What are your books about?|books]]
+[[Did you speak to your mom before her passing?|speak]]
+===
+title: books
+tags: 
+colorID: 0
+position: 111,656
+---
+<<setSpeaker Harper>>
+My favorite story I wrote is about a raccoon who shares a den with her mother for their first winter.
+The raccoon wonders if she can provide for herself like her mother has for her,
+but she finds herself after "moving out."
+It's only somewhat of a self-insert, I promise.
+[[then2]]
+===
+title: speak
+tags: 
+colorID: 0
+position: 560,658
+---
+<<setSpeaker Harper>>
+Our last conversation was an argument.
+I told her I didn't want to write poetry anymore.
+[[then2]]
+===
+title: then2
+tags: 
+colorID: 0
+position: 380,941
+---
+<<setSpeaker Harper>>
+She doesn't understand how serious I am.
+Her publisher began accepting submissions for children's books,
+but she refused to give me her contact.
+I even started learning art so I could do the illustrations in my book.
+That said, have you seen a sketchbook anywhere? I can't find mine.
+<<setSpeaker MC>>
+I haven't.
+What made you want to write children's books?
+<<setSpeaker Harper>>
+I grew up around metaphors that made no sense to me.
+I like children's books because they aren't trying to be something they're not.
+When I was young, I read this book called <i>Trading Faces</i> —
+it's about twins who switch places, and I was obsessed with it.
+I had this revelation; books can be fun?
+They didn't have to follow rigid poetic structure?
+I knew then that this was what I wanted to write.
+<<setSpeaker MC>>
+Does your mother know this?
+<<setSpeaker Harper>>
+My mother was the Ruth Lilly Poetry Prize winner.
+I'm her daughter.
+That's my place in the world: Delilah Anderson's offspring.
+She didn't have time to care about me even if she wanted to.
+I just wanted the contact.
+I wanted to show her I could be successful too, in my own way.
+I'm sorry. I wish I could help you more.
+===
+title: worry
+tags: 
+colorID: 0
+position: 678,22
+---
+<<setSpeaker Harper>>
+A friendly exorcist? As opposed to what, a mean one?
+<<setSpeaker MC>>
+Some exorcists banish spirits, but I try to help them.
+My job is to figure out why they're there and help them with their earthly desires.
+<<setSpeaker Harper>>
+Don't tell me...
+<<setSpeaker MC>>
+I'm here to exorcise your mom.
+[[then]]
+===

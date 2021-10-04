@@ -1,0 +1,102 @@
+fileFormatVersion: 2
+guid: b9dc0c19b60d8454cb886d9a3071c5f7
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - childHarper-Child_Harper-0
+  - childHarper-Child_Harper-1
+  - childHarper-Child_Harper-2
+  - childHarper-Child_Harper-3
+  - childHarper-Child_Harper-4
+  - childHarper-Child_Harper-5
+  - childHarper-Child_Harper-6
+  - childHarper-Child_Harper-7
+  - childHarper-Child_Harper-8
+  - childHarper-Child_Harper-9
+  - childHarper-Child_Harper-10
+  - childHarper-Child_Harper-11
+  - childHarper-Child_Harper-12
+  - childHarper-Child_Harper-13
+  - childHarper-Child_Harper-14
+  - childHarper-Child_Harper-15
+  - childHarper-Child_Harper-16
+  - childHarper-Child_Harper-17
+  - childHarper-Child_Harper-18
+  - childHarper-Child_Harper-19
+  - childHarper-Child_Harper-20
+  - childHarper-Child_Harper-21
+  - childHarper-Child_Harper-22
+  - childHarper-Child_Harper-23
+  - childHarper-Child_Harper-24
+  - childHarper-Child_Harper-25
+  - childHarper-Child_Harper-26
+  - childHarper-Child_Harper-27
+  - childHarper-weird-28
+  - childHarper-weird-29
+  - childHarper-weird-30
+  - childHarper-weird-31
+  - childHarper-weird-32
+  - childHarper-weird-33
+  - childHarper-weird-34
+  - childHarper-weird-35
+  - childHarper-then-36
+  - childHarper-then-37
+  - childHarper-then-38
+  - childHarper-then-39
+  - childHarper-then-40
+  - childHarper-then-41
+  - childHarper-then-42
+  - childHarper-then-43
+  - childHarper-then-44
+  - childHarper-then-45
+  - childHarper-then-46
+  - childHarper-then-47
+  - childHarper-then-48
+  - childHarper-then-49
+  - childHarper-then-50
+  - childHarper-then-51
+  - childHarper-books-52
+  - childHarper-books-53
+  - childHarper-books-54
+  - childHarper-books-55
+  - childHarper-speak-56
+  - childHarper-speak-57
+  - childHarper-then2-58
+  - childHarper-then2-59
+  - childHarper-then2-60
+  - childHarper-then2-61
+  - childHarper-then2-62
+  - childHarper-then2-63
+  - childHarper-then2-64
+  - childHarper-then2-65
+  - childHarper-then2-66
+  - childHarper-then2-67
+  - childHarper-then2-68
+  - childHarper-then2-69
+  - childHarper-then2-70
+  - childHarper-then2-71
+  - childHarper-then2-72
+  - childHarper-then2-73
+  - childHarper-then2-74
+  - childHarper-then2-75
+  - childHarper-then2-76
+  - childHarper-then2-77
+  - childHarper-then2-78
+  - childHarper-then2-79
+  - childHarper-worry-80
+  - childHarper-worry-81
+  - childHarper-worry-82
+  - childHarper-worry-83
+  - childHarper-worry-84
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: b9dc0c19b60d8454cb886d9a3071c5f7, type: 3}
+  localizations: []
