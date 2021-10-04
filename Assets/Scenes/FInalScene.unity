@@ -2932,6 +2932,18 @@ MonoBehaviour:
   harper: {fileID: 851835276}
   delilah: {fileID: 2102733411}
   runner: {fileID: 918621232}
+  ui: {fileID: 918621234}
+--- !u!114 &918621234 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+  m_PrefabInstance: {fileID: 918621229}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918621231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ff5fd1b583504818aa152e2358ba768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &934567936 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1932435035533094163, guid: 6bc9893bdc1494513825b1926121ccee, type: 3}
