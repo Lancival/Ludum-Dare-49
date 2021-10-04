@@ -24,6 +24,7 @@ public class QuestCompletion : MonoBehaviour
     private void QuestComplete(string[] parameters)
     {
     	Settings.QUESTS_COMPLETED++;
+        AudioQuestComplete.instance.DoAudioStuff();
     	if (Settings.QUESTS_COMPLETED == 4)
     		SceneLoader.SceneLoaderInstance.LoadNextScene("FinalScene");
     }

@@ -1481,6 +1481,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 598975774}
     m_Modifications:
+    - target: {fileID: 2885360295086753899, guid: 2e7c69310c25640fbb6464906269dbb0, type: 3}
+      propertyPath: fadeInOnStart
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6576512221918381929, guid: 2e7c69310c25640fbb6464906269dbb0, type: 3}
       propertyPath: m_Name
       value: Audio_Ambient_Cottage
@@ -6051,11 +6055,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8022350292011359431, guid: d18446b400b76422fb3b042f75cd1828, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.12
+      value: -3.56
       objectReference: {fileID: 0}
     - target: {fileID: 8022350292011359431, guid: d18446b400b76422fb3b042f75cd1828, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.82
+      value: -2.02
       objectReference: {fileID: 0}
     - target: {fileID: 8022350292011359431, guid: d18446b400b76422fb3b042f75cd1828, type: 3}
       propertyPath: m_LocalPosition.z

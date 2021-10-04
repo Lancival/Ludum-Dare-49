@@ -358,6 +358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e100a0ad324adee489a1b753b03e2cf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
   duration: 2
   zoomFactor: 1
   CamZooming: 0
