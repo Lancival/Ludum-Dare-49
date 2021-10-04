@@ -9,7 +9,9 @@ using UnityEngine.InputSystem;
 //						Also change the type of collider to fit the model
 
 public class Player : MonoBehaviour
-{	[SerializeField] private LayerMask m_LayerMask;
+{
+	
+	[SerializeField] private LayerMask m_LayerMask;
 	[SerializeField] private float speed = 5f;
 	[SerializeField] private UI_Inventory uiInventory;
 
@@ -84,13 +86,14 @@ public class Player : MonoBehaviour
 		//uiInventory.SetInventory(inventory);
 	}
 
-	void Update(){
+	void Update()
+	{
 		// Checks what objects are in front of the player (in the direction the player is facing
-		if (!Settings.PAUSED)
-		{
-			Vector2 curPos = new Vector2(transform.position.x, transform.position.y);
-			closest = Physics2D.OverlapArea(curPos + new Vector2 (-1.5f, -2f), curPos + new Vector2 (1.5f, 2f), m_LayerMask);
-		}
+		if (Settings.PAUSED)
+			rb.velocity = Vector2.zero;
+
+		Vector2 curPos = new Vector2(transform.position.x, transform.position.y);
+		closest = Physics2D.OverlapArea(curPos + new Vector2 (-1.5f, -2f), curPos + new Vector2 (1.5f, 2f), m_LayerMask);
 	}
 
 	public void EnablePlayerControls()

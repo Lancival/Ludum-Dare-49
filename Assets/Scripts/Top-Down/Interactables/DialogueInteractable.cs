@@ -6,6 +6,8 @@ using Yarn.Unity;
 public class DialogueInteractable : Interactable
 {
 	[SerializeField] private string startNode;
+	[SerializeField] private float talkCooldown = 2.0f;
+
 	private DialogueRunner runner;
 	private CustomUI ui;
 	private bool dialogueStarted = false;
@@ -33,9 +35,23 @@ public class DialogueInteractable : Interactable
     		ui.MarkLineComplete();
     	else
     	{
-    			runner.transform.position = transform.position;
+    		runner.transform.position = transform.position;
+    		runner.onDialogueComplete.AddListener(exitDialogue);
         	runner.StartDialogue(startNode);
         	dialogueStarted = true;
     	}
+    }
+
+    private void exitDialogue()
+    {
+    	StartCoroutine(Wait(talkCooldown));
+    	
+    }
+
+    private IEnumerator Wait(float duration)
+    {
+    	yield return new WaitForSeconds(duration);
+    	dialogueStarted = false;
+    	runner.onDialogueComplete.RemoveListener(exitDialogue);
     }
 }
