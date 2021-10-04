@@ -21,7 +21,11 @@ It isn't.
 <<setSpeaker Oliver>>
 Thank you for giving me this.
 <<else>>
-
+<<if $hasTalkedToOliver is true>>
+<<setSpeaker Oliver>>
+Have you found proof yet?
+<<else>>
+<<set $hasTalkedToOliver to true>>
 <<setSpeaker Oliver>>
 Hi, can I help you?
 <<setSpeaker MC>>
@@ -31,6 +35,7 @@ I'm her husband. Who are you?
 <<setSpeaker>>
 [[I'm a friendly exorcist.|truth]]
 [[I'm...doing a project on her poetry.|lie]]
+<<endif>>
 <<endif>>
 ===
 title: truth
