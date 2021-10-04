@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
 	[SerializeField] private UI_Inventory uiInventory;
 	[SerializeField] private Vector2 interactLim;
 
-	private Collider2D[] hits;
+	private Collider2D closest;
 	private Rigidbody2D rb;
 	private Vector3 facing;
 	private Inventory inventory;
@@ -44,15 +44,15 @@ public class Player : MonoBehaviour
 	public void OnInteract(InputValue input)
 	{
 		Debug.Log("Attempting to interact with nearby objects...");
-		if (hits.Length != 0){
-				Interactable other = hits[0].gameObject.GetComponent<Interactable>();
+		if (closest != null){
+				Interactable other = closest.gameObject.GetComponent<Interactable>();
 				if (other == null){
 					Debug.Log("Colliding object is either uniteractable or has no script inheriting from `Interactable`");
 				}else{
 						other.interact();
 				}
 		}else{
-			Debug.Log("Not facing any nearby objects!");
+			Debug.Log("Not near any interactable objects!");
 		}
 	}
 
@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
 
 	void Update(){
 		// Checks what objects are in front of the player (in the direction the player is facing
-		// and snaps camera to the player
-		hits = Physics2D.OverlapAreaAll( transform.position + new Vector3 (0f, .66f, 0), transform.position + new Vector3 (1f, -.66f, 0), 0, m_LayerMask);
+		Vector2 curPos = new Vector2(transform.position.x, transform.position.y);
+		closest = Physics2D.OverlapArea(curPos + new Vector2 (-1.5f, -2f), curPos + new Vector2 (1.5f, 2f), m_LayerMask);
 	}
 }
