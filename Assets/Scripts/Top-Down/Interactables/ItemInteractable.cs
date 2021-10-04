@@ -8,6 +8,16 @@ public class ItemInteractable : Interactable
     [SerializeField]
     private string ItemType;
 
+    void Start()
+    {
+        string formattedItemType = "$" + char.ToUpper(ItemType[0]) + ItemType.Substring(1);
+        Inventory inventory = GameObject.Find("Player").GetComponent<Player>().GetInventory();
+        if (inventory.GetItemsPickedUp().Contains(formattedItemType))
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
+
     public override void interact()
     {
         Inventory inventory = GameObject.Find("Player").GetComponent<Player>().GetInventory();

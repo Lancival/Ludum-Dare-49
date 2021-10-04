@@ -41,6 +41,11 @@ public class Inventory
         }
     }
 
+    public List<string> GetItemsPickedUp()
+    {
+      return itemsPickedUp;
+    }
+    
     public void setItem(string i){
         string output = "$has" + char.ToUpper(i[0]) + i.Substring(1);
         itemsPickedUp.Add(output);
@@ -48,17 +53,10 @@ public class Inventory
           varSet(output);
         }
     }
-
-    public void setChar(string name){
-      string output = "$" + "hasTalkedTo" + name;
-      if (vars != null){
-        varSet(output);
-      }
-    }
-
     private void varSet(string i){
       vars.GetComponent<InMemoryVariableStorage>().SetValue(i, true);
     }
+
     public void AddItem(Item item) {
         itemList.Add(item);
         OnItemListChanged?.Invoke(this, EventArgs.Empty);
