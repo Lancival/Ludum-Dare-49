@@ -19,23 +19,28 @@ public class Player : MonoBehaviour
 	private Inventory inventory;
 	private Animator anim;
 	private SpriteRenderer sprite;
+	private bool controllable;
 
   	public void OnMove(InputValue input)
 	{
-		Vector2 inputVec = input.Get<Vector2>();
-		// I found that releasing the movement key sends an input value of vector2.zero, which messes with the code saving which direction the player is facing
-		if (inputVec != Vector2.zero){
-			facing = new Vector3 (inputVec.x, inputVec.y, 0);
-			if (inputVec.y > 0){
-				anim.Play("PlayerWalkBack");
+		if (controllable){
+			Vector2 inputVec = input.Get<Vector2>();
+			// I found that releasing the movement key sends an input value of vector2.zero, which messes with the code saving which direction the player is facing
+			if (inputVec != Vector2.zero){
+				facing = new Vector3 (inputVec.x, inputVec.y, 0);
+				if (inputVec.y > 0){
+					anim.Play("PlayerWalkBack");
+				}else{
+					sprite.flipX = inputVec.x > 0;
+					anim.Play("PlayerWalkFront");
+				}
 			}else{
-				sprite.flipX = inputVec.x > 0;
-				anim.Play("PlayerWalkFront");
+					anim.Play("PlayerIdle");
 			}
+			rb.velocity = inputVec * speed;
 		}else{
-				anim.Play("PlayerIdle");
+			Debug.Log("Player has no control");
 		}
-		rb.velocity = inputVec * speed;
 	}
 
 	// Ran when player presses `Interact` key (currently set to SPACE)
@@ -68,6 +73,7 @@ public class Player : MonoBehaviour
 		facing = new Vector3(0,1,0);
 		anim = GetComponent<Animator>();
 		sprite = GetComponent<SpriteRenderer>();
+		controllable = true;
 		//inventory = new Inventory();
 		//uiInventory.SetInventory(inventory);
 	}
@@ -77,4 +83,9 @@ public class Player : MonoBehaviour
 		Vector2 curPos = new Vector2(transform.position.x, transform.position.y);
 		closest = Physics2D.OverlapArea(curPos + new Vector2 (-1.5f, -2f), curPos + new Vector2 (1.5f, 2f), m_LayerMask);
 	}
+
+	public void SetPlayerControls(bool set){
+		controllable = set;
+	}
+
 }
