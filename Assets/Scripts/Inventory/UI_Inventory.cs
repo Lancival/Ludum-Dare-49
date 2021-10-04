@@ -48,47 +48,84 @@ public class UI_Inventory : MonoBehaviour
        RefreshInventoryItems();
    }
 
+   // should be called by SendMessage() from the buttons
+   public void ClickInventoryPageRight()
+   {
+       // Change this if the page isn't correct
+       currentPage = 1;
+       RefreshInventoryItems();
+   }
+
+   public void ClickInventoryPageLeft()
+   {
+       // Change this if the page isn't correct
+       currentPage = 0;
+       RefreshInventoryItems();
+   }
+
    public void RefreshInventoryItems() {
        if (itemSlots == null) return;
-       //if (inventory == null) return;
 
        // Should only display visible items
        int startIndex = currentPage * 5;
 
+       // Disable right/left buttons first...
+       Transform buttonRight = transform.Find("inventoryPageRight");
+       if (buttonRight != null)
+       {
+           buttonRight.gameObject.SetActive(false);
+       }
+       Transform buttonLeft = transform.Find("inventoryPageLeft");
+       if (buttonLeft != null)
+       {
+           buttonLeft.gameObject.SetActive(false);
+       }
+
        // Check if the arrow should be displayed?
        // I'm assuming that only 7 items can be carried at once
+
        if ( currentPage == 0)
        {
            if (inventory.GetItemListCount() > 5)
            {
-               // Display the forward arrow
+               // Display right button
+               if (buttonRight != null)
+               {
+                   buttonRight.gameObject.SetActive(true);
+               }
+               else
+               {
+                    Debug.LogError("Expect right button to exist in UI. Are you sure you named it correctly?");
+               }
            }
        }
        else if (currentPage == 1)
        {
-           // Display the backwards arrow
+           // Display the left button
+           if (buttonLeft != null)
+           {
+               buttonLeft.gameObject.SetActive(true);
+           }
        }
        else
        {
            Debug.LogError("Unexpected item count in inventory\n");
        }
-        int slotCounter = 0; // Always start from the leftmost slot 
-        for (int i = startIndex; i < numDisplayedItems; i++)
+        for (int i = 0; i < numDisplayedItems; i++)
         {
-            if (i < startIndex + inventory.GetItemListCount())
+            if (startIndex + i  < inventory.GetItemListCount())
             {
                 // Display appropriate item image in the correct slot
                 // get (slot[number] -> image)
-                itemSlots[slotCounter].GetChild(0).gameObject.SetActive(true);
-                Image image = itemSlots[slotCounter].GetChild(0).gameObject.GetComponent<Image>();
-                image.sprite = inventory.GetItemList()[i].GetSprite();
+                itemSlots[i].GetChild(0).gameObject.SetActive(true);
+                Image image = itemSlots[i].GetChild(0).gameObject.GetComponent<Image>();
+                image.sprite = inventory.GetItemList()[startIndex + i].GetSprite();
             }
             else
             {   
                 // Deactivate image slots with no items in them
-                itemSlots[slotCounter].GetChild(0).gameObject.SetActive(false);
+                itemSlots[i].GetChild(0).gameObject.SetActive(false);
             }
-            slotCounter++;
         }
     }
 }

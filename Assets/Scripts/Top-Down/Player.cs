@@ -80,8 +80,6 @@ public class Player : MonoBehaviour
 		anim = GetComponent<Animator>();
 		sprite = GetComponent<SpriteRenderer>();
 		controllable = true;
-		//inventory = new Inventory();
-		//uiInventory.SetInventory(inventory);
 	}
 
 	void Update(){
