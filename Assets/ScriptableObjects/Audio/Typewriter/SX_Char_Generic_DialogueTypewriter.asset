@@ -21,16 +21,22 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f4bc5c3e1819f4f7d97e6d0db33a53a8, type: 3}
   - {fileID: 8300000, guid: f1b7ed0a99c6640dba1e4cefd077a4bd, type: 3}
   - {fileID: 8300000, guid: c5de663e982314d48af3fea972cbaa66, type: 3}
+  - {fileID: 8300000, guid: 1f2b54c8c0bc448b1b18eea32f2c9efd, type: 3}
+  - {fileID: 8300000, guid: e858e6d9a3de541e79519940ff92e334, type: 3}
+  - {fileID: 8300000, guid: 8937c820160624724ba7de558095cd31, type: 3}
+  - {fileID: 8300000, guid: a3c8438b74668493dbc4171034cc3db3, type: 3}
+  - {fileID: 8300000, guid: a5acf730e51d2453987988c4bfb932ef, type: 3}
+  - {fileID: 8300000, guid: ae465354ee3654f469e50682146961d5, type: 3}
   loop: 0
-  Volume: 1
+  Volume: 0
   Pitch: 1
   sequenceMode: 2
-  NegativePitchVariation: -0.1
-  PositivePitchVariation: 0.1
+  NegativePitchVariation: -0.15
+  PositivePitchVariation: 0.3
   NegativeVolumeVariation: 0
   PositiveVolumeVariation: 0
-  lastIndex: 0
-  nextIndex: 0
+  lastIndex: 9
+  nextIndex: 9
   fadeInTime: 0
   fadeOutTime: 0
   reverbTailLength: 0
