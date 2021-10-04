@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6eef9b0f97ad412a8b578d173bb0c01, type: 3}
-  m_Name: Audio_Config_Int_3D
+  m_Name: AudioConfig_Lights_3D
   m_EditorClassIdentifier: 
-  OutputAudioMixerGroup: {fileID: -4595038701690656384, guid: 60edac19168ca4f2dbd7cd5386750f59, type: 2}
-  _priorityLevel: 64
+  OutputAudioMixerGroup: {fileID: 7908054521536458220, guid: 60edac19168ca4f2dbd7cd5386750f59, type: 2}
+  _priorityLevel: 194
   Mute: 0
   PlayOnAwake: 0
   PanStereo: 0
   ReverbZoneMix: 1
   SpatialBlend: 1
   RolloffMode: 0
-  MinDistance: 3
-  MaxDistance: 10
+  MinDistance: 1.5
+  MaxDistance: 5
   Spread: 0
-  DopplerLevel: 0
+  DopplerLevel: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0

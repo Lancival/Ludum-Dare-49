@@ -22,15 +22,15 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 08b205abd7176483dbc5b86f3d850651, type: 3}
   - {fileID: 8300000, guid: e7d65c5a0bc56470c9c46a755d3d2c5d, type: 3}
   loop: 0
-  Volume: 1
+  Volume: 0.659
   Pitch: 1
   sequenceMode: 1
   NegativePitchVariation: -0.1
   PositivePitchVariation: 0.1
   NegativeVolumeVariation: 0
   PositiveVolumeVariation: 0
-  lastIndex: 0
-  nextIndex: 0
+  lastIndex: 6
+  nextIndex: 6
   fadeInTime: 0
   fadeOutTime: 0
   reverbTailLength: 0
