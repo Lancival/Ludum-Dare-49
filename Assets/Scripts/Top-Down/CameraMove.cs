@@ -61,8 +61,8 @@ public class CameraMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (mainCamera == null)
-            mainCamera = Camera.main;
+        // if (mainCamera == null)
+        //     mainCamera = Camera.main;
         if(UpdateEnabled){
             if(Mathf.Abs(transform.position.x) <= 17.2f && Mathf.Abs(transform.position.y) <= 11.6){
        	        mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y, mainCamera.transform.position.z);
