@@ -33,6 +33,21 @@ public class ItemInteractable : Interactable
             inventory.AddItem(new Item {itemType = Item.ItemType.Item7, amount=1});
             this.gameObject.SetActive(false);
         }
+        else if ( ItemType == "sketchbook")
+        {
+             inventory.AddItem(new Item {itemType = Item.ItemType.Item8, amount=1});
+            this.gameObject.SetActive(false);
+        }
+        else if ( ItemType == "suitcase")
+        {
+             inventory.AddItem(new Item {itemType = Item.ItemType.Item10, amount=1});
+            this.gameObject.SetActive(false);
+        }
+         else if ( ItemType == "travelbook")
+        {
+             inventory.AddItem(new Item {itemType = Item.ItemType.Item11, amount=1});
+            this.gameObject.SetActive(false);
+        }
         else
         {
             Debug.LogError("Invalid ItemType specified for interactable");
