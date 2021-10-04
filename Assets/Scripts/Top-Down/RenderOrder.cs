@@ -24,6 +24,10 @@ public class RenderOrder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (player == null)
+        {
+            player = GameObject.Find("Player");
+        }
         if (player.transform.position.y > location)
           renderer.sortingOrder = 1; // Render above player
         else

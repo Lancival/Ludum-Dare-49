@@ -15,7 +15,7 @@ public class DialogueControl : MonoBehaviour
 
 	void Awake()
 	{
-		player = GameObject.Find("Player").GetComponent<Player>();
+		player = GameObject.FindObjectOfType<Player>().GetComponent<Player>();
 		if (player == null)
 		{
 			Debug.Log("DialogueControl not provided Player.");
