@@ -38,7 +38,7 @@ public class UI_Inventory : MonoBehaviour
        Assert.IsNotNull(itemSlots[4]); 
 
        m_Animator = GetComponent<Animator>();
-       inventory = GameObject.Find("Player").GetComponent<Player>().GetInventory();
+       //inventory = GameObject.Find("Player").GetComponent<Player>().GetInventory();
    }
 
    public void SetInventory(Inventory inventory)

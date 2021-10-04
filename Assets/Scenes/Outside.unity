@@ -905,7 +905,7 @@ PrefabInstance:
     - target: {fileID: 7883313757190844999, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
       propertyPath: yarnScripts.Array.data[0]
       value: 
-      objectReference: {fileID: 2480198943629176163, guid: 94514fa37daec8f43a8f7a457794ab8b, type: 3}
+      objectReference: {fileID: 2480198943629176163, guid: 33541320436599e4195223a46a0850ba, type: 3}
     - target: {fileID: 7883313757190844999, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
       propertyPath: yarnScripts.Array.data[1]
       value: 
@@ -913,11 +913,11 @@ PrefabInstance:
     - target: {fileID: 7883313757190844999, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
       propertyPath: yarnScripts.Array.data[2]
       value: 
-      objectReference: {fileID: 2480198943629176163, guid: b8c9e5fe0f93d8541a4cce7bd8a720df, type: 3}
+      objectReference: {fileID: 2480198943629176163, guid: d8e040d85febf9747af3f1af2e7e824a, type: 3}
     - target: {fileID: 7883313757190844999, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
       propertyPath: yarnScripts.Array.data[3]
       value: 
-      objectReference: {fileID: 2480198943629176163, guid: 496ecff63e96db444adf73757af793e2, type: 3}
+      objectReference: {fileID: 2480198943629176163, guid: 0697521df744f4a47bc271a7e83fe6d4, type: 3}
     - target: {fileID: 7883313757190845016, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1199,7 +1199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da13efa4d298211478793d5bf2c45ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1023043859}
   offset: 0
 --- !u!1 &530555617
 GameObject:
@@ -1759,7 +1758,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da13efa4d298211478793d5bf2c45ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1023043859}
   offset: 0
 --- !u!1 &824777477
 GameObject:
@@ -1890,7 +1888,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da13efa4d298211478793d5bf2c45ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1023043859}
   offset: -1
 --- !u!61 &838310571
 BoxCollider2D:
@@ -6949,7 +6946,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da13efa4d298211478793d5bf2c45ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1023043859}
   offset: -4
 --- !u!61 &993206191
 BoxCollider2D:
@@ -7574,7 +7570,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 6.88
+  m_Radius: 10.05
 --- !u!114 &1152636402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8527,7 +8523,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da13efa4d298211478793d5bf2c45ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1023043859}
   offset: 0
 --- !u!1 &1356647757
 GameObject:
@@ -9009,7 +9004,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da13efa4d298211478793d5bf2c45ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1023043859}
   offset: -1.5
 --- !u!4 &1456720123 stripped
 Transform:
@@ -9082,7 +9076,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da13efa4d298211478793d5bf2c45ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1023043859}
   offset: -0.2
 --- !u!61 &1636083800
 BoxCollider2D:
@@ -9384,7 +9377,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da13efa4d298211478793d5bf2c45ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1023043859}
   offset: 0
 --- !u!61 &1688063808
 BoxCollider2D:
@@ -10035,7 +10027,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da13efa4d298211478793d5bf2c45ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1023043859}
   offset: 0
 --- !u!4 &1900677531 stripped
 Transform:
@@ -10426,7 +10417,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da13efa4d298211478793d5bf2c45ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1023043859}
   offset: 0
 --- !u!1 &2096300572
 GameObject:
@@ -10549,7 +10539,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da13efa4d298211478793d5bf2c45ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1023043859}
   offset: -2
 --- !u!1001 &2106461388
 PrefabInstance:
