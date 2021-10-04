@@ -12,12 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Opening.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Test_Transition.unity
-    guid: 979fa15f9b68641afb8afcd968ac3f0f
-  - enabled: 1
     path: Assets/Scenes/House.unity
     guid: 845085278ad9d4859878bff7970c8808
   - enabled: 1
     path: Assets/Scenes/Outside.unity
     guid: a5df3c50c6ee44b3b89b644b3225d752
+  - enabled: 1
+    path: Assets/Scenes/FInalScene.unity
+    guid: bc84c8dd245749441bfec346badc237a
   m_configObjects: {}
