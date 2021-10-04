@@ -26,38 +26,43 @@ public class Player : MonoBehaviour
 		if (controllable && !Settings.PAUSED)
 		{
 			Vector2 inputVec = input.Get<Vector2>();
+
 			// I found that releasing the movement key sends an input value of vector2.zero, which messes with the code saving which direction the player is facing
-			if (inputVec != Vector2.zero){
+			if (inputVec != Vector2.zero)
+			{
 				facing = new Vector3 (inputVec.x, inputVec.y, 0);
-				if (inputVec.y > 0){
+
+				if (inputVec.y > 0)
 					anim.Play("PlayerWalkBack");
-				}else{
+				else
+				{
 					sprite.flipX = inputVec.x > 0;
 					anim.Play("PlayerWalkFront");
 				}
-			}else{
-					anim.Play("PlayerIdle");
 			}
+			else
+				anim.Play("PlayerIdle");
+
 			rb.velocity = inputVec * speed;
-		}else{
-			Debug.Log("Player has no control");
 		}
+		else
+			Debug.Log("Player has no control");
 	}
 
 	// Ran when player presses `Interact` key (currently set to SPACE)
 	public void OnInteract(InputValue input)
 	{
 		Debug.Log("Attempting to interact with nearby objects...");
-		if (closest != null){
+		if (closest != null)
+		{
 				Interactable other = closest.gameObject.GetComponent<Interactable>();
-				if (other == null){
+				if (other == null)
 					Debug.Log("Colliding object is either uniteractable or has no script inheriting from `Interactable`");
-				}else{
-						other.interact();
-				}
-		}else{
-			Debug.Log("Not near any interactable objects!");
+				else
+					other.interact();
 		}
+		else
+			Debug.Log("Not near any interactable objects!");
 	}
 
 
@@ -88,8 +93,15 @@ public class Player : MonoBehaviour
 		}
 	}
 
-	public void SetPlayerControls(bool set){
-		controllable = set;
+	public void EnablePlayerControls()
+	{
+		controllable = true;
 	}
 
+	public void DisablePlayerControls()
+	{
+		rb.velocity = Vector2.zero;
+		anim.Play("PlayerIdle");
+		controllable = false;
+	}
 }

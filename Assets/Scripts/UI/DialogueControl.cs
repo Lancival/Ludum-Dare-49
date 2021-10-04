@@ -6,56 +6,54 @@ using Yarn.Unity;
 public class DialogueControl : MonoBehaviour
 {
 
-    [SerializeField] private GameObject player;
+	[SerializeField] private Player player;
 
-    private DialogueRunner runner;
-    private CustomUI ui;
-    private Vector3 initPos;
-    private Vector3 offset = new Vector3(0, 1f, 0);
+	private DialogueRunner runner;
+	private CustomUI ui;
+	private Vector3 initPos;
+	private Vector3 offset = new Vector3(0, 1f, 0);
 
-    // Start is called before the first frame update
-    void Start()
-    {
-      runner = GameObject.FindObjectOfType<DialogueRunner>();
-      if (runner == null)
-      {
-        Debug.Log("DialogueControl unable to locate DialogueRunner.");
-        Destroy(this);
-      }
-      ui = GameObject.FindObjectOfType<CustomUI>();
-      if (ui == null)
-      {
-        Debug.Log("DialogueControl unable to locate CustomUI");
-        Destroy(this);
-      }
+	void Awake()
+	{
+		if (player == null)
+		{
+			Debug.Log("DialogueControl not provided Player.");
+			Destroy(this);
+		}
+	}
 
-    	runner.AddCommandHandler("setSpeaker", SetSpeaker);
+	// Start is called before the first frame update
+	void Start()
+	{
+		runner = GameObject.FindObjectOfType<DialogueRunner>();
+		if (runner == null)
+		{
+			Debug.Log("DialogueControl unable to locate DialogueRunner.");
+			Destroy(this);
+		}
+		ui = GameObject.FindObjectOfType<CustomUI>();
 
-      ui.onDialogueStart.AddListener(DisablePlayerControls);
-      ui.onDialogueStart.AddListener(SetInitPos);
-      ui.onDialogueEnd.AddListener(EnablePlayerControls);
-    }
+		if (ui == null)
+		{
+			Debug.Log("DialogueControl unable to locate CustomUI");
+			Destroy(this);
+	  	}
 
-    public void SetSpeaker(string[] parameters)
-    {
-      if (parameters != null)
-        runner.transform.position = (parameters[0] == "MC" ? player.transform.position + offset : initPos);
-    }
+		runner.AddCommandHandler("setSpeaker", SetSpeaker);
 
-    private void SetInitPos()
-    {
-      initPos = runner.transform.position;
-    }
+		ui.onDialogueStart.AddListener(player.DisablePlayerControls);
+		ui.onDialogueStart.AddListener(SetInitPos);
+		ui.onDialogueEnd.AddListener(player.EnablePlayerControls);
+	}
 
-    public void EnablePlayerControls()
-    {
-      player.GetComponent<Player>().SetPlayerControls(true);
-    }
+	public void SetSpeaker(string[] parameters)
+	{
+		if (parameters != null)
+			runner.transform.position = (parameters[0] == "MC" ? player.transform.position + offset : initPos);
+	}
 
-    public void DisablePlayerControls()
-    {
-      player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-      player.GetComponent<Animator>().Play("PlayerIdle");
-      player.GetComponent<Player>().SetPlayerControls(false);
-    }
+	private void SetInitPos()
+	{
+		initPos = runner.transform.position;
+	}
 }
