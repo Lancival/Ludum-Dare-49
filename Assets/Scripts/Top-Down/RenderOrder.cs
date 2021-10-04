@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class RenderOrder : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
-    [SerializeField] private float offset = 0f;
 
+    [SerializeField] private float offset = 0f;
+    private GameObject player;
     private SpriteRenderer renderer;
     private float location;
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Player");
         if (player == null){
           Debug.Log(this.gameObject.name + "lacks a player to render against.");
+          Destroy(this);
         }
         renderer = GetComponent<SpriteRenderer>();
         location = transform.position.y + offset + .5f;
