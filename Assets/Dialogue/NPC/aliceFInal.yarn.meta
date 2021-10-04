@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1415afa21200e314cbe8ad50f4380269
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs: []
+  compilationStatus: 0
+  isSuccesfullyCompiled: 0
+  compilationErrorMessage: "Error on line 92 at position 3:\nno viable alternative
+    at input '<<endif'\r\n<<endif>>\r\n  ^^^^^"
+  baseLanguage: {instanceID: 0}
+  localizations: []

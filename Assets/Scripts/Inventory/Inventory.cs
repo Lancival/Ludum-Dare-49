@@ -48,17 +48,10 @@ public class Inventory
           varSet(output);
         }
     }
-
-    public void setChar(string name){
-      string output = "$" + "hasTalkedTo" + name;
-      if (vars != null){
-        varSet(output);
-      }
-    }
-
     private void varSet(string i){
       vars.GetComponent<InMemoryVariableStorage>().SetValue(i, true);
     }
+
     public void AddItem(Item item) {
         itemList.Add(item);
         OnItemListChanged?.Invoke(this, EventArgs.Empty);
