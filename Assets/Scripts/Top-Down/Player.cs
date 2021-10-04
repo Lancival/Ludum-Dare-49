@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
 {	[SerializeField] private LayerMask m_LayerMask;
 	[SerializeField] private float speed = 5f;
 	[SerializeField] private UI_Inventory uiInventory;
+	[SerializeField] private Vector2 interactLim;
 
 	private Collider2D[] hits;
 	private Rigidbody2D rb;
@@ -19,6 +20,7 @@ public class Player : MonoBehaviour
 	private Inventory inventory;
 	private Animator anim;
 	private SpriteRenderer sprite;
+	private Rigidbody2D hitter;
 
   	public void OnMove(InputValue input)
 	{
@@ -69,13 +71,12 @@ public class Player : MonoBehaviour
 
 	void Start()
 	{
-		return;	
+		return;
 	}
 
 	void Update(){
 		// Checks what objects are in front of the player (in the direction the player is facing
 		// and snaps camera to the player
-		hits = Physics2D.OverlapBoxAll( transform.position + facing / 2f, transform.localScale / 2, 0, m_LayerMask);
+		hits = Physics2D.OverlapAreaAll( transform.position + new Vector3 (0f, .66f, 0), transform.position + new Vector3 (1f, -.66f, 0), 0, m_LayerMask);
 	}
 }
-
