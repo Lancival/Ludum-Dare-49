@@ -20,7 +20,7 @@ public class AudioConcatenation : MonoBehaviour
     private enum PlayOnAwakeMethod { No, PlayWithNoFade, PlayWithFade }
 
     private float maxTextSpeed = 0.15f;
-    private float textSpeedMultiplier = 1.5f;
+    private float textSpeedMultiplier = 1.25f;
 
     // Start is called before the first frame update
     void Awake()
