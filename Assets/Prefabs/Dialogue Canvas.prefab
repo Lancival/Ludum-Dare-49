@@ -1481,7 +1481,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!114 &7883313757190845022
 MonoBehaviour:
@@ -1536,11 +1536,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yarnScripts:
-  - {fileID: 2480198943629176163, guid: cae969bc44dcf41db9b5ad2380bda117, type: 3}
+  - {fileID: 2480198943629176163, guid: 54095e02440d345fbb7db831cfc27471, type: 3}
   textLanguage: 
   variableStorage: {fileID: 7883313757190845019}
   dialogueUI: {fileID: 7883313757190845018}
-  startNode: book1
+  startNode: Alice
   startAutomatically: 0
   onNodeStart:
     m_PersistentCalls:
