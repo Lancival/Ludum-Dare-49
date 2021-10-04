@@ -311,6 +311,9 @@ namespace Yarn.Unity {
                 int tags = 0;
 
                 foreach (char c in text) {
+                    while (Settings.PAUSED)
+                        yield return new WaitForEndOfFrame();
+
                     stringBuilder.Append (c);
 
                     if (c == '<')
