@@ -37,6 +37,8 @@ public class AudioIntermittentEmitter : MonoBehaviour
     {
         if (playOnAwake)
             Play();
+        if (randomPosition)
+            listenerPosition = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     private void ConfigureAudioSource()
