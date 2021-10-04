@@ -52,6 +52,11 @@ public class ItemInteractable : Interactable
             inventory.AddItem(new Item{itemType = Item.ItemType.Item2, amount=1});
             this.gameObject.SetActive(false);
         }
+        else if ( ItemType == "ladder")
+        {
+            inventory.AddItem(new Item{itemType = Item.ItemType.Item5, amount=1});
+            this.gameObject.SetActive(false);
+        }
         else
         {
             Debug.LogError("Invalid ItemType specified for interactable");
