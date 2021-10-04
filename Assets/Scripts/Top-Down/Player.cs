@@ -11,7 +11,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-	
+
 	[SerializeField] private LayerMask m_LayerMask;
 	[SerializeField] private float speed = 5f;
 	[SerializeField] private UI_Inventory uiInventory;
@@ -55,6 +55,7 @@ public class Player : MonoBehaviour
 	// Ran when player presses `Interact` key (currently set to SPACE)
 	public void OnInteract(InputValue input)
 	{
+		inventory.printitems();
 		Debug.Log("Attempting to interact with nearby objects...");
 		if (closest != null)
 		{
@@ -75,10 +76,10 @@ public class Player : MonoBehaviour
 		inventory = new Inventory();
 		if (uiInventory != null)
 			uiInventory.SetInventory(inventory);
-		
+
     	SceneManager.sceneLoaded += OnSceneLoaded;
 	}
-	
+
 	void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 	{
 		string sceneName = SceneManager.GetActiveScene().name;

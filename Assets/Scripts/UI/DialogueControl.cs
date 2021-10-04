@@ -6,15 +6,16 @@ using Yarn.Unity;
 public class DialogueControl : MonoBehaviour
 {
 
-	[SerializeField] private Player player;
-
+	private Player player;
 	private DialogueRunner runner;
 	private CustomUI ui;
 	private Vector3 initPos;
 	private Vector3 offset = new Vector3(0, 1f, 0);
+	private InMemoryVariableStorage thisInv;
 
 	void Awake()
 	{
+		player = GameObject.Find("Player").GetComponent<Player>();
 		if (player == null)
 		{
 			Debug.Log("DialogueControl not provided Player.");
@@ -38,12 +39,20 @@ public class DialogueControl : MonoBehaviour
 			Debug.Log("DialogueControl unable to locate CustomUI");
 			Destroy(this);
 	  	}
-
 		runner.AddCommandHandler("setSpeaker", SetSpeaker);
-
 		ui.onDialogueStart.AddListener(player.DisablePlayerControls);
 		ui.onDialogueStart.AddListener(SetInitPos);
 		ui.onDialogueEnd.AddListener(player.EnablePlayerControls);
+		thisInv = runner.GetComponent<InMemoryVariableStorage>();
+	}
+
+	public void SetMem(){
+		foreach(var i in player.GetInventory().GetItemsPickedUp()){
+			thisInv.SetValue(i, true);
+		}
+		foreach(var i in player.GetInventory().GetCharsTalkedTo()){
+			thisInv.SetValue(i, true);
+		}
 	}
 
 	public void SetSpeaker(string[] parameters)
@@ -56,4 +65,6 @@ public class DialogueControl : MonoBehaviour
 	{
 		initPos = runner.transform.position;
 	}
+
+
 }

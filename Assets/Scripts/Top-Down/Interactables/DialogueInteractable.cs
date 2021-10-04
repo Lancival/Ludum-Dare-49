@@ -31,14 +31,21 @@ public class DialogueInteractable : Interactable
 
     public override void interact()
     {
+			runner.GetComponent<DialogueControl>().SetMem();
     	if (dialogueStarted)
     		ui.MarkLineComplete();
     	else
     	{
     		runner.transform.position = transform.position;
     		runner.onDialogueComplete.AddListener(exitDialogue);
-        	runner.StartDialogue(startNode);
-        	dialogueStarted = true;
+      	runner.StartDialogue(startNode);
+
+				foreach(var i in runner.GetComponent<InMemoryVariableStorage>()){
+					Debug.Log(i);
+				}
+
+      	dialogueStarted = true;
+				addToList();
     	}
     }
 
@@ -53,5 +60,24 @@ public class DialogueInteractable : Interactable
     	dialogueStarted = false;
     	runner.onDialogueComplete.RemoveListener(exitDialogue);
     }
+
+		private void addToList()
+		{
+			Inventory inv = GameObject.Find("Player").GetComponent<Player>().GetInventory();
+			switch (this.name){
+				case "Harper":
+					inv.setChar("$hasTalkedToHarper");
+					break;
+				case "Alice":
+					inv.setChar("$hasTalkedToAlice");
+					break;
+				case "Husband":
+					inv.setChar("$hasTalkedToHusband");
+					break;
+				case "Dennis":
+					inv.setChar("$hasTalkedToBrother");
+					break;
+			}
+		}
 
 }

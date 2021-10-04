@@ -12,7 +12,7 @@ public class ItemInteractable : Interactable
     {
         string formattedItemType = "$" + char.ToUpper(ItemType[0]) + ItemType.Substring(1);
         Inventory inventory = GameObject.Find("Player").GetComponent<Player>().GetInventory();
-        if (inventory.GetItemsPickedUp().Contains(formattedItemType))
+        if (inventory != null && inventory.GetItemsPickedUp().Contains(formattedItemType))
         {
             this.gameObject.SetActive(false);
         }
@@ -30,62 +30,62 @@ public class ItemInteractable : Interactable
         if (ItemType == "cables")
         {
             inventory.AddItem(new Item {itemType = Item.ItemType.Item3, amount=1});
-            inventory.setItem(ItemType);
+            inventory.setItem("$hasCables");
             this.gameObject.SetActive(false);
         }
         else if (ItemType == "paints")
         {
             inventory.AddItem(new Item {itemType = Item.ItemType.Item6, amount=1});
-            inventory.setItem(ItemType);
+            inventory.setItem("$hasPaints");
             this.gameObject.SetActive(false);
         }
         else if ( ItemType == "poems")
         {
             inventory.AddItem(new Item {itemType = Item.ItemType.Item1, amount=1});
-            inventory.setItem(ItemType);
+            inventory.setItem("$hasPoem");
             this.gameObject.SetActive(false);
         }
         else if ( ItemType == "sketchbook")
         {
              inventory.AddItem(new Item {itemType = Item.ItemType.Item8, amount=1});
-             inventory.setItem(ItemType);
+             inventory.setItem("$hasSketchbook");
             this.gameObject.SetActive(false);
         }
         else if ( ItemType == "suitcase")
         {
             inventory.AddItem(new Item {itemType = Item.ItemType.Item10, amount=1});
-            inventory.setItem(ItemType);
+            inventory.setItem("$hasSuitcase");
             this.gameObject.SetActive(false);
         }
         else if ( ItemType == "travelbook")
         {
             inventory.AddItem(new Item {itemType = Item.ItemType.Item11, amount=1});
-            inventory.setItem(ItemType);
+            inventory.setItem("$hasTravelBook");
             this.gameObject.SetActive(false);
         }
         else if ( ItemType == "business")
         {
             inventory.AddItem(new Item{itemType = Item.ItemType.Item2, amount=1});
-            inventory.setItem(ItemType);
+            inventory.setItem("$hasBusinessCard");
             this.gameObject.SetActive(false);
         }
         else if ( ItemType == "ladder")
         {
             inventory.AddItem(new Item{itemType = Item.ItemType.Item5, amount=1});
-            inventory.setItem(ItemType);
+            inventory.setItem("$hasLadder");
             this.gameObject.SetActive(false);
         }
         else if ( ItemType == "steering_wheel")
         {
             // TODO: Should check if the ladder has been placed
             inventory.AddItem(new Item{itemType = Item.ItemType.Item9, amount=1});
-            inventory.setItem(ItemType);
+            inventory.setItem("$hasSteeringWheel");
             this.gameObject.SetActive(false);
         }
         else if ( ItemType == "rotary")
         {
             inventory.AddItem(new Item{itemType = Item.ItemType.Item7, amount=1});
-            inventory.setItem(ItemType);
+            inventory.setItem("$hasRotaryHelm");
             this.gameObject.SetActive(false);
         }
         else

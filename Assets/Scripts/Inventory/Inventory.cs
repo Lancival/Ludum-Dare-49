@@ -12,6 +12,7 @@ public class Inventory
 
     private List<Item> itemList;
     private List<string> itemsPickedUp;
+    private List<string> chars;
     private InMemoryVariableStorage vars;
 
     public Inventory() {
@@ -27,7 +28,8 @@ public class Inventory
         // AddItem(new Item {itemType = Item.ItemType.Item3, amount=1});
 
         Debug.Log(itemList.Count);
-        itemsPickedUp = new List<String>();
+        itemsPickedUp = new List<string>();
+        chars = new List<string>();
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
@@ -35,26 +37,46 @@ public class Inventory
     void OnSceneLoaded(Scene scene, LoadSceneMode mode){
         GameObject dialogueCanvas = GameObject.Find("Dialogue Canvas");
         if (dialogueCanvas != null){
+          Debug.Log("dialogueCanvas found");
           vars = dialogueCanvas.GetComponent<InMemoryVariableStorage>();
           foreach(string i in itemsPickedUp)
             varSet(i);
+          foreach(string i in chars)
+            varSet(i);
+          printitems();
+        }else{
+
+            Debug.Log("dialogueCanvas not found");
         }
+    }
+    public void printitems(){
+      if(vars == null)
+        Debug.Log("vars not set");
+      else
+        foreach(var i in vars)
+          Debug.Log(i);
     }
 
     public List<string> GetItemsPickedUp()
     {
       return itemsPickedUp;
     }
-    
+
+    public List<string> GetCharsTalkedTo(){
+      return chars;
+    }
     public void setItem(string i){
-        string output = "$has" + char.ToUpper(i[0]) + i.Substring(1);
-        itemsPickedUp.Add(output);
+        itemsPickedUp.Add(i);
         if (vars != null){
-          varSet(output);
+          varSet(i);
         }
     }
+    public void setChar(string i){
+      chars.Add(i);
+    }
+
     private void varSet(string i){
-      vars.GetComponent<InMemoryVariableStorage>().SetValue(i, true);
+      vars.SetValue(i, true);
     }
 
     public void AddItem(Item item) {
@@ -77,4 +99,5 @@ public class Inventory
     {
         return itemList.Count;
     }
+
 }
