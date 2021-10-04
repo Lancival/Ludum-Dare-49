@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Title Screen.unity
     guid: 2b1d827eae0054db0aefa862b2a0da41
   - enabled: 1
-    path: Assets/Scenes/Test 1.unity
+    path: Assets/Scenes/Opening.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Test 2.unity
+    path: Assets/Scenes/Test_Transition.unity
     guid: 979fa15f9b68641afb8afcd968ac3f0f
   - enabled: 1
     path: Assets/Scenes/Top Down.unity

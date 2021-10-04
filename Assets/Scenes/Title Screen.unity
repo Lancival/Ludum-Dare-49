@@ -2297,7 +2297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4526203941294328152, guid: 2c4493a47221d415d8a59ac8c96f6ae5, type: 3}
       propertyPath: nextScene
-      value: Test 1
+      value: Opening
       objectReference: {fileID: 0}
     - target: {fileID: 4526203941294328157, guid: 2c4493a47221d415d8a59ac8c96f6ae5, type: 3}
       propertyPath: m_Pivot.x
