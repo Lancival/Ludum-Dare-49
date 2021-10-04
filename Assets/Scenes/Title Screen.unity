@@ -2293,7 +2293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4526203941294328151, guid: 2c4493a47221d415d8a59ac8c96f6ae5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4526203941294328152, guid: 2c4493a47221d415d8a59ac8c96f6ae5, type: 3}
       propertyPath: nextScene

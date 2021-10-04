@@ -60,11 +60,15 @@ public class Player : MonoBehaviour
 	}
 
 
-	void Awake()
+	void Start()
 	{
 		inventory = new Inventory();
 		if (uiInventory != null)
 			uiInventory.SetInventory(inventory);
+	}
+	
+	void Awake()
+	{
 		rb = GetComponent<Rigidbody2D>();
 		facing = new Vector3(0,1,0);
 		anim = GetComponent<Animator>();
