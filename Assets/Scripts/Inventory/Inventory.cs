@@ -42,7 +42,7 @@ public class Inventory
     }
 
     public void setItem(string i){
-        string output = "$" + char.ToUpper(i[0]) + i.Substring(1);
+        string output = "$has" + char.ToUpper(i[0]) + i.Substring(1);
         itemsPickedUp.Add(output);
         if (vars != null){
           varSet(output);

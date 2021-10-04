@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 670577596453837749}
   - component: {fileID: 1074488791435841879}
   - component: {fileID: 1400552350813850074}
+  - component: {fileID: 4370131751357551542}
   m_Layer: 0
   m_Name: InventoryUp
   m_TagString: Untagged
@@ -154,6 +155,23 @@ MonoBehaviour:
           m_StringArgument: Open
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4370131751357551542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100984579673997266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &591427440354322154
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,6 +473,7 @@ GameObject:
   - component: {fileID: 3446274243132193180}
   - component: {fileID: 8757006472409213053}
   - component: {fileID: 5536645114751849621}
+  - component: {fileID: 6345666999064422173}
   m_Layer: 0
   m_Name: inventoryDown
   m_TagString: Untagged
@@ -596,6 +615,23 @@ MonoBehaviour:
           m_StringArgument: Close
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6345666999064422173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2965281145476354155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &3191381723623850886
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class CameraMove : MonoBehaviour
 {
-    private Camera mainCamera;
+    public Camera mainCamera;
     [SerializeField] private float duration;
     [SerializeField] private float zoomFactor;
 
@@ -49,20 +49,27 @@ public class CameraMove : MonoBehaviour
     {
         mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
         SceneManager.sceneLoaded += OnSceneLoaded;
+        if (SceneManager.GetActiveScene().name == "House"){
+          UpdateEnabled = false;
+        }else{
+          UpdateEnabled = true;
+        }
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode){
       mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
       if (scene.name == "House"){
         UpdateEnabled = false;
+      }else{
+        UpdateEnabled = true;
       }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (mainCamera == null)
-            mainCamera = Camera.main;
+        // if (mainCamera == null)
+        //     mainCamera = Camera.main;
         if(UpdateEnabled){
             if(Mathf.Abs(transform.position.x) <= 17.2f && Mathf.Abs(transform.position.y) <= 11.6){
        	        mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y, mainCamera.transform.position.z);

@@ -13,6 +13,7 @@ public class FinalDialogueMover : MonoBehaviour
 	[SerializeField] private Transform harper;
 	[SerializeField] private Transform delilah;
 	[SerializeField] private DialogueRunner runner;
+    [SerializeField] private CustomUI ui;
 
 	private Vector3 offset = new Vector3(0, 1f, 0);
 
@@ -20,6 +21,12 @@ public class FinalDialogueMover : MonoBehaviour
     void Start()
     {
         runner.AddCommandHandler("setSpeaker", SetSpeaker);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+            ui.MarkLineComplete();
     }
 
     private void SetSpeaker(string[] parameters)
