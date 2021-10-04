@@ -41,6 +41,11 @@ public class Inventory
         }
     }
 
+    public List<string> GetItemsPickedUp()
+    {
+      return itemsPickedUp;
+    }
+    
     public void setItem(string i){
         string output = "$has" + char.ToUpper(i[0]) + i.Substring(1);
         itemsPickedUp.Add(output);
