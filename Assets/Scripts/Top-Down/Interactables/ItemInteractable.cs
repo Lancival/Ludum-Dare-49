@@ -57,6 +57,17 @@ public class ItemInteractable : Interactable
             inventory.AddItem(new Item{itemType = Item.ItemType.Item5, amount=1});
             this.gameObject.SetActive(false);
         }
+        else if ( ItemType == "steering_wheel")
+        {   
+            // TODO: Should check if the ladder has been placed
+            inventory.AddItem(new Item{itemType = Item.ItemType.Item9, amount=1});
+            this.gameObject.SetActive(false);
+        }
+        else if ( ItemType == "rotary")
+        {
+            inventory.AddItem(new Item{itemType = Item.ItemType.Item7, amount=1});
+            this.gameObject.SetActive(false);
+        }
         else
         {
             Debug.LogError("Invalid ItemType specified for interactable");
