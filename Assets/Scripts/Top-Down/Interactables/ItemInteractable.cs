@@ -29,7 +29,7 @@ public class ItemInteractable : Interactable
         }
         else if ( ItemType == "poems")
         {
-            inventory.AddItem(new Item {itemType = Item.ItemType.Item7, amount=1});
+            inventory.AddItem(new Item {itemType = Item.ItemType.Item1, amount=1});
             this.gameObject.SetActive(false);
         }
         else if ( ItemType == "sketchbook")
@@ -39,12 +39,17 @@ public class ItemInteractable : Interactable
         }
         else if ( ItemType == "suitcase")
         {
-             inventory.AddItem(new Item {itemType = Item.ItemType.Item10, amount=1});
+            inventory.AddItem(new Item {itemType = Item.ItemType.Item10, amount=1});
             this.gameObject.SetActive(false);
         }
         else if ( ItemType == "travelbook")
         {
-             inventory.AddItem(new Item {itemType = Item.ItemType.Item11, amount=1});
+            inventory.AddItem(new Item {itemType = Item.ItemType.Item11, amount=1});
+            this.gameObject.SetActive(false);
+        }
+        else if ( ItemType == "business")
+        {
+            inventory.AddItem(new Item{itemType = Item.ItemType.Item2, amount=1});
             this.gameObject.SetActive(false);
         }
         else
