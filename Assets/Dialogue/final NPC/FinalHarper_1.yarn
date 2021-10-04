@@ -15,6 +15,7 @@ These belong you to you. I promise.
 <<setSpeaker Harper>>
 Seeing that she left these, a part of me feels like she's still here with me.
 Thank you.
+<<questComplete>>
 <<else>>
 <<if $hasTalkedToHarper is true>>
 <<setSpeaker Harper>>

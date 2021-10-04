@@ -22,6 +22,7 @@ Consider this a favor.
 [[Why do you want to leave town?|q1]]
 [[What are your honest thoughts on your mother?|q2]]
 [[Why does everyone I talk to seem to not like your mother?|q3]]
+<<questComplete>>
 <<endif>>
 [[after2]]
 ===
