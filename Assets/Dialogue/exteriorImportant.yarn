@@ -1,0 +1,26 @@
+title: rotaryhelm
+tags: 
+colorID: 0
+position: -1329,-922
+---
+<<setSpeaker MC>>
+(This looks like it's missing parts.)
+===
+title: steering
+tags: 
+colorID: 0
+position: -926,-927
+---
+<<setSpeaker MC>>
+(It's too high to reach. If only I had some way of getting up...)
+(Who in their right mind stores a steering wheel on a tree?)
+===
+title: business card
+tags: 
+colorID: 0
+position: -1113,-654
+---
+<<setSpeaker MC>>
+"Ida Raginhard. Loose Ink Publishing. Email..."
+A business card for a book publisher.
+===

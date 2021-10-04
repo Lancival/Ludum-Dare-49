@@ -1,0 +1,49 @@
+fileFormatVersion: 2
+guid: be0c652ed0d236143b3830879e9a896d
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - interiorUnimportant_flavor (1)-Mirror-0
+  - interiorUnimportant_flavor (1)-Mug-1
+  - interiorUnimportant_flavor (1)-Picture-2
+  - interiorUnimportant_flavor (1)-Picture2-3
+  - interiorUnimportant_flavor (1)-Picture2-4
+  - interiorUnimportant_flavor (1)-teddybear-5
+  - interiorUnimportant_flavor (1)-WitheredPlant-6
+  - interiorUnimportant_flavor (1)-WitheredPlant-7
+  - interiorUnimportant_flavor (1)-UnmadeBed-8
+  - interiorUnimportant_flavor (1)-UnmadeBed-9
+  - interiorUnimportant_flavor (1)-witheredPlant2-10
+  - interiorUnimportant_flavor (1)-witheredPlant2-11
+  - interiorUnimportant_flavor (1)-book1-12
+  - interiorUnimportant_flavor (1)-book1-13
+  - interiorUnimportant_flavor (1)-book1-14
+  - interiorUnimportant_flavor (1)-open-15
+  - interiorUnimportant_flavor (1)-open-16
+  - interiorUnimportant_flavor (1)-open-17
+  - interiorUnimportant_flavor (1)-open-18
+  - interiorUnimportant_flavor (1)-open-19
+  - interiorUnimportant_flavor (1)-open-20
+  - interiorUnimportant_flavor (1)-open-21
+  - interiorUnimportant_flavor (1)-close-22
+  - interiorUnimportant_flavor (1)-book2-23
+  - interiorUnimportant_flavor (1)-book2-24
+  - interiorUnimportant_flavor (1)-book2-25
+  - interiorUnimportant_flavor (1)-Drawer-26
+  - interiorUnimportant_flavor (1)-Drawer-27
+  - interiorUnimportant_flavor (1)-Drawer-28
+  - interiorUnimportant_flavor (1)-FlickeringLamp-29
+  - interiorUnimportant_flavor (1)-flickeringLight-30
+  - interiorUnimportant_flavor (1)-flickeringLight-31
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []
