@@ -57,6 +57,7 @@ public class Player : MonoBehaviour
 		Debug.Log("Attempting to interact with nearby objects...");
 		if (closest != null)
 		{
+
 				Interactable other = closest.gameObject.GetComponent<Interactable>();
 				if (other == null)
 					Debug.Log("Colliding object is either uninteractable or has no script inheriting from `Interactable`");

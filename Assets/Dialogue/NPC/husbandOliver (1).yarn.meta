@@ -1,0 +1,80 @@
+fileFormatVersion: 2
+guid: d266bcc405a0d4543bbd5fc193636f47
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - husbandOliver (1)-Oliver-0
+  - husbandOliver (1)-Oliver-1
+  - husbandOliver (1)-Oliver-2
+  - husbandOliver (1)-Oliver-3
+  - husbandOliver (1)-Oliver-4
+  - husbandOliver (1)-Oliver-5
+  - husbandOliver (1)-Oliver-6
+  - husbandOliver (1)-Oliver-7
+  - husbandOliver (1)-Oliver-8
+  - husbandOliver (1)-Oliver-9
+  - husbandOliver (1)-Oliver-10
+  - husbandOliver (1)-Oliver-11
+  - husbandOliver (1)-Oliver-12
+  - husbandOliver (1)-Oliver-13
+  - husbandOliver (1)-Oliver-14
+  - husbandOliver (1)-Oliver-15
+  - husbandOliver (1)-Oliver-16
+  - husbandOliver (1)-truth-17
+  - husbandOliver (1)-truth-18
+  - husbandOliver (1)-truth-19
+  - husbandOliver (1)-truth-20
+  - husbandOliver (1)-truth-21
+  - husbandOliver (1)-lie-22
+  - husbandOliver (1)-lie-23
+  - husbandOliver (1)-lie-24
+  - husbandOliver (1)-lie-25
+  - husbandOliver (1)-lie-26
+  - husbandOliver (1)-cont-27
+  - husbandOliver (1)-cont-28
+  - husbandOliver (1)-cont-29
+  - husbandOliver (1)-cont-30
+  - husbandOliver (1)-cont-31
+  - husbandOliver (1)-cont-32
+  - husbandOliver (1)-cont-33
+  - husbandOliver (1)-cont-34
+  - husbandOliver (1)-cont-35
+  - husbandOliver (1)-cont-36
+  - husbandOliver (1)-cont-37
+  - husbandOliver (1)-cont-38
+  - husbandOliver (1)-cont-39
+  - husbandOliver (1)-cont-40
+  - husbandOliver (1)-cont-41
+  - husbandOliver (1)-cont-42
+  - husbandOliver (1)-cont-43
+  - husbandOliver (1)-cont-44
+  - husbandOliver (1)-cont-45
+  - husbandOliver (1)-husband-46
+  - husbandOliver (1)-husband-47
+  - husbandOliver (1)-husband-48
+  - husbandOliver (1)-planning-49
+  - husbandOliver (1)-planning-50
+  - husbandOliver (1)-cont1-51
+  - husbandOliver (1)-cont1-52
+  - husbandOliver (1)-cont1-53
+  - husbandOliver (1)-cont1-54
+  - husbandOliver (1)-cont1-55
+  - husbandOliver (1)-cont1-56
+  - husbandOliver (1)-cont1-57
+  - husbandOliver (1)-cont1-58
+  - husbandOliver (1)-cont1-59
+  - husbandOliver (1)-cont1-60
+  - husbandOliver (1)-cont1-61
+  - husbandOliver (1)-cont1-62
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: d266bcc405a0d4543bbd5fc193636f47, type: 3}
+  localizations: []

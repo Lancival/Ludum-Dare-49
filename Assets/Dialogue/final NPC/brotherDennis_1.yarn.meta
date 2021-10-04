@@ -1,0 +1,112 @@
+fileFormatVersion: 2
+guid: 7735cf0ec5b93c2489c86cd262e95702
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - brotherDennis_1-Dennis-0
+  - brotherDennis_1-Dennis-1
+  - brotherDennis_1-Dennis-2
+  - brotherDennis_1-Dennis-3
+  - brotherDennis_1-Dennis-4
+  - brotherDennis_1-Dennis-5
+  - brotherDennis_1-Dennis-6
+  - brotherDennis_1-Dennis-7
+  - brotherDennis_1-Dennis-8
+  - brotherDennis_1-Dennis-9
+  - brotherDennis_1-Dennis-10
+  - brotherDennis_1-Dennis-11
+  - brotherDennis_1-Dennis-12
+  - brotherDennis_1-Dennis-13
+  - brotherDennis_1-Dennis-14
+  - brotherDennis_1-Dennis-15
+  - brotherDennis_1-Dennis-16
+  - brotherDennis_1-Dennis-17
+  - brotherDennis_1-Dennis-18
+  - brotherDennis_1-Dennis-19
+  - brotherDennis_1-next-20
+  - brotherDennis_1-next-21
+  - brotherDennis_1-next-22
+  - brotherDennis_1-next-23
+  - brotherDennis_1-next-24
+  - brotherDennis_1-next-25
+  - brotherDennis_1-next-26
+  - brotherDennis_1-next-27
+  - brotherDennis_1-next-28
+  - brotherDennis_1-next-29
+  - brotherDennis_1-next-30
+  - brotherDennis_1-next-31
+  - brotherDennis_1-next-32
+  - brotherDennis_1-next-33
+  - brotherDennis_1-next-34
+  - brotherDennis_1-next-35
+  - brotherDennis_1-next-36
+  - brotherDennis_1-next-37
+  - brotherDennis_1-next-38
+  - brotherDennis_1-ghost-39
+  - brotherDennis_1-ghost-40
+  - brotherDennis_1-ghost-41
+  - brotherDennis_1-ghost-42
+  - brotherDennis_1-ghost-43
+  - brotherDennis_1-ghost-44
+  - brotherDennis_1-ghost-45
+  - brotherDennis_1-ghost-46
+  - brotherDennis_1-ghost-47
+  - brotherDennis_1-ghost-48
+  - brotherDennis_1-ghost-49
+  - brotherDennis_1-ghost-50
+  - brotherDennis_1-ghost-51
+  - brotherDennis_1-ghost-52
+  - brotherDennis_1-ghost-53
+  - brotherDennis_1-family-54
+  - brotherDennis_1-family-55
+  - brotherDennis_1-family-56
+  - brotherDennis_1-family-57
+  - brotherDennis_1-family-58
+  - brotherDennis_1-family-59
+  - brotherDennis_1-family-60
+  - brotherDennis_1-family-61
+  - brotherDennis_1-family-62
+  - brotherDennis_1-bread-63
+  - brotherDennis_1-bread-64
+  - brotherDennis_1-bread-65
+  - brotherDennis_1-bread-66
+  - brotherDennis_1-bread-67
+  - brotherDennis_1-bread-68
+  - brotherDennis_1-bread-69
+  - brotherDennis_1-epiphany-70
+  - brotherDennis_1-epiphany-71
+  - brotherDennis_1-epiphany-72
+  - brotherDennis_1-epiphany-73
+  - brotherDennis_1-epiphany-74
+  - brotherDennis_1-epiphany-75
+  - brotherDennis_1-fame-76
+  - brotherDennis_1-fame-77
+  - brotherDennis_1-fame-78
+  - brotherDennis_1-fame-79
+  - brotherDennis_1-fame-80
+  - brotherDennis_1-fame-81
+  - brotherDennis_1-fame-82
+  - brotherDennis_1-next1-83
+  - brotherDennis_1-next1-84
+  - brotherDennis_1-next1-85
+  - brotherDennis_1-next1-86
+  - brotherDennis_1-next1-87
+  - brotherDennis_1-next1-88
+  - brotherDennis_1-next1-89
+  - brotherDennis_1-next1-90
+  - brotherDennis_1-next1-91
+  - brotherDennis_1-next1-92
+  - brotherDennis_1-next1-93
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: "Error on line 192 at position 3:\nno viable alternative
+    at input '<<endif'\r\n<<endif>>\r\n  ^^^^^"
+  baseLanguage: {fileID: 7128917941130120860, guid: 7735cf0ec5b93c2489c86cd262e95702, type: 3}
+  localizations: []

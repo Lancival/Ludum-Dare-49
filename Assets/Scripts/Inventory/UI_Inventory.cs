@@ -15,6 +15,8 @@ public class UI_Inventory : MonoBehaviour
 
    private int numDisplayedItems = 5;
 
+   private Animator m_Animator;
+
    // Which page of the inventory are we currently on?
    int currentPage;
 
@@ -34,6 +36,8 @@ public class UI_Inventory : MonoBehaviour
        Assert.IsNotNull(itemSlots[2]);
        Assert.IsNotNull(itemSlots[3]);
        Assert.IsNotNull(itemSlots[4]); 
+
+       m_Animator = GetComponent<Animator>();
    }
 
    public void SetInventory(Inventory inventory)
@@ -63,6 +67,24 @@ public class UI_Inventory : MonoBehaviour
        RefreshInventoryItems();
    }
 
+   // Ewww repeated code yikes :/ 
+   public void DisableButtons()
+   {
+       // Disable right/left buttons first...
+       Transform buttonRight = transform.Find("inventoryPageRight");
+       if (buttonRight != null)
+       {
+           Debug.Log("Disabling right button");
+           buttonRight.gameObject.SetActive(false);
+       }
+       Transform buttonLeft = transform.Find("inventoryPageLeft");
+       if (buttonLeft != null)
+       {
+           Debug.Log("Disabling left button");
+           buttonLeft.gameObject.SetActive(false);
+       }
+   }
+
    public void RefreshInventoryItems() {
        if (itemSlots == null) return;
 
@@ -73,11 +95,13 @@ public class UI_Inventory : MonoBehaviour
        Transform buttonRight = transform.Find("inventoryPageRight");
        if (buttonRight != null)
        {
+           Debug.Log("Disabling right button");
            buttonRight.gameObject.SetActive(false);
        }
        Transform buttonLeft = transform.Find("inventoryPageLeft");
        if (buttonLeft != null)
        {
+           Debug.Log("Disabling left button");
            buttonLeft.gameObject.SetActive(false);
        }
 
@@ -89,8 +113,11 @@ public class UI_Inventory : MonoBehaviour
            if (inventory.GetItemListCount() > 5)
            {
                // Display right button
-               if (buttonRight != null)
+               if (buttonRight != null 
+                && !m_Animator.GetCurrentAnimatorStateInfo(0).IsName("UI_close")
+                && !m_Animator.GetCurrentAnimatorStateInfo(0).IsName("UI_close_idle"))
                {
+                   Debug.Log("Enabling right button");
                    buttonRight.gameObject.SetActive(true);
                }
                else
@@ -102,8 +129,11 @@ public class UI_Inventory : MonoBehaviour
        else if (currentPage == 1)
        {
            // Display the left button
-           if (buttonLeft != null)
+           if (buttonLeft != null
+                && !m_Animator.GetCurrentAnimatorStateInfo(0).IsName("UI_close")
+                && !m_Animator.GetCurrentAnimatorStateInfo(0).IsName("UI_close_idle"))
            {
+               Debug.Log("Enabling left button");
                buttonLeft.gameObject.SetActive(true);
            }
        }

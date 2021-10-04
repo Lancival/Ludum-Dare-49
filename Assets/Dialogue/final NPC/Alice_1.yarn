@@ -1,0 +1,189 @@
+title: Alice
+tags: 
+colorID: 1
+position: 329,-1532
+---
+<<if $hasSuitcase and $hasTravelBook is true>>
+<<setSpeaker Alice>>
+This is promising.
+But I can't leave without a form of transportation.
+<<setSpeaker MC>>
+This was all I could find.
+It's actually your mother's stuff.
+<<setSpeaker Alice>>
+...She had a travel book? That woman is a homebody.
+You get one question.
+<<setSpeaker MC>>
+But-
+<<setSpeaker Alice>>
+I can't leave with only a suitcase and a book.
+Consider this a favor.
+<<setSpeaker>>
+[[Why do you want to leave town?|q1]]
+[[What are your honest thoughts on your mother?|q2]]
+[[Why does everyone I talk to seem to not like your mother?|q3]]
+<<endif>>
+[[after2]]
+===
+title: same
+tags: 
+colorID: 0
+position: 25,-442
+---
+<<setSpeaker Alice>>
+My mom knew I really wanted this new phone, so she surprised me with it for my birthday.
+A month later, she told me technology was rotting my brain.
+<<setSpeaker MC>>
+That's considerate of her?
+[[after]]
+===
+title: since
+tags: 
+colorID: 0
+position: 320,-432
+---
+<<setSpeaker Alice>>
+Lady, I don't know you.
+To be honest, I don't think you care what I say. You just want to know about my mom.
+<<setSpeaker>>
+[[You're right.|truth1]]
+[[I do care.|lie1]]
+===
+title: truth1
+tags: 
+colorID: 0
+position: 256,-153
+---
+<<setSpeaker Alice>>
+Okay, respect.
+You're sort of a prick, but at least you know.
+[[after]]
+===
+title: lie1
+tags: 
+colorID: 0
+position: 588,-99
+---
+<<setSpeaker Alice>>
+Sure you do.
+[[after]]
+===
+title: after
+tags: 
+colorID: 0
+position: 115,312
+---
+<<setSpeaker MC>>
+I'm not trying to intrude in your space.
+I just want to ask some questions about her.
+<<setSpeaker Alice>>
+What do I get out of it?
+<<setSpeaker MC>>
+The satisfaction of helping your mother?
+<<setSpeaker Alice>>
+...
+<<setSpeaker MC>>
+Just tell me what you want.
+<<setSpeaker Alice>>
+To leave this town. I can't stand it here.
+I don't want to go home either.
+If you can help me do that, I'll tell you whatever you want.
+===
+title: q1
+tags: 
+colorID: 0
+position: -931,-1495
+---
+<<setSpeaker Alice>>
+Because everywhere I go, I see my family.
+They want me to take care of my sister, help Dad around the house, give Mom space to write.
+I did this robotics competition in sophomore year, and my team placed in the finals.
+The organization flew me to New York and gave this whole speech about
+how we should become astronauts and see what's out there.
+And I was like, "Man, can I really do this? Go to freaking space?"
+Mom said I should stay home and work on my future here.
+Really, I think she doesn't want Dad to be alone.
+Or maybe she doesn't want to be alone.
+Before I forget, can you give this back to Harper?
+It's her sketchbook.
+I like looking at her drawings, but I forgot to put it back.
+And don't tell her it was from me, okay?
+===
+title: q2
+tags: 
+colorID: 0
+position: -929,-1061
+---
+<<setSpeaker Alice>>
+Honestly? I hate and love her at the same time.
+People always come up to her and tell her how her writing changed their life.
+They even cry when they meet her;
+a part of me is like, my mom is this badass-feminist woman,
+but she's also my mom, and I don't know if she really wanted to be.
+When I was seven, I overheard her arguing with my dad over whose going to take care of me after school.
+"You have to do it. I need to write my new book so the lights stay on in this house."
+And it was like, I know she didn't mean anything by it,
+but I felt like I was holding her back, you know?
+Meanwhile, I'm trying to be my own person and figure out my place in the world.
+My mom was the center of the universe for my entire family.
+Before I forget, can you give this back to Harper?
+It's her sketchbook. I like looking at her drawings, but I forgot to put it back.
+And don't tell her it was from me, okay?
+===
+title: after2
+tags: 
+colorID: 0
+position: 238,-728
+---
+<<if $hasTalkedToAlice is true>>
+<<setSpeaker Alice>>
+Hey, loser. Ready to ditch town with me yet?
+<<else>>
+<<set $hasTalkedToAlice to true>>
+<<setSpeaker Alice>>
+Hey. You're that woman whose been running around here.
+<<setSpeaker MC>>
+Er, that's me. And you're...
+<<setSpeaker Alice>>
+Alice. My mom used to live in that house you've been trespassing in.
+<<setSpeaker MC>>
+Well, the city gave me permission to enter.
+I heard your mother was a great woman.
+<<setSpeaker Alice>>
+I guess.
+<<setSpeaker MC>>
+I'm here to help your mom.
+<<setSpeaker Alice>>
+You can't help a dead woman.
+<<setSpeaker MC>>
+Right...
+Alice, I'm really sorry about what happened.
+I was just wondering if you could tell me more about your relationship with her?
+Maybe there's something you're unhappy with about her? Unfinished business with her, perhaps?
+<<setSpeaker Alice>>
+And you think this because...?
+My mom cares about me. She's cold but caring.
+<<setSpeaker>>
+[[You can be cold and caring at the same time?|same]]
+[[How have you been holding up since...?|since]]
+<<endif>>
+===
+title: q3
+tags: 
+colorID: 0
+position: -1195,-708
+---
+<<setSpeaker Alice>>
+Honestly? I think it's because we needed her way more than she needed us.
+She moved here and guess what we all got done?
+Absolutely nothing.
+Dad's been a mess and my sister fell behind in her deadlines with her agent and I,
+I'm still stuck in this town.
+You know, my elementary school teacher made us fill out a log of all the books we read.
+I had the most books read in our class, and my mom surprised me after school for ice cream.
+She said "I'm proud of you" and I could tell me meant it too.
+My graduation's in a month...I wish I could hear her say it one more time
+Before I forget, can you give this back to Harper?.
+It's her sketchbook. I like looking at her drawings, but I forgot to put it back.
+And don't tell her it was from me, okay?
+===

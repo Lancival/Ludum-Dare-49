@@ -1,0 +1,105 @@
+fileFormatVersion: 2
+guid: 94514fa37daec8f43a8f7a457794ab8b
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - Alice_1-Alice-0
+  - Alice_1-Alice-1
+  - Alice_1-Alice-2
+  - Alice_1-Alice-3
+  - Alice_1-Alice-4
+  - Alice_1-Alice-5
+  - Alice_1-Alice-6
+  - Alice_1-Alice-7
+  - Alice_1-Alice-8
+  - Alice_1-Alice-9
+  - Alice_1-Alice-10
+  - Alice_1-Alice-11
+  - Alice_1-same-12
+  - Alice_1-same-13
+  - Alice_1-same-14
+  - Alice_1-since-15
+  - Alice_1-since-16
+  - Alice_1-since-17
+  - Alice_1-since-18
+  - Alice_1-truth1-19
+  - Alice_1-truth1-20
+  - Alice_1-lie1-21
+  - Alice_1-after-22
+  - Alice_1-after-23
+  - Alice_1-after-24
+  - Alice_1-after-25
+  - Alice_1-after-26
+  - Alice_1-after-27
+  - Alice_1-after-28
+  - Alice_1-after-29
+  - Alice_1-after-30
+  - Alice_1-q1-31
+  - Alice_1-q1-32
+  - Alice_1-q1-33
+  - Alice_1-q1-34
+  - Alice_1-q1-35
+  - Alice_1-q1-36
+  - Alice_1-q1-37
+  - Alice_1-q1-38
+  - Alice_1-q1-39
+  - Alice_1-q1-40
+  - Alice_1-q1-41
+  - Alice_1-q1-42
+  - Alice_1-q1-43
+  - Alice_1-q2-44
+  - Alice_1-q2-45
+  - Alice_1-q2-46
+  - Alice_1-q2-47
+  - Alice_1-q2-48
+  - Alice_1-q2-49
+  - Alice_1-q2-50
+  - Alice_1-q2-51
+  - Alice_1-q2-52
+  - Alice_1-q2-53
+  - Alice_1-q2-54
+  - Alice_1-q2-55
+  - Alice_1-q2-56
+  - Alice_1-q2-57
+  - Alice_1-after2-58
+  - Alice_1-after2-59
+  - Alice_1-after2-60
+  - Alice_1-after2-61
+  - Alice_1-after2-62
+  - Alice_1-after2-63
+  - Alice_1-after2-64
+  - Alice_1-after2-65
+  - Alice_1-after2-66
+  - Alice_1-after2-67
+  - Alice_1-after2-68
+  - Alice_1-after2-69
+  - Alice_1-after2-70
+  - Alice_1-after2-71
+  - Alice_1-after2-72
+  - Alice_1-after2-73
+  - Alice_1-after2-74
+  - Alice_1-q3-75
+  - Alice_1-q3-76
+  - Alice_1-q3-77
+  - Alice_1-q3-78
+  - Alice_1-q3-79
+  - Alice_1-q3-80
+  - Alice_1-q3-81
+  - Alice_1-q3-82
+  - Alice_1-q3-83
+  - Alice_1-q3-84
+  - Alice_1-q3-85
+  - Alice_1-q3-86
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: "Error on line 91 at position 3:\nno viable alternative
+    at input '<<endif'\r\n<<endif>>\r\n  ^^^^^"
+  baseLanguage: {fileID: 7128917941130120860, guid: 94514fa37daec8f43a8f7a457794ab8b, type: 3}
+  localizations: []
