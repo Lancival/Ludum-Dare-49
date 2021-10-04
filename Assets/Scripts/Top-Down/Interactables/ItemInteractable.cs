@@ -21,7 +21,6 @@ public class ItemInteractable : Interactable
         {
             inventory.AddItem(new Item {itemType = Item.ItemType.Item3, amount=1});
             this.gameObject.SetActive(false);
-
         }
         else if (ItemType == "paints")
         {

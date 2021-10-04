@@ -28,6 +28,8 @@ public class Inventory
     public void AddItem(Item item) {
         itemList.Add(item);
         OnItemListChanged?.Invoke(this, EventArgs.Empty);
+
+        AudioItemPickupSingleton.instance.GetComponent<AudioPlayOneShot>().Play();
     }
 
     public void RemoveItem(Item item) {

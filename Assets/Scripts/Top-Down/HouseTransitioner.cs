@@ -12,6 +12,14 @@ public class HouseTransitioner : MonoBehaviour
     private Collider2D bedroomDoor;
     private bool inLivingRoom;
     private float diff;
+
+    private AudioPlayOneShot sfxDoorOpen;
+
+    private void Awake()
+    {
+        sfxDoorOpen = GetComponent<AudioPlayOneShot>();    
+    }
+
     void Start(){
       inLivingRoom = true;
       diff = (bedroom - livingRoom) / duration;
@@ -39,6 +47,8 @@ public class HouseTransitioner : MonoBehaviour
               bedroomDoor.enabled = false;
           }
           inLivingRoom = !inLivingRoom;
+
+          sfxDoorOpen.Play();
         }
     }
 }

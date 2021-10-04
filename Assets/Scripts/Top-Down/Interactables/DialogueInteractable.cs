@@ -44,8 +44,7 @@ public class DialogueInteractable : Interactable
 
     private void exitDialogue()
     {
-    	StartCoroutine(Wait(talkCooldown));
-    	
+    	StartCoroutine(Wait(talkCooldown)); 	
     }
 
     private IEnumerator Wait(float duration)
