@@ -27,7 +27,7 @@ public class UI_Inventory : MonoBehaviour
    }
 
    public void RefreshInventoryItems() {
-       foreach (Transform child in itemSlotContainer) {
+       /*foreach (Transform child in itemSlotContainer) {
            if (child == itemSlotTemplate) continue;
            Destroy(child.gameObject);
        }
@@ -45,6 +45,6 @@ public class UI_Inventory : MonoBehaviour
                x = 0;
                y++;
            }
-       }
+       }*/
    }
 }
