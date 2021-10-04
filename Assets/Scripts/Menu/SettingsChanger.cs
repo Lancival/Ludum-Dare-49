@@ -66,6 +66,8 @@ public class SettingsChanger : MonoBehaviour
     	textScaleChangedDelegate?.Invoke();
     }
 
+    public delegate void OnSettingsOpenDelegate();
+    public event OnSettingsOpenDelegate settingsOpenDelegate;
     public void OpenSettings()
     {
         if (!open)
@@ -73,9 +75,12 @@ public class SettingsChanger : MonoBehaviour
             open = true;
             Settings.PAUSED = true;
             fader.FadeIn();
+            settingsOpenDelegate?.Invoke();
         }
     }
 
+    public delegate void OnSettingsCloseDelegate();
+    public event OnSettingsCloseDelegate settingsCloseDelegate;
     public void CloseSettings()
     {
         if (open)
@@ -83,6 +88,7 @@ public class SettingsChanger : MonoBehaviour
         	open = false;
         	Settings.PAUSED = false;
             fader.FadeOut();
+            settingsCloseDelegate?.Invoke();
         }
     }
 }
