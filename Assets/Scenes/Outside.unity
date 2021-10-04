@@ -979,6 +979,90 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineStart.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1812407759}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineStart.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineFinishDisplaying.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1812407759}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineEnd.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineEnd.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Stop
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineStart.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineStart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineFinishDisplaying.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineFinishDisplaying.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1812407759}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineEnd.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: AudioConcatenation, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineFinishDisplaying.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineFinishDisplaying.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Stop
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineStart.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioConcatenation, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineFinishDisplaying.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioConcatenation, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883313757190845018, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: onLineFinishDisplaying.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7883313757190845020, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
       propertyPath: m_Name
       value: Dialogue Canvas
@@ -9586,6 +9670,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2574040354586361514, guid: 26e9cc8c14c99bd44a0b0ef76310f0fb, type: 3}
   m_PrefabInstance: {fileID: 2574040356100913052}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1812407759 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3988128547500770570, guid: 29c3cb71cc4024ec4a48623ca58a2ac5, type: 3}
+  m_PrefabInstance: {fileID: 1231977726}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39b04ee3550ca4a0194315358f2beda5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1845404333
 PrefabInstance:
   m_ObjectHideFlags: 0

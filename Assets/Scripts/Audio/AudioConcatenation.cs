@@ -8,6 +8,7 @@ public class AudioConcatenation : MonoBehaviour
     [SerializeField] private AudioConfigurationSO config;
     [SerializeField] private AudioClipCueSO cue;
     [SerializeField] private AudioSource[] audioSources; //Array with 2 audio sources
+    [SerializeField] private AudioSource audioSourceStop;
     [Space]
     [Header("CONCATENATION PROPERTIES")]
     [SerializeField] private PlayOnAwakeMethod playOnAwake = PlayOnAwakeMethod.No;
@@ -106,6 +107,8 @@ public class AudioConcatenation : MonoBehaviour
             isPlaying = false;
             foreach (AudioSource aSource in audioSources)
                 aSource.Stop();
+
+            audioSourceStop.PlayOneShot(cue.GetNextClip());
         }
 
         //print("STOP: " + gameObject.name);
