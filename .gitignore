@@ -56,3 +56,6 @@ UserSettings/EditorUserSettings.asset
 # VS Code
 .vsconfig
 .vscode
+
+# Plugin (GitHub for Unity)
+./Assets/Plugins
