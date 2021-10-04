@@ -7,6 +7,7 @@ public class QuestCompletion : MonoBehaviour
 {
 
 	private DialogueRunner runner;
+    [SerializeField] private AudioQuestComplete audioQuestComplete;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class QuestCompletion : MonoBehaviour
     private void QuestComplete(string[] parameters)
     {
     	Settings.QUESTS_COMPLETED++;
+        audioQuestComplete.DoAudioStuff();
     	if (Settings.QUESTS_COMPLETED == 4)
     		SceneLoader.SceneLoaderInstance.LoadNextScene("FinalScene");
     }
