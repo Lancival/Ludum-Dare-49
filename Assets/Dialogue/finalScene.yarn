@@ -1,0 +1,50 @@
+title: final scene
+tags: 
+colorID: 0
+position: -1325,-1060
+---
+<<setSpeaker Dennis>>
+DELILAH!?
+<<setSpeaker Harper>>
+MOM!?
+<<setSpeaker Oliver>>
+HONEY!?
+<<setSpeaker Delilah>>
+My dear brother, husband, children, I'm sorry I have to say goodbye like this.
+I've been selfish.
+I thought I was protecting you, but I hurt you all.
+Oliver, my love, I am sorry for moving to this cottage when you needed me the most.
+I know how much you gave up for me to pursue my truest passion,
+and I thought by moving, you'd be able to explore your interests again.
+I was wrong, and I love you.
+<<setSpeaker Oliver>>
+You are not a burden Delilah. You are my person.
+I love you too.
+<<setSpeaker Delilah>>
+My brother, I am sorry for ignoring you when you have always been with me.
+I felt like a stress to Mom and Dad, and I didn't want to have to depend on you too.
+Now, go seek the ocean. It's calling you.
+<<setSpeaker Dennis>>
+Sailing won't be nearly as fulfilling without you, but I will try my best.
+Thank you for the gift of exploration.
+<<setSpeaker Delilah>>
+Alice, my baby, I am sorry for stifling your curiosity.
+I should've let you move and explore to your heart's content.
+I am so proud of how warm and spirited and brilliant you are.
+<<setSpeaker Alice>>
+Mom...I miss you so much.
+I promise I'll visit home often.
+<<setSpeaker Delilah>>
+Harper, my dear, I am sorry for doubting your creativity
+The purpose of art is not to create the most elaborate metaphors
+or redefine poetic structure.
+It is to spark joy, inspiration, hope, reflection.
+<<setSpeaker Harper>>
+I hope to do just that in my books.
+One day, my writing can be alongside yours in the bookstore.
+<<setSpeaker Delilah>>
+Friendly exorcist, thank you for bringing my family together.
+For bringing what those I love closest need from me.
+I wish I could stay longer, but you all have so much adventure left to chase.
+Goodbye.
+===

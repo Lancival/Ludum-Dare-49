@@ -1,14 +1,14 @@
 title: Dennis
 tags: 
 colorID: 0
-position: -129,-1780
+position: -129,-1779
 ---
 <<if $hasTalkedToBrother is true>>
 <<setSpeaker Dennis>>
 You got the parts for the boat yet?
-I need a steering wheel, cables, and a rotary helm
+I need a steering wheel, cables, and a rotary helm.
 <<endif>>
-<<if $brotherQuest is true>>
+<<if $hasSteeringWheel and $hasRotaryHelm and $hasCables is true>>
 <<setSpeaker Dennis>>
 You found them!
 <<setSpeaker MC>>
@@ -26,23 +26,15 @@ If I discover mermaids, I will credit you!
 <<endif>>
 
 <<setSpeaker Dennis>>
-Is that
-<<wait 1>>
-...a person? Miss, are you lost?
+Is that...a person? Miss, are you lost?
 You don't want to be wandering here alone.
 <<setSpeaker MC>>
 Do you know Delilah Anderson?
 <<setSpeaker Dennis>>
 You could say that. I'm her brother.
-Let me guess, you're one of her fan girls.
+Let me guess, you're one of her fans.
 <<setSpeaker MC>>
-I'm trying to figure out what her life was like before she died.
-<<setSpeaker Dennis>>
-Then you're asking the wrong person. I haven't seen her in months.
-I was supposed to visit her last weekend.
-I'm sure you can assume how that went.
-<<setSpeaker MC>>
-What about when you did see her last?
+I was wondering if you could tell me about when you saw her last
 <<setSpeaker Dennis>>
 Look, I know you're up to no good. Tell me, why are you here?
 <<setSpeaker>>
@@ -52,7 +44,7 @@ Look, I know you're up to no good. Tell me, why are you here?
 title: next
 tags: 
 colorID: 0
-position: -131,-1253
+position: -131,-1255
 ---
 <<setSpeaker Dennis>>
 She was always very quiet.
@@ -66,9 +58,6 @@ But there has to be a reason she's still here. She has regrets from her life.
 ...My parents.
 They made her sign up for theater, group dance classes, whatever they could to get her with other people.
 They didn't know how to love her.
-My mom tried to get her to be friends with her boss's daughter.
-She wanted to get close to him — a promotion, to be liked at work, I don't know.
-So when the daughter liked improv and Delilah wrote poetry, Mom wasn't happy.
 Delilah started getting known for her writing, and my parents were shocked.
 We had no idea she was so good. She hit a million sales for her book.
 Then she became poet laureate.
@@ -136,14 +125,13 @@ There's no way Delilah would be screaming.
 title: bread
 tags: 
 colorID: 0
-position: -401,-923
+position: -403,-923
 ---
 <<setSpeaker Dennis>>
 We grew up in a small town.
 We weren't exactly rich.
 My parents wanted us to pursue medicine or law;
-she didn't care what they thought and left.
-They didn't talk for years.
+she didn't care what they thought and left, and they didn't talk for years.
 Imagine how she felt when my parents wrote letters of apology once they saw her name in the news.
 Delilah had money - she was seen as our generation's voice - and they wanted their share.
 I don't think she ever let that resentment go away.
@@ -160,28 +148,28 @@ That she needed me.
 She told me how much she loved and missed me.
 Started talking about the boat, how we shouldn't give up on becoming sailors.
 She started repeating that there wasn't enough time.
-I think you're onto something about her spirit being trapped her.
+I think you're onto something about her spirit being trapped here.
 [[next1]]
 ===
 title: fame
 tags: 
 colorID: 0
-position: 248,-912
+position: 248,-903
 ---
 <<setSpeaker Dennis>>
 She refused to do a book tour or go to any writing events. 
-he didn't like the attention.
+She didn't like the attention.
 She had a P.O. box where fans could send her letters.
 Delilah was embarrassed when people would compliment her writing,
 but there was this one package that she cherished.
-It was a letter from woman who had moved to America as a kid.
-She said she had trouble communicating as a kid, but reading Delilah's poetry helped her learn English.
+It was a letter from a woman who had moved to America as a kid.
+She said she had trouble communicating, but reading Delilah's poetry helped her learn English.
 [[next1]]
 ===
 title: next1
 tags: 
 colorID: 0
-position: -111,-540
+position: -105,-539
 ---
 <<setSpeaker MC>>
 And what about you? How do you feel about her?
@@ -196,7 +184,7 @@ We wanted to be the first ones to discover mermaids.
 The steering system is broken.
 Figure she needs a new wheel, cables, and rotary helm.
 I guess Delilah never got to it.
-I wanted her to see the boat, even though she isn't here.
+I wanted her to see the boat, even though she isn't here anymore.
 <<setSpeaker MC>>
 I may be able to help you...
 ===

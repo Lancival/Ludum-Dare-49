@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: db15866bdae374a59acf8a12df12d8a9
+guid: f2284c511f0055e41b08d5e779b10b97
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -8,14 +8,11 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
-  baseLanguageID: en-US
+  baseLanguageID: 
   stringIDs:
-  - NewFile-Start-0
-  - NewFile-Start-1
-  - NewFile-Start-2
-  - NewFile-Start-3
+  - SeeGhostFirstTime-Start-0
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
-  baseLanguage: {fileID: 7128917941130120860, guid: db15866bdae374a59acf8a12df12d8a9, type: 3}
+  baseLanguage: {instanceID: 0}
   localizations: []

@@ -1,0 +1,83 @@
+title: HusbandPoem
+tags: 
+colorID: 0
+position: 330,-212
+---
+<<setSpeaker MC>>
+(There's a bunch of writing on this paper...)
+<i>"For my dear Oliver:
+I used to think that Love was in New York
+Love worked at a quaint bookshop
+listened to The Smiths records on repeat
+woke up every morning to watch the sun kiss the sky
+but when Love came,
+he had no interest in poetry
+his perfect Sunday meant staying in until noon
+swore by top 40's hits
+Love appeared like a lighthouse on a gloomy day
+guiding me back to shore
+when Love came,
+so did you"</i>
+(I wonder what this has to do with why Delilah can't leave this cottage...)
+===
+title: ladder
+tags: 
+colorID: 0
+position: 14,-452
+---
+<<setSpeaker MC>>
+(A ladder with dirt scraping the bottom edge.)
+(This must've been outside last.)
+===
+title: PictureFrame
+tags: 
+colorID: 0
+position: 431,106
+---
+<<setSpeaker MC>>
+(They're all smiling in this picture:)
+(Delilah, her husband, her brother, and two beautiful girls.)
+(I wonder how her family is holding up.)
+===
+title: Travel book
+tags: 
+colorID: 0
+position: -122,-83
+---
+<<setSpeaker MC>>
+(A book about how to get around New York.)
+(I thought she came here to get away from civilization, so who could this be for?)
+===
+title: suitcase
+tags: 
+colorID: 0
+position: 110,109
+---
+<<setSpeaker MC>>
+(A suitcase in mint condition.)
+(Even the tag is still on it.)
+===
+title: artsupplies
+tags: 
+colorID: 0
+position: 672,-111
+---
+<<setSpeaker MC>>
+(Paints. They're still in their original packaging.)
+===
+title: cables
+tags: 
+colorID: 0
+position: -778,-240
+---
+<<setSpeaker MC>>
+(Cables. These will work for the boat.)
+===
+title: bag
+tags: 
+colorID: 0
+position: 926,-461
+---
+<<setSpeaker MC>>
+I wonder what's in this bag...
+===

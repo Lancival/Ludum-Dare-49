@@ -1,0 +1,87 @@
+title: campfire
+tags: 
+colorID: 0
+position: -208,-1458
+---
+<<setSpeaker MC>>
+(This campfire is the only source of warmth out here.)
+(I should've brought a flashlight.)
+===
+title: CircleRocks
+tags: 
+colorID: 0
+position: -502,-1460
+---
+<<setSpeaker MC>>
+(The rocks reflect the illumination of the moonlight.)
+(This place gets spookier the longer I'm here.)
+===
+title: Tent
+tags: 
+colorID: 0
+position: -452,-1011
+---
+<<setSpeaker MC>>
+(This is the same tent as the one in the picture at Delilah's house.)
+(It looks like she went camping in her front yard?)
+===
+title: WaterSource
+tags: 
+colorID: 0
+position: -192,-1244
+---
+<<setSpeaker MC>>
+(The water is so still that even a slight breeze would puncture the quiet.)
+===
+title: BigTree
+tags: 
+colorID: 0
+position: -444,-764
+---
+<<setSpeaker MC>>
+(Delilah's cottage is secluded from the rest of town.)
+(There's trees everywhere.)
+===
+title: Bird
+tags: 
+colorID: 0
+position: -511,-1239
+---
+<<setSpeaker MC>>
+(This bird is one of the few signs of life here.)
+(He looks lost.)
+===
+title: cottagewindow
+tags: 
+colorID: 0
+position: -200,-998
+---
+<<setSpeaker MC>>
+(The outside of this cottage is so cozy.)
+(You would never expect a chamber of death and decay inside.)
+===
+title: frogonrock
+tags: 
+colorID: 0
+position: 68,-1469
+---
+<<setSpeaker MC>>
+(This frog smells suspiciously like rotten mangoes.)
+===
+title: frogWater
+tags: 
+colorID: 0
+position: -209,-772
+---
+<<setSpeaker MC>>
+(There are breadcrumbs around the frog's mouth.)
+(Where'd he get the bread?)
+===
+title: raccoon
+tags: 
+colorID: 0
+position: 84,-1232
+---
+<<setSpeaker raccoon>>
+*purr purr*
+===

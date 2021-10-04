@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 39b6ec0b8c4fa8c4ab900af768c5c492
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs: []
+  compilationStatus: 0
+  isSuccesfullyCompiled: 0
+  compilationErrorMessage: The node 'final scene' contains illegal characters in
+    its title.
+  baseLanguage: {instanceID: 0}
+  localizations: []

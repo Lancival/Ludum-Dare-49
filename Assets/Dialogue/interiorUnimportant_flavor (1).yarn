@@ -1,0 +1,138 @@
+title: Mirror
+tags: 
+colorID: 0
+position: -485,221
+---
+<<setSpeaker MC>>
+(Considering how ominous this cottage is, I look like a ghost myself.)
+===
+title: Mug
+tags: 
+colorID: 0
+position: -197,-516
+---
+<<setSpeaker Emily>>
+(There's still coffee in here.)
+===
+title: Picture
+tags: 
+colorID: 0
+position: 168,-65
+---
+<<setSpeaker MC>>
+(The picture is of Delilah and her kids. They're camping.)
+===
+title: Picture2
+tags: 
+colorID: 0
+position: -473,-565
+---
+<<setSpeaker MC>>
+(Delilah is posing with her book in this picture.)
+(She looks...happy.)
+===
+title: teddybear
+tags: 
+colorID: 0
+position: -512,-41
+---
+<<setSpeaker Emily>>
+(This teddy bear looks...thoroughly loved.)
+===
+title: WitheredPlant
+tags: 
+colorID: 0
+position: -196,-267
+---
+<<setSpeaker MC>>
+(This plant hasn't been watered in weeks.)
+(God, this place reeks of death.)
+===
+title: UnmadeBed
+tags: 
+colorID: 0
+position: -474,-329
+---
+<<setSpeaker MC>>
+(The bed still feels lived in.)
+(I don't think anyone's been in here since her passing.)
+===
+title: witheredPlant2
+tags: 
+colorID: 0
+position: -231,428
+---
+<<setSpeaker Emily>>
+(This plant is hanging on by a thread.)
+(When Delilah died, so did everything around her.)
+===
+title: book1
+tags: 
+colorID: 0
+position: 526,5
+---
+<<setSpeaker MC>>
+(What do we have here...<i>Lessons on Love</i> by Delilah Anderson.)
+<<setSpeaker>>
+[[Open book.|open]]
+[[Put the book away.|close]]
+===
+title: open
+tags: 
+colorID: 0
+position: 224,369
+---
+<<setSpeaker MC>>
+<i>"I tell him for the fifth time
+(the fourth over text), that I love you
+I tell him through sharing secrets in the dark
+and buying caramels at the grocery store, his favorite
+I tell him through..."
+</i>
+(I need to focus.)
+===
+title: close
+tags: 
+colorID: 0
+position: 713,348
+---
+<<setSpeaker MC>>
+(I have to focus.)
+===
+title: book2
+tags: 
+colorID: 0
+position: 128,-278
+---
+<<setSpeaker MC>>
+(There's handwriting in this.)
+<i>"I fear that my body is fading. I don't have much time left.
+I hope this will be enough to right my past."</i>
+===
+title: Drawer
+tags: 
+colorID: 0
+position: -267,182
+---
+<<setSpeaker MC>>
+(This drawer is lying askew on the floor.)
+(There aren't any clothes in it.)
+(What were Delilah's final moments like?)
+===
+title: FlickeringLamp
+tags: 
+colorID: 0
+position: -455,473
+---
+<<setSpeaker MC>>
+(None of the lights work. Weird.)
+===
+title: flickeringLight
+tags: 
+colorID: 0
+position: -220,-41
+---
+<<setSpeaker MC>>
+(The lights are on...sort of.)
+(Even the air in here feels eerie.)
+===
