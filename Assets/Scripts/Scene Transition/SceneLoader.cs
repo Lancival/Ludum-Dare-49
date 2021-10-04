@@ -74,7 +74,7 @@ public class SceneLoader : MonoBehaviour
         {
             loading = true;
             sceneLoadDelegate?.Invoke(transitionDurationDefault);
-            StartCoroutine(LoadSceneAsync(nextScene, transitionDurationDefault));
+            StartCoroutine(LoadSceneAsync(sceneName, transitionDurationDefault));
         }
     }
 }
