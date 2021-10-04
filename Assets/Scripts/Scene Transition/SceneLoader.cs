@@ -65,4 +65,16 @@ public class SceneLoader : MonoBehaviour
     		StartCoroutine(LoadSceneAsync(nextScene, transitionDurationDefault));
 	    }
     }
+
+    public void LoadNextScene(string sceneName)
+    {
+        if (sceneName == null)
+            Debug.Log("Error: Custom next scene name was null in SceneLoader script.");
+        else if (!loading)
+        {
+            loading = true;
+            sceneLoadDelegate?.Invoke(transitionDurationDefault);
+            StartCoroutine(LoadSceneAsync(nextScene, transitionDurationDefault));
+        }
+    }
 }

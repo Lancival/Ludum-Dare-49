@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class CameraMove : MonoBehaviour
 {
-    [SerializeField] public Camera mainCamera;
+    private Camera mainCamera;
     [SerializeField] private float duration;
     [SerializeField] private float zoomFactor;
 
@@ -43,23 +43,19 @@ public class CameraMove : MonoBehaviour
         CamPanning = false;
         this.GetComponent<PlayerInput>().enabled = true;
     }
-    void Awake(){
-      Scene scene = SceneManager.GetActiveScene();
-
-      if (scene.name == "House"){
-          UpdateEnabled = false;
-        }
-
-    }
 
     // Start is called before the first frame update
     void Start()
     {
-        if (mainCamera == null)
-		{
-			Debug.Log("Error: Main camera not provided to CameraMove scipt."); //hi
-			Destroy(this);
-        }
+      mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode){
+      mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
+      if (scene.name == "House"){
+        UpdateEnabled = false;
+      }
     }
 
     // Update is called once per frame
@@ -68,13 +64,13 @@ public class CameraMove : MonoBehaviour
         if (mainCamera == null)
             mainCamera = Camera.main;
         if(UpdateEnabled){
-            if(Mathf.Abs(transform.position.x) <= 19.1f && Mathf.Abs(transform.position.y) <= 11.6){
+            if(Mathf.Abs(transform.position.x) <= 17.2f && Mathf.Abs(transform.position.y) <= 11.6){
        	        mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y, mainCamera.transform.position.z);
             }
-            else if(Mathf.Abs(transform.position.x) <= 19.1f && !(Mathf.Abs(transform.position.y) <= 11.6)){
+            else if(Mathf.Abs(transform.position.x) <= 17.2f && !(Mathf.Abs(transform.position.y) <= 11.6)){
                 mainCamera.transform.position = new Vector3(transform.position.x, mainCamera.transform.position.y, mainCamera.transform.position.z);
             }
-            else if(!(Mathf.Abs(transform.position.x) <= 19.1f) && Mathf.Abs(transform.position.y) <= 11.6){
+            else if(!(Mathf.Abs(transform.position.x) <= 17.2f) && Mathf.Abs(transform.position.y) <= 11.6){
                 mainCamera.transform.position = new Vector3(mainCamera.transform.position.x, transform.position.y, mainCamera.transform.position.z);
             }
         }
