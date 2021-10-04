@@ -1715,7 +1715,7 @@ GameObject:
   - component: {fileID: 730386851}
   - component: {fileID: 730386852}
   m_Layer: 6
-  m_Name: poems_yellow
+  m_Name: business_yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1798,7 +1798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3877569c74640de4eb42c4ac85e9da45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemType: poems
+  ItemType: business
 --- !u!61 &730386852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2948,7 +2948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4526203941294328151, guid: 2c4493a47221d415d8a59ac8c96f6ae5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4526203941294328152, guid: 2c4493a47221d415d8a59ac8c96f6ae5, type: 3}
       propertyPath: nextScene
@@ -3821,6 +3821,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1909578613}
   - component: {fileID: 1909578614}
+  - component: {fileID: 1909578616}
+  - component: {fileID: 1909578615}
   m_Layer: 6
   m_Name: poemitem_yellow
   m_TagString: Untagged
@@ -3893,6 +3895,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1909578615
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909578612}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.18830323, y: 0.005614996}
+  m_SpriteTilingProperty:
+    border: {x: 15.259999, y: 7.7, z: 2.56, w: 2.36}
+    pivot: {x: 0.83401376, y: 0.74512833}
+    oldSize: {x: 19.2, y: 10.8}
+    newSize: {x: 19.2, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.8298049, y: 1.1956072}
+  m_EdgeRadius: 0
+--- !u!114 &1909578616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909578612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3877569c74640de4eb42c4ac85e9da45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemType: poems
 --- !u!1 &1911143712
 GameObject:
   m_ObjectHideFlags: 0
