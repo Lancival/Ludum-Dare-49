@@ -86,15 +86,9 @@ public class CanvasGroupFade : MonoBehaviour
 	    }
 
         if (interactable)
-        {
-            cg.interactable = true;
             cg.blocksRaycasts = true;
-        }
         else
-        {
-            cg.interactable = false;
             cg.blocksRaycasts = false;
-        }
     }
 
     // Stops any ongoing fade coroutine

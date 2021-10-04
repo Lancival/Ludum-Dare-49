@@ -7,7 +7,7 @@ public class DialogueInteractable : Interactable
 {
 	[SerializeField] private string startNode;
 	private DialogueRunner runner;
-	private DialogueUI ui;
+	private CustomUI ui;
 	private bool dialogueStarted = false;
 
 	void Start()
@@ -24,7 +24,7 @@ public class DialogueInteractable : Interactable
 			Debug.Log("DialogueInteractable unable to locate DialogueRunner.");
 			Destroy(this);
 		}
-		ui = runner.GetComponent<DialogueUI>();
+		ui = runner.GetComponent<CustomUI>();
 	}
 
     public override void interact()
@@ -33,7 +33,7 @@ public class DialogueInteractable : Interactable
     		ui.MarkLineComplete();
     	else
     	{
-    		runner.transform.parent.position = transform.position;
+    		runner.transform.position = transform.position;
         	runner.StartDialogue(startNode);
         	dialogueStarted = true;
     	}

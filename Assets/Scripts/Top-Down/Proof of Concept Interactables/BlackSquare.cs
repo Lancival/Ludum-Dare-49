@@ -39,15 +39,12 @@ public class BlackSquare : Interactable
 
     // Pans camera, interpolated by `duration` seconds
     private IEnumerator moveCamera(){
-        float time = 0f;
-        float temp;
-        while (time < duration)
-        {
-          temp = Time.deltaTime;
-          time += temp;
-          mainCamera.transform.position = new Vector3(mainCamera.transform.position.x + delX * Time.deltaTime , mainCamera.transform.position.y + delY * Time.deltaTime, mainCamera.transform.position.z);
-          yield return null;
+        target.GetComponent<CameraMove>().CamPanning = true;
+        StartCoroutine(target.GetComponent<CameraMove>().CamPan(delX, delY, duration));
+        while(target.GetComponent<CameraMove>().CamPanning){
+            yield return null;
         }
+        yield return StartCoroutine(target.GetComponent<CameraMove>().CamZoom());
         Debug.Log("TP complete.");
         target.transform.position = new Vector3(destination.transform.position.x, destination.transform.position.y, target.transform.position.z);
         destination.GetComponent<Door>().transport(target);

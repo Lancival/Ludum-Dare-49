@@ -1,0 +1,202 @@
+title: Dennis
+tags: 
+colorID: 0
+position: -129,-1780
+---
+<<if $hasTalkedToBrother is true>>
+<<setSpeaker Dennis>>
+You got the parts for the boat yet?
+I need a steering wheel, cables, and a rotary helm
+<<endif>>
+<<if $brotherQuest is true>>
+<<setSpeaker Dennis>>
+You found them!
+<<setSpeaker MC>>
+Delilah had the parts around here.
+I think she meant to give these to you.
+<<setSpeaker Dennis>>
+She did? I thought she forgot about the boat altogether. 
+<<setSpeaker MC>>
+Maybe she was hoping to surprise you.
+<<setSpeaker Dennis>>
+It's crazy. She's been dead for a month, but I'm still learning new things about her.
+I'd never have thought our relationship would keep changing after she passed.
+Thank you.
+If I discover mermaids, I will credit you!
+<<endif>>
+
+<<setSpeaker Dennis>>
+Is that
+<<wait 1>>
+...a person? Miss, are you lost?
+You don't want to be wandering here alone.
+<<setSpeaker MC>>
+Do you know Delilah Anderson?
+<<setSpeaker Dennis>>
+You could say that. I'm her brother.
+Let me guess, you're one of her fan girls.
+<<setSpeaker MC>>
+I'm trying to figure out what her life was like before she died.
+<<setSpeaker Dennis>>
+Then you're asking the wrong person. I haven't seen her in months.
+I was supposed to visit her last weekend.
+I'm sure you can assume how that went.
+<<setSpeaker MC>>
+What about when you did see her last?
+<<setSpeaker Dennis>>
+Look, I know you're up to no good. Tell me, why are you here?
+<<setSpeaker>>
+[[Delilah's spirit is still in this area.|ghost]]
+[[Delilah has one last message for you.|family]]
+===
+title: next
+tags: 
+colorID: 0
+position: -131,-1253
+---
+<<setSpeaker Dennis>>
+She was always very quiet.
+We were close as kids. We used to talk about our dreams —
+I wanted to be a fisherman, she wanted to be a writer, as you can imagine.
+I used to play hide and seek with her during family gatherings.
+I'd seek, she'd hide, so she didn't have to talk about herself to everyone.
+<<setSpeaker MC>>
+But there has to be a reason she's still here. She has regrets from her life.
+<<setSpeaker Dennis>>
+...My parents.
+They made her sign up for theater, group dance classes, whatever they could to get her with other people.
+They didn't know how to love her.
+My mom tried to get her to be friends with her boss's daughter.
+She wanted to get close to him — a promotion, to be liked at work, I don't know.
+So when the daughter liked improv and Delilah wrote poetry, Mom wasn't happy.
+Delilah started getting known for her writing, and my parents were shocked.
+We had no idea she was so good. She hit a million sales for her book.
+Then she became poet laureate.
+Suddenly, she was the breadwinner for a family who didn't give her much attention.
+As she became more well known, we became more distant. She had to chase her dreams.
+I don't think she was a very happy person. These past few years...
+She's fallen off the deep end.
+<<setSpeaker>>
+[[Ask about Delilah being the breadwinner.|bread]]
+[[Ask about Delilah's falling off the deep end.|epiphany]]
+[[Ask about Delilah's fame.|fame]]
+===
+title: ghost
+tags: 
+colorID: 0
+position: -364,-1520
+---
+<<setSpeaker Dennis>>
+Don't tell me you're trying to bring her back to life or some other voodoo crap.
+<<setSpeaker MC>>
+A friendly exorcist's job is to remove ghosts, not bring them back.
+<<setSpeaker Dennis>>
+"Friendly exorcist"? That's a first.
+<<setSpeaker MC>>
+I think the reason her spirit is still here has something to do with you.
+I know you've felt her presence here.
+I can help you reach her.
+<<setSpeaker Dennis>>
+Yeah, right.
+You're really something for giving an old man false hope.
+<<setSpeaker MC>>
+Haven't you felt something off about this place?
+Have you heard any noises? Screams?
+They sound like Delilah, right?
+<<setSpeaker Dennis>>
+...How did you know that?
+<<setSpeaker MC>>
+They're coming from her house. I think she's trying to talk to us.
+Can you tell me more about your relationship with Delilah?
+<<setSpeaker Dennis>>
+There's no way Delilah would be screaming.
+[[next]]
+===
+title: family
+tags: 
+colorID: 0
+position: 115,-1514
+---
+<<setSpeaker Dennis>>
+I don't know who you are, which means you don't know my sister.
+I don't have the mental capacity to deal with another one of her crazed readers right now.
+<<setSpeaker MC>>
+Haven't you felt something off about this place?
+Have you heard any noises? Screams?
+<<setSpeaker Dennis>>
+...How did you know that?
+<<setSpeaker MC>>
+They're coming from her house, right?
+I think she's trying to talk to us.
+Can you tell me more about your relationship with Delilah?
+<<setSpeaker Dennis>>
+There's no way Delilah would be screaming.
+[[next]]
+===
+title: bread
+tags: 
+colorID: 0
+position: -401,-923
+---
+<<setSpeaker Dennis>>
+We grew up in a small town.
+We weren't exactly rich.
+My parents wanted us to pursue medicine or law;
+she didn't care what they thought and left.
+They didn't talk for years.
+Imagine how she felt when my parents wrote letters of apology once they saw her name in the news.
+Delilah had money - she was seen as our generation's voice - and they wanted their share.
+I don't think she ever let that resentment go away.
+[[next1]]
+===
+title: epiphany
+tags: 
+colorID: 0
+position: -81,-923
+---
+<<setSpeaker Dennis>>
+She called me in the middle of the night saying she needed her husband and kids.
+That she needed me.
+She told me how much she loved and missed me.
+Started talking about the boat, how we shouldn't give up on becoming sailors.
+She started repeating that there wasn't enough time.
+I think you're onto something about her spirit being trapped her.
+[[next1]]
+===
+title: fame
+tags: 
+colorID: 0
+position: 248,-912
+---
+<<setSpeaker Dennis>>
+She refused to do a book tour or go to any writing events. 
+he didn't like the attention.
+She had a P.O. box where fans could send her letters.
+Delilah was embarrassed when people would compliment her writing,
+but there was this one package that she cherished.
+It was a letter from woman who had moved to America as a kid.
+She said she had trouble communicating as a kid, but reading Delilah's poetry helped her learn English.
+[[next1]]
+===
+title: next1
+tags: 
+colorID: 0
+position: -111,-540
+---
+<<setSpeaker MC>>
+And what about you? How do you feel about her?
+<<setSpeaker Dennis>>
+Well, I brought this boat here.
+<<setSpeaker MC>>
+Boat?
+<<setSpeaker Dennis>>
+I know it's stupid. But she promised me we'd fix this up.
+Our childhood dream was to go sailing.
+We wanted to be the first ones to discover mermaids.
+The steering system is broken.
+Figure she needs a new wheel, cables, and rotary helm.
+I guess Delilah never got to it.
+I wanted her to see the boat, even though she isn't here.
+<<setSpeaker MC>>
+I may be able to help you...
+===

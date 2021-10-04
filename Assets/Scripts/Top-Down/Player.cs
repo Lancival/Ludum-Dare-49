@@ -17,13 +17,24 @@ public class Player : MonoBehaviour
 	private Rigidbody2D rb;
 	private Vector3 facing;
 	private Inventory inventory;
+	private Animator anim;
+	private SpriteRenderer sprite;
 
   	public void OnMove(InputValue input)
 	{
 		Vector2 inputVec = input.Get<Vector2>();
 		// I found that releasing the movement key sends an input value of vector2.zero, which messes with the code saving which direction the player is facing
-		if (inputVec != Vector2.zero)
+		if (inputVec != Vector2.zero){
 			facing = new Vector3 (inputVec.x, inputVec.y, 0);
+			if (inputVec.y > 0){
+				anim.Play("PlayerWalkBack");
+			}else{
+				sprite.flipX = inputVec.x > 0;
+				anim.Play("PlayerWalkFront");
+			}
+		}else{
+				anim.Play("PlayerIdle");
+		}
 		rb.velocity = inputVec * speed;
 	}
 
@@ -42,21 +53,24 @@ public class Player : MonoBehaviour
 			Debug.Log("Not facing any nearby objects!");
 		}
 	}
-  
+
 	void Awake()
 	{
 		inventory = new Inventory();
-		uiInventory.SetInventory(inventory);
-	}
-	void Start()
-	{
+		if (uiInventory != null)
+			uiInventory.SetInventory(inventory);
 		rb = GetComponent<Rigidbody2D>();
 		facing = new Vector3(0,1,0);
+		anim = GetComponent<Animator>();
+		sprite = GetComponent<SpriteRenderer>();
+		//inventory = new Inventory();
+		//uiInventory.SetInventory(inventory);
 	}
 
-	/*void FixedUpdate()
+	void Start()
 	{
-	}*/
+		return;	
+	}
 
 	void Update(){
 		// Checks what objects are in front of the player (in the direction the player is facing
@@ -64,3 +78,4 @@ public class Player : MonoBehaviour
 		hits = Physics2D.OverlapBoxAll( transform.position + facing / 2f, transform.localScale / 2, 0, m_LayerMask);
 	}
 }
+
