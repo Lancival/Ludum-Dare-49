@@ -37,12 +37,12 @@ public class Draggable : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
    public void OnEndDrag(PointerEventData eventData)
    {
        Debug.Log("OnEndDrag");
-    
+
        var rt = m_DraggingIcon.GetComponent<RectTransform>();
        rt.anchoredPosition = m_InitialPosition;
        canvasGroup.alpha = 1.0f;
        canvasGroup.blocksRaycasts = true;
-   }   
+   }
    public void OnPointerDown(PointerEventData eventData)
    {
        Debug.Log("OnPointerDown");
