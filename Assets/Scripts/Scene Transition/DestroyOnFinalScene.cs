@@ -7,10 +7,13 @@ public class DestroyOnFinalScene : MonoBehaviour
 {
     void Start()
     {
-    	Debug.Log("Start of scene");
-    	Debug.Log(SceneManager.GetActiveScene().name);
-
-        if (SceneManager.GetActiveScene().name == "FinalScene")
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("Start of scene");
+        Debug.Log(SceneManager.GetActiveScene().name.ToLower());
+        if (SceneManager.GetActiveScene().name.ToLower() == "finalscene")
         {
         	Debug.Log("attempting to destroy player");
         	Destroy(this.gameObject);

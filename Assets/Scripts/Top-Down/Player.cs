@@ -90,6 +90,11 @@ public class Player : MonoBehaviour
 		{
 			transform.position = new Vector3(-7.76f, 6.73f, 0f);
 		}
+		if (sceneName == "FinalScene")
+		{
+			Debug.Log(SceneManager.GetActiveScene().name);
+			Destroy(this.gameObject);
+		}
 		GetComponent<PlayerInput>().enabled = true;
 
 	}
