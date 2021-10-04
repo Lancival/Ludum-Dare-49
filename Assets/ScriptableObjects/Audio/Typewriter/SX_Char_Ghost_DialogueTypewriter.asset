@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35d58fd446484448289ab1cbbe38ea22, type: 3}
+  m_Name: SX_Char_Ghost_DialogueTypewriter
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 545a7a01e24184783b43e3ab4949da6d, type: 3}
+  - {fileID: 8300000, guid: 92573e3fdd2f44033a774a7ab522bc09, type: 3}
+  - {fileID: 8300000, guid: c37de8eab07704460ba0a36efc6ff074, type: 3}
+  - {fileID: 8300000, guid: 31b46951844b247c191fd2656910f737, type: 3}
+  - {fileID: 8300000, guid: cb5d0e1680baf4c15818fbf7a5981915, type: 3}
+  - {fileID: 8300000, guid: 489522b53df9b4162a185d1cb5fc4c6b, type: 3}
+  - {fileID: 8300000, guid: 26b5c549bb1eb42598e81b89cace1643, type: 3}
+  - {fileID: 8300000, guid: 1e125c48b8eb04743935c54f310aa300, type: 3}
+  loop: 0
+  Volume: 0.196
+  Pitch: 1
+  sequenceMode: 1
+  NegativePitchVariation: -0.1
+  PositivePitchVariation: 0.1
+  NegativeVolumeVariation: 0
+  PositiveVolumeVariation: 0
+  lastIndex: 0
+  nextIndex: 0
+  fadeInTime: 0
+  fadeOutTime: 0
+  reverbTailLength: 0
+  barLength: 0
+  bpm: 0
+  timeSigUpper: 0
+  timeSigLower: 0
