@@ -23,7 +23,8 @@ public class Player : MonoBehaviour
 
   	public void OnMove(InputValue input)
 	{
-		if (controllable){
+		if (controllable && !Settings.PAUSED)
+		{
 			Vector2 inputVec = input.Get<Vector2>();
 			// I found that releasing the movement key sends an input value of vector2.zero, which messes with the code saving which direction the player is facing
 			if (inputVec != Vector2.zero){
@@ -80,8 +81,11 @@ public class Player : MonoBehaviour
 
 	void Update(){
 		// Checks what objects are in front of the player (in the direction the player is facing
-		Vector2 curPos = new Vector2(transform.position.x, transform.position.y);
-		closest = Physics2D.OverlapArea(curPos + new Vector2 (-1.5f, -2f), curPos + new Vector2 (1.5f, 2f), m_LayerMask);
+		if (!Settings.PAUSED)
+		{
+			Vector2 curPos = new Vector2(transform.position.x, transform.position.y);
+			closest = Physics2D.OverlapArea(curPos + new Vector2 (-1.5f, -2f), curPos + new Vector2 (1.5f, 2f), m_LayerMask);
+		}
 	}
 
 	public void SetPlayerControls(bool set){
