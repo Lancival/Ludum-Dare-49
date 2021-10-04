@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(PlayerInput))]
 
@@ -74,8 +75,25 @@ public class Player : MonoBehaviour
 		inventory = new Inventory();
 		if (uiInventory != null)
 			uiInventory.SetInventory(inventory);
+		
+    	SceneManager.sceneLoaded += OnSceneLoaded;
 	}
 	
+	void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+	{
+		string sceneName = SceneManager.GetActiveScene().name;
+		if (sceneName == "House")
+		{
+			transform.position = new Vector3(-7.85f, 1.23f, 0f);
+		}
+		if (sceneName == "Outside")
+		{
+			transform.position = new Vector3(-7.76f, 6.73f, 0f);
+		}
+		GetComponent<PlayerInput>().enabled = true;
+
+	}
+
 	void Awake()
 	{
 		rb = GetComponent<Rigidbody2D>();

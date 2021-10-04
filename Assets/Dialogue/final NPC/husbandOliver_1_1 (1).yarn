@@ -22,6 +22,10 @@ It isn't.
 Thank you for giving me this.
 <<questComplete>>
 <<else>>
+<<if $hasTalkedToHusband is true>>
+<<setSpeaker Oliver>>
+You found proof yet?
+<<else>>
 
 <<setSpeaker Oliver>>
 Hi, can I help you?
@@ -32,6 +36,7 @@ I'm her husband. Who are you?
 <<setSpeaker>>
 [[I'm a friendly exorcist.|truth]]
 [[I'm...doing a project on her poetry.|lie]]
+<<endif>>
 <<endif>>
 ===
 title: truth
