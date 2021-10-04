@@ -1,0 +1,43 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ItemInteractable : Interactable
+{
+    // String will determine what item to add to inventory
+    [SerializeField]
+    private string ItemType;
+
+    public override void interact()
+    {
+        Inventory inventory = GameObject.Find("Player").GetComponent<Player>().GetInventory();
+        if (inventory == null)
+        {
+           Debug.LogError("Couldn't find the player inventory");
+           return;
+        }
+        // Use case statements to remove outline and add to inventory
+        if (ItemType == "cables")
+        {
+            inventory.AddItem(new Item {itemType = Item.ItemType.Item3, amount=1});
+            this.gameObject.SetActive(false);
+
+        }
+        else if (ItemType == "paints")
+        {
+            inventory.AddItem(new Item {itemType = Item.ItemType.Item6, amount=1});
+            this.gameObject.SetActive(false);
+        }
+        else if ( ItemType == "poems")
+        {
+            inventory.AddItem(new Item {itemType = Item.ItemType.Item7, amount=1});
+            this.gameObject.SetActive(false);
+        }
+        else
+        {
+            Debug.LogError("Invalid ItemType specified for interactable");
+        }
+
+    }
+    
+}

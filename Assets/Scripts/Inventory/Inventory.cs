@@ -15,12 +15,12 @@ public class Inventory
 
         /* Test adding items */
         // REMOVE IN FINAL VERSION
-        AddItem(new Item {itemType = Item.ItemType.Item1, amount=1});
-        AddItem(new Item {itemType = Item.ItemType.Item2, amount=1});
-        AddItem(new Item {itemType = Item.ItemType.Item3, amount=1});
-        AddItem(new Item {itemType = Item.ItemType.Item3, amount=1});
-        AddItem(new Item {itemType = Item.ItemType.Item3, amount=1});
-        AddItem(new Item {itemType = Item.ItemType.Item3, amount=1});
+        // AddItem(new Item {itemType = Item.ItemType.Item1, amount=1});
+        // AddItem(new Item {itemType = Item.ItemType.Item2, amount=1});
+        // AddItem(new Item {itemType = Item.ItemType.Item3, amount=1});
+        // AddItem(new Item {itemType = Item.ItemType.Item3, amount=1});
+        // AddItem(new Item {itemType = Item.ItemType.Item3, amount=1});
+        // AddItem(new Item {itemType = Item.ItemType.Item3, amount=1});
 
         Debug.Log(itemList.Count);
     }

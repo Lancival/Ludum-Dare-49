@@ -59,7 +59,7 @@ public class Player : MonoBehaviour
 		{
 				Interactable other = closest.gameObject.GetComponent<Interactable>();
 				if (other == null)
-					Debug.Log("Colliding object is either uniteractable or has no script inheriting from `Interactable`");
+					Debug.Log("Colliding object is either uninteractable or has no script inheriting from `Interactable`");
 				else
 					other.interact();
 		}
@@ -104,5 +104,10 @@ public class Player : MonoBehaviour
 		rb.velocity = Vector2.zero;
 		anim.Play("PlayerIdle");
 		controllable = false;
+	}
+
+	public Inventory GetInventory()
+	{
+		return inventory;
 	}
 }
