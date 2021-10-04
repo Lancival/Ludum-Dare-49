@@ -2,10 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
-
 public class AudioConcatenation : MonoBehaviour
 {
     [Header("AUDIO REFERENCES")]
@@ -15,14 +11,11 @@ public class AudioConcatenation : MonoBehaviour
     [Space]
     [Header("CONCATENATION PROPERTIES")]
     [SerializeField] private PlayOnAwakeMethod playOnAwake = PlayOnAwakeMethod.No;
-    public ConcatenationInterval concatenationInterval;
-    [HideInInspector] public double intervalOnInspector;
 
     private bool isPlaying;
     private int toggle;
-    private double interval, nextStartTime, dspTimeOffset = 0.1;
+    private double nextStartTime, dspTimeOffset = 0.1;
 
-    public enum ConcatenationInterval { UpdateDynamically, FixedAtIndex0, SetOnInspector }
     private enum PlayOnAwakeMethod { No, PlayWithNoFade, PlayWithFade }
 
     private float maxTextSpeed = 0.15f;
@@ -65,18 +58,11 @@ public class AudioConcatenation : MonoBehaviour
         audioSources[toggle].pitch = cue.RandomPitch();
         audioSources[toggle].PlayScheduled(nextStartTime);
 
-        print("CONCATENATE: " + audioSources[toggle].clip + " on " + gameObject.name);
+        //print("CONCATENATE: " + audioSources[toggle].clip + " on " + gameObject.name);
     }
 
     private void IncrementNextStartTime()
     {
-        //if (concatenationInterval == ConcatenationInterval.UpdateDynamically)
-        //{
-        //    interval = ((double)audioSources[toggle].clip.samples / audioSources[toggle].clip.frequency) - cue.reverbTailLength;
-        //}
-
-        //nextStartTime += interval;
-
         float textSpeed = Settings.TEXT_DELAY * textSpeedMultiplier;
         nextStartTime += textSpeed < maxTextSpeed ? maxTextSpeed : textSpeed;
     }
@@ -90,11 +76,6 @@ public class AudioConcatenation : MonoBehaviour
             config.SetupAudioSource(aSource);
             cue.Initialize(aSource);
         }
-
-        //if (concatenationInterval == ConcatenationInterval.FixedAtIndex0)
-        //    interval = (double)cue.audioClips[0].samples / cue.audioClips[0].frequency;
-        //else if (concatenationInterval == ConcatenationInterval.SetOnInspector)
-        //    interval = intervalOnInspector;
     }
 
     public void Play(bool fadeIn)
@@ -109,7 +90,7 @@ public class AudioConcatenation : MonoBehaviour
         isPlaying = true;
         nextStartTime = AudioSettings.dspTime + dspTimeOffset;
 
-        print("PLAY " + audioSources[toggle].clip);
+        //print("PLAY " + audioSources[toggle].clip);
     }
 
     public void Stop(bool fadeOut)
@@ -127,7 +108,7 @@ public class AudioConcatenation : MonoBehaviour
                 aSource.Stop();
         }
 
-        print("STOP: " + gameObject.name);
+        //print("STOP: " + gameObject.name);
     }
 
     #endregion
@@ -141,7 +122,7 @@ public class AudioConcatenation : MonoBehaviour
             StartCoroutine(AudioUtility.FadeAudioSource(aSource, cue.fadeInTime, cue.Volume));
         }
 
-        print("FADE IN: " + gameObject.name);
+        //print("FADE IN: " + gameObject.name);
     }
 
     public void FadeOut()
@@ -160,22 +141,3 @@ public class AudioConcatenation : MonoBehaviour
     }
     #endregion
 }
-
-#if UNITY_EDITOR
-[CustomEditor(typeof(AudioConcatenation))]
-public class AudioConcatenation_Editor : Editor
-{
-    public override void OnInspectorGUI()
-    {
-        DrawDefaultInspector(); // for other non-HideInInspector fields
-
-        AudioConcatenation script = (AudioConcatenation)target;
-
-        if (script.concatenationInterval == AudioConcatenation.ConcatenationInterval.SetOnInspector) // if bool is true, show other fields
-        {
-            script.intervalOnInspector = EditorGUILayout.DoubleField("Interval On Inspector", script.intervalOnInspector);
-        }
-    }
-}
-#endif
-
