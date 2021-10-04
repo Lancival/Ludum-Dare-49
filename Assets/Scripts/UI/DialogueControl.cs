@@ -6,7 +6,7 @@ using Yarn.Unity;
 public class DialogueControl : MonoBehaviour
 {
 
-	[SerializeField] private Player player;
+	private Player player;
 
 	private DialogueRunner runner;
 	private CustomUI ui;
@@ -15,6 +15,7 @@ public class DialogueControl : MonoBehaviour
 
 	void Awake()
 	{
+		player = GameObject.FindObjectOfType<Player>().GetComponent<Player>();
 		if (player == null)
 		{
 			Debug.Log("DialogueControl not provided Player.");
