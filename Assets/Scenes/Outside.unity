@@ -884,17 +884,21 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7883313757190844999, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
+      propertyPath: yarnScripts.Array.data[0]
+      value: 
+      objectReference: {fileID: 2480198943629176163, guid: 94514fa37daec8f43a8f7a457794ab8b, type: 3}
+    - target: {fileID: 7883313757190844999, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
       propertyPath: yarnScripts.Array.data[1]
       value: 
-      objectReference: {fileID: 2480198943629176163, guid: dad76a021b94f3f4eaf901652a7c1df9, type: 3}
+      objectReference: {fileID: 2480198943629176163, guid: 7735cf0ec5b93c2489c86cd262e95702, type: 3}
     - target: {fileID: 7883313757190844999, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
       propertyPath: yarnScripts.Array.data[2]
       value: 
-      objectReference: {fileID: 2480198943629176163, guid: acd03bddc8ad47c44b6cba1856502133, type: 3}
+      objectReference: {fileID: 2480198943629176163, guid: b8c9e5fe0f93d8541a4cce7bd8a720df, type: 3}
     - target: {fileID: 7883313757190844999, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
       propertyPath: yarnScripts.Array.data[3]
       value: 
-      objectReference: {fileID: 2480198943629176163, guid: 918debad9aea99841b2dcd61dc0e6aec, type: 3}
+      objectReference: {fileID: 2480198943629176163, guid: 574f520dc9292b14db29df71cb86c86c, type: 3}
     - target: {fileID: 7883313757190845016, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
