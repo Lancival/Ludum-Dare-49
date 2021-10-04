@@ -363,8 +363,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 573798382}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -380,7 +379,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a1fdfb2ee9ba40c2ac70f5cee0414f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioQuestComplete: {fileID: 573798381}
 --- !u!1 &212031554
 GameObject:
   m_ObjectHideFlags: 0
@@ -1425,8 +1423,8 @@ Transform:
   - {fileID: 1732298531}
   - {fileID: 1283824829}
   - {fileID: 977002596}
-  m_Father: {fileID: 197849639}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &589063360
 PrefabInstance:

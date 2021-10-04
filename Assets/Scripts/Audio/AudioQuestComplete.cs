@@ -5,19 +5,30 @@ using UnityEngine;
 public class AudioQuestComplete : MonoBehaviour
 {
     [SerializeField] private AudioPlayOneShot[] stingers;
-    private int index;
+    private static int index = 0;
 
+    public static AudioQuestComplete instance = null;
+
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
+
+        DontDestroyOnLoad(gameObject);
+    }
 
     public void DoAudioStuff()
     {
-        PlayMusicStinger();
         CrossfadeLayer();
+        PlayMusicStinger();
+        index++;
     }
 
     private void PlayMusicStinger()
     {
         stingers[index].Play();
-        index++;
     }
 
     private void CrossfadeLayer()
@@ -32,9 +43,9 @@ public class AudioQuestComplete : MonoBehaviour
                 break;
             case 2:
                 AudioLayerManager.instance.CrossfadeLayer3();
+                AudioLayerManager.instance.CrossfadeLayer4();
                 break;
             case 3:
-                AudioLayerManager.instance.CrossfadeLayer4();
                 break;
         }
     }

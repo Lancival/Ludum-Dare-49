@@ -9,6 +9,14 @@ public class FadeInAudioSource : MonoBehaviour
     private float fadeTime = 1f;
     private float targetVolume = 1f;
 
+    public bool fadeInOnStart;
+
+    private void Start()
+    {
+        if (fadeInOnStart)
+            FadeMusicLayers();
+    }
+
     public void FadeMusicLayers()
     {
         foreach(AudioSource aSource in audioSources)

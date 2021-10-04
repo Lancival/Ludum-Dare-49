@@ -26,6 +26,8 @@ public class AudioLayerManager : MonoBehaviour
         if (!isLayer1Crossfaded)
         {
             StartCoroutine(AudioLayerValues.LerpLayer1());
+            print("CROSSFADE LAYER 1");
+
             isLayer1Crossfaded = true;
         }
     }
@@ -35,6 +37,8 @@ public class AudioLayerManager : MonoBehaviour
         if (!isLayer2Crossfaded)
         {
             StartCoroutine(AudioLayerValues.LerpLayer2());
+            print("CROSSFADE LAYER 2");
+
             isLayer2Crossfaded = true;
         }
     }
@@ -44,6 +48,8 @@ public class AudioLayerManager : MonoBehaviour
         if (!isLayer3Crossfaded)
         {
             StartCoroutine(AudioLayerValues.LerpLayer3());
+            print("CROSSFADE LAYER 3");
+
             isLayer3Crossfaded = true;
         }
     }
@@ -53,6 +59,8 @@ public class AudioLayerManager : MonoBehaviour
         if (!isLayer4Crossfaded)
         {
             StartCoroutine(AudioLayerValues.LerpLayer4());
+            print("CROSSFADE LAYER 4");
+
             isLayer4Crossfaded = true;
         }
     }
