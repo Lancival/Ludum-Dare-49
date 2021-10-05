@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3877569c74640de4eb42c4ac85e9da45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemType: steering_wheel
+  ItemType: SteeringWheel
 --- !u!61 &530555620
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8966,7 +8966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3877569c74640de4eb42c4ac85e9da45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemType: rotary
+  ItemType: RotaryHelm
 --- !u!61 &1330297736
 BoxCollider2D:
   m_ObjectHideFlags: 0
