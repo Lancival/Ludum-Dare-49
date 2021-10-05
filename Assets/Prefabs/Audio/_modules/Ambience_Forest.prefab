@@ -147,6 +147,7 @@ MonoBehaviour:
   maxTime: 8
   playOnAwake: 1
   randomPosition: 1
+  getPlayerPosOnStart: 1
   listenerPosition: {fileID: 0}
   maxDistanceDivisor: {x: 4, y: 4, z: 4}
 --- !u!1 &5460835322837301124
@@ -633,6 +634,7 @@ MonoBehaviour:
   maxTime: 12
   playOnAwake: 1
   randomPosition: 1
+  getPlayerPosOnStart: 1
   listenerPosition: {fileID: 0}
   maxDistanceDivisor: {x: 2, y: 2, z: 2}
 --- !u!1 &5460835323418909002
@@ -831,6 +833,7 @@ MonoBehaviour:
   maxTime: 15
   playOnAwake: 1
   randomPosition: 1
+  getPlayerPosOnStart: 1
   listenerPosition: {fileID: 0}
   maxDistanceDivisor: {x: 4, y: 4, z: 4}
 --- !u!1 &5460835323590532999
@@ -980,6 +983,7 @@ MonoBehaviour:
   maxTime: 12
   playOnAwake: 1
   randomPosition: 0
+  getPlayerPosOnStart: 0
   listenerPosition: {fileID: 0}
   maxDistanceDivisor: {x: 2, y: 2, z: 2}
 --- !u!1 &5460835323885337109
@@ -1178,6 +1182,7 @@ MonoBehaviour:
   maxTime: 10
   playOnAwake: 1
   randomPosition: 0
+  getPlayerPosOnStart: 0
   listenerPosition: {fileID: 0}
   maxDistanceDivisor: {x: 0, y: 0, z: 0}
 --- !u!1 &5460835324184362404
@@ -1376,6 +1381,7 @@ MonoBehaviour:
   maxTime: 7.5
   playOnAwake: 1
   randomPosition: 0
+  getPlayerPosOnStart: 0
   listenerPosition: {fileID: 0}
   maxDistanceDivisor: {x: 2, y: 2, z: 2}
 --- !u!1 &5460835324469061554
