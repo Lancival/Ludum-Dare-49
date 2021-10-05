@@ -147,6 +147,7 @@ MonoBehaviour:
   maxTime: 4
   playOnAwake: 1
   randomPosition: 0
+  getPlayerPosOnStart: 0
   listenerPosition: {fileID: 0}
   maxDistanceDivisor: {x: 0, y: 0, z: 0}
 --- !u!1 &6150215603962502969
@@ -296,6 +297,7 @@ MonoBehaviour:
   maxTime: 4
   playOnAwake: 1
   randomPosition: 0
+  getPlayerPosOnStart: 0
   listenerPosition: {fileID: 0}
   maxDistanceDivisor: {x: 0, y: 0, z: 0}
 --- !u!1 &6150215604497825883
