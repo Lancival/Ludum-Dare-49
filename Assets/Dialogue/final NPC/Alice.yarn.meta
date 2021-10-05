@@ -1,0 +1,104 @@
+fileFormatVersion: 2
+guid: ac6fd355284db504ca795e96a86d219e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - Alice-Alice-0
+  - Alice-Alice-1
+  - Alice-Alice-2
+  - Alice-Alice-3
+  - Alice-Alice-4
+  - Alice-Alice-5
+  - Alice-Alice-6
+  - Alice-Alice-7
+  - Alice-Alice-8
+  - Alice-Alice-9
+  - Alice-Alice-10
+  - Alice-Alice-11
+  - Alice-same-12
+  - Alice-same-13
+  - Alice-same-14
+  - Alice-since-15
+  - Alice-since-16
+  - Alice-since-17
+  - Alice-since-18
+  - Alice-truth1-19
+  - Alice-truth1-20
+  - Alice-lie1-21
+  - Alice-after-22
+  - Alice-after-23
+  - Alice-after-24
+  - Alice-after-25
+  - Alice-after-26
+  - Alice-after-27
+  - Alice-after-28
+  - Alice-after-29
+  - Alice-after-30
+  - Alice-q1-31
+  - Alice-q1-32
+  - Alice-q1-33
+  - Alice-q1-34
+  - Alice-q1-35
+  - Alice-q1-36
+  - Alice-q1-37
+  - Alice-q1-38
+  - Alice-q1-39
+  - Alice-q1-40
+  - Alice-q1-41
+  - Alice-q1-42
+  - Alice-q1-43
+  - Alice-q2-44
+  - Alice-q2-45
+  - Alice-q2-46
+  - Alice-q2-47
+  - Alice-q2-48
+  - Alice-q2-49
+  - Alice-q2-50
+  - Alice-q2-51
+  - Alice-q2-52
+  - Alice-q2-53
+  - Alice-q2-54
+  - Alice-q2-55
+  - Alice-q2-56
+  - Alice-q2-57
+  - Alice-after2-58
+  - Alice-after2-59
+  - Alice-after2-60
+  - Alice-after2-61
+  - Alice-after2-62
+  - Alice-after2-63
+  - Alice-after2-64
+  - Alice-after2-65
+  - Alice-after2-66
+  - Alice-after2-67
+  - Alice-after2-68
+  - Alice-after2-69
+  - Alice-after2-70
+  - Alice-after2-71
+  - Alice-after2-72
+  - Alice-after2-73
+  - Alice-after2-74
+  - Alice-q3-75
+  - Alice-q3-76
+  - Alice-q3-77
+  - Alice-q3-78
+  - Alice-q3-79
+  - Alice-q3-80
+  - Alice-q3-81
+  - Alice-q3-82
+  - Alice-q3-83
+  - Alice-q3-84
+  - Alice-q3-85
+  - Alice-q3-86
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

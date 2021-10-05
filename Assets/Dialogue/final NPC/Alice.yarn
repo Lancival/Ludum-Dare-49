@@ -3,7 +3,7 @@ tags:
 colorID: 1
 position: 329,-1532
 ---
-<<if $hasSuitcase and $hasTravelBook is true>>
+<<if $hasSuitcase and $hasTravelBook and $hasTalkedToAlice is true>>
 <<setSpeaker Alice>>
 This is promising.
 But I can't leave without a form of transportation.

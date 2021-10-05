@@ -3,7 +3,7 @@ tags:
 colorID: 0
 position: 352,-100
 ---
-<<if $hasPoem is true>>
+<<if $hasPoem and $hasTalkedToOliver is true>>
 <<setSpeaker Oliver>>
 How did you find this?
 <<setSpeaker MC>>
