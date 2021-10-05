@@ -59,6 +59,8 @@ public class DialogueControl : MonoBehaviour
 	{
 		if (parameters != null)
 			runner.transform.position = (parameters[0] == "MC" ? player.transform.position + offset : initPos);
+		else
+			runner.transform.position = initPos;
 	}
 
 	private void SetInitPos()
