@@ -614,7 +614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3877569c74640de4eb42c4ac85e9da45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemType: sketchbook
+  ItemType: Sketchbook
 --- !u!61 &122980621
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -674,19 +674,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4357980015189844255, guid: f74d6a1a903ae463b96a79b90d14ad0a, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4357980015189844255, guid: f74d6a1a903ae463b96a79b90d14ad0a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 79
-      objectReference: {fileID: 0}
-    - target: {fileID: 5256753243124048612, guid: f74d6a1a903ae463b96a79b90d14ad0a, type: 3}
-      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5256753243124048612, guid: f74d6a1a903ae463b96a79b90d14ad0a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5256753243124048612, guid: f74d6a1a903ae463b96a79b90d14ad0a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 79
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5256753244011845993, guid: f74d6a1a903ae463b96a79b90d14ad0a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -862,19 +862,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8041457102965434625, guid: f74d6a1a903ae463b96a79b90d14ad0a, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8041457102965434625, guid: f74d6a1a903ae463b96a79b90d14ad0a, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8041457102965434625, guid: f74d6a1a903ae463b96a79b90d14ad0a, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8041457102965434625, guid: f74d6a1a903ae463b96a79b90d14ad0a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 79
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8624017219645175522, guid: f74d6a1a903ae463b96a79b90d14ad0a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -902,19 +902,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8873457935577826372, guid: f74d6a1a903ae463b96a79b90d14ad0a, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8873457935577826372, guid: f74d6a1a903ae463b96a79b90d14ad0a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 79
-      objectReference: {fileID: 0}
-    - target: {fileID: 9180455406664802206, guid: f74d6a1a903ae463b96a79b90d14ad0a, type: 3}
-      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9180455406664802206, guid: f74d6a1a903ae463b96a79b90d14ad0a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180455406664802206, guid: f74d6a1a903ae463b96a79b90d14ad0a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 79
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74d6a1a903ae463b96a79b90d14ad0a, type: 3}
@@ -1400,7 +1400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3877569c74640de4eb42c4ac85e9da45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemType: ladder
+  ItemType: Ladder
 --- !u!1001 &236782034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1761,7 +1761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3877569c74640de4eb42c4ac85e9da45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemType: cables
+  ItemType: Cables
 --- !u!61 &319700462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2477,7 +2477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3877569c74640de4eb42c4ac85e9da45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemType: business
+  ItemType: BusinessCard
 --- !u!61 &730386852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4588,7 +4588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3877569c74640de4eb42c4ac85e9da45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemType: suitcase
+  ItemType: Suitcase
 --- !u!1 &1689609635
 GameObject:
   m_ObjectHideFlags: 0
@@ -4855,7 +4855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3877569c74640de4eb42c4ac85e9da45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemType: travelbook
+  ItemType: TravelBook
 --- !u!4 &1781286592 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1932435035533094163, guid: 6bc9893bdc1494513825b1926121ccee, type: 3}
@@ -5058,7 +5058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3877569c74640de4eb42c4ac85e9da45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemType: poems
+  ItemType: Poem
 --- !u!1 &1911143712
 GameObject:
   m_ObjectHideFlags: 0
@@ -5488,7 +5488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3877569c74640de4eb42c4ac85e9da45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemType: paints
+  ItemType: Paints
 --- !u!61 &1987536813
 BoxCollider2D:
   m_ObjectHideFlags: 0
