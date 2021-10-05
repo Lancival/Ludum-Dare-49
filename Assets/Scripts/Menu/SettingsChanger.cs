@@ -18,6 +18,12 @@ public class SettingsChanger : MonoBehaviour
         fader = GetComponent<CanvasGroupFade>();
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            OpenSettings();
+    }
+
     void OnDestroy()
     {
         SettingsChangerInstance = null;
