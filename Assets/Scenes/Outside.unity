@@ -956,15 +956,15 @@ PrefabInstance:
     - target: {fileID: 7883313757190844999, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
       propertyPath: yarnScripts.Array.data[0]
       value: 
-      objectReference: {fileID: 2480198943629176163, guid: 1415afa21200e314cbe8ad50f4380269, type: 3}
+      objectReference: {fileID: 2480198943629176163, guid: ac6fd355284db504ca795e96a86d219e, type: 3}
     - target: {fileID: 7883313757190844999, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
       propertyPath: yarnScripts.Array.data[1]
       value: 
-      objectReference: {fileID: 2480198943629176163, guid: 7735cf0ec5b93c2489c86cd262e95702, type: 3}
+      objectReference: {fileID: 2480198943629176163, guid: ab69e2571b929e94ab4b7e5a5688e4a6, type: 3}
     - target: {fileID: 7883313757190844999, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
       propertyPath: yarnScripts.Array.data[2]
       value: 
-      objectReference: {fileID: 2480198943629176163, guid: d8e040d85febf9747af3f1af2e7e824a, type: 3}
+      objectReference: {fileID: 2480198943629176163, guid: 47c9a517f0d3e134cad740c8df24fc82, type: 3}
     - target: {fileID: 7883313757190844999, guid: e29c58ffbd1844d899bfb5335123c0c4, type: 3}
       propertyPath: yarnScripts.Array.data[3]
       value: 
@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3877569c74640de4eb42c4ac85e9da45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemType: steering_wheel
+  ItemType: SteeringWheel
 --- !u!61 &530555620
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8966,7 +8966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3877569c74640de4eb42c4ac85e9da45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemType: rotary
+  ItemType: RotaryHelm
 --- !u!61 &1330297736
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10509,6 +10509,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 22807146631539407, guid: d1de494b99c77664d8bd78460b10c373, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 526796024283687777, guid: d1de494b99c77664d8bd78460b10c373, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326265547198162610, guid: d1de494b99c77664d8bd78460b10c373, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3520592653405052516, guid: d1de494b99c77664d8bd78460b10c373, type: 3}
       propertyPath: m_SizeDelta.y
       value: -7.269251
@@ -10604,6 +10616,14 @@ PrefabInstance:
     - target: {fileID: 3520592655123089022, guid: d1de494b99c77664d8bd78460b10c373, type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187840862435668010, guid: d1de494b99c77664d8bd78460b10c373, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299657926403402290, guid: d1de494b99c77664d8bd78460b10c373, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1de494b99c77664d8bd78460b10c373, type: 3}

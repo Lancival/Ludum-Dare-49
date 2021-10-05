@@ -3,7 +3,7 @@ tags:
 colorID: 0
 position: -129,-1779
 ---
-<<if $hasSteeringWheel and $hasRotaryHelm and $hasCables is true>>
+<<if $hasSteeringWheel and $hasRotaryHelm and $hasCables and $hasTalkedToBrother is true>>
 <<setSpeaker Dennis>>
 You found them!
 <<setSpeaker MC>>

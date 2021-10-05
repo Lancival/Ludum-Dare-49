@@ -899,8 +899,8 @@ RectTransform:
   - {fileID: 7858310321391841997}
   - {fileID: 9192347042526719524}
   - {fileID: 3173464535797500555}
-  - {fileID: 3520592654293306489}
   - {fileID: 3520592654106638702}
+  - {fileID: 3520592654293306489}
   m_Father: {fileID: 3520592655123089010}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -973,7 +973,7 @@ RectTransform:
   - {fileID: 3006923836467593518}
   - {fileID: 9200712534913975793}
   m_Father: {fileID: 3520592653405052516}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1011,7 +1011,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3520592653405052516}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1075,7 +1075,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_TargetDisplay: 0
 --- !u!1 &3520592655123089022
 GameObject:

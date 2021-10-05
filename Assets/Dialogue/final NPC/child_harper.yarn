@@ -3,7 +3,7 @@ tags:
 colorID: 0
 position: 294,-189
 ---
-<<if $hasSketchbook and $hasBusinessCard and $hasPaints is true>>
+<<if $hasSketchbook and $hasBusinessCard and $hasPaints and $hasTalkedToHarper is true>>
 <<setSpeaker Harper>>
 WHAT? How did you get all this?
 <<setSpeaker MC>>
