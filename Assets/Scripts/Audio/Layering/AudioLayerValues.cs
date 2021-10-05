@@ -59,5 +59,13 @@ public static class AudioLayerValues
         }
         yield break;
     }
+
+    public static void ResetValues()
+    {
+        layer1 = 0;
+        layer2 = 0;
+        layer3 = 0;
+        layer4 = 0;
+    }
     #endregion
 }
