@@ -52,7 +52,7 @@ public class AudioPlayCue : MonoBehaviour
         if (fadeIn)
             FadeIn();
 
-        print("PLAY " + gameObject.name + " : " + audioSource.clip);
+//        print("PLAY " + gameObject.name + " : " + audioSource.clip);
     }
 
     public void Stop(bool fadeOut)
@@ -64,7 +64,7 @@ public class AudioPlayCue : MonoBehaviour
         else
             audioSource.Stop();
 
-        print("STOP " + gameObject.name + " : " + audioSource.clip);
+   //     print("STOP " + gameObject.name + " : " + audioSource.clip);
     }
     #endregion
 

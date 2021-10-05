@@ -23,6 +23,7 @@ public class AudioIntermittentEmitter : MonoBehaviour
     [SerializeField] private bool playOnAwake;
 
     public bool randomPosition;
+    public bool getPlayerPosOnStart;
     [HideInInspector] public Transform listenerPosition;
     [HideInInspector] public Vector3 maxDistanceDivisor;
     private bool enablePlay;
@@ -38,7 +39,10 @@ public class AudioIntermittentEmitter : MonoBehaviour
         if (playOnAwake)
             Play();
         if (randomPosition)
-            listenerPosition = GameObject.FindGameObjectWithTag("Player").transform;
+        {
+            if(getPlayerPosOnStart)
+                listenerPosition = GameObject.FindGameObjectWithTag("Player").transform;
+        }
     }
 
     private void ConfigureAudioSource()
