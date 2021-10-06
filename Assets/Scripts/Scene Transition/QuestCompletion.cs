@@ -23,10 +23,29 @@ public class QuestCompletion : MonoBehaviour
 
     private void QuestComplete(string[] parameters)
     {
-    	Settings.QUESTS_COMPLETED++;
-        AudioQuestComplete.instance.DoAudioStuff();
-    	if (Settings.QUESTS_COMPLETED == 4)
-    		SceneLoader.SceneLoaderInstance.LoadNextScene("FinalScene");
+        if (parameters != null)
+        {
+            AudioQuestComplete.instance.DoAudioStuff();
+            switch (parameters[0])
+            {
+                case "Alice":
+                    Settings.ALICE_QUEST_COMPLETE = true;
+                    break;
+                case "Dennis":
+                    Settings.DENNIS_QUEST_COMPLETE = true;
+                    break;
+                case "Harper":
+                    Settings.HARPER_QUEST_COMPLETE = true;
+                    break;
+                case "Oliver":
+                    Settings.OLIVER_QUEST_COMPLETE = true;
+                    break;
+                default:
+                    break;
+            }
+            if (Settings.ALICE_QUEST_COMPLETE && Settings.DENNIS_QUEST_COMPLETE && Settings.HARPER_QUEST_COMPLETE && Settings.OLIVER_QUEST_COMPLETE)
+                SceneLoader.SceneLoaderInstance.LoadNextScene("FinalScene");
+        }
     }
 
     // Temporary testing
@@ -35,7 +54,10 @@ public class QuestCompletion : MonoBehaviour
     	if (Input.GetKeyDown(KeyCode.Equals))
     	{
     		Debug.Log("Quest Complete!");
-    		QuestComplete(null);
+    		QuestComplete(new string[] {"Alice"});
+            QuestComplete(new string[] {"Dennis"});
+            QuestComplete(new string[] {"Harper"});
+            QuestComplete(new string[] {"Oliver"});
     	}
     }
 }

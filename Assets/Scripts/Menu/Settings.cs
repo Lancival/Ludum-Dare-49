@@ -13,7 +13,10 @@ public static class Settings
 {
 	/* Gameplay State */
     public static bool PAUSED = false;
-    public static int QUESTS_COMPLETED = 0;
+    public static bool ALICE_QUEST_COMPLETE = false;
+    public static bool DENNIS_QUEST_COMPLETE = false;
+    public static bool HARPER_QUEST_COMPLETE = false;
+    public static bool OLIVER_QUEST_COMPLETE = false;
 
 
     /* Audio Settings */
